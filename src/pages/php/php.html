@@ -1,0 +1,75 @@
+<!--
+  Generated template for the Php page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Curso PHP</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="PhpPage(item)" icon-left>
+      <ion-icon [name]="'logo-' + item.icon" [ngStyle]="{'color': item.color}" item-left></ion-icon>
+      {{ item.title }}
+    </button>
+  </ion-list>
+
+     <button ion-item menuClose icon-right (click)="launchBienvenidoPhpPage()">
+      <ion-thumbnail item-left>
+         <img src="assets/icon/phpicon.png">
+      </ion-thumbnail>
+      <h2>Bienvenidos a PHP</h2>
+      </button>
+
+      <button ion-item menuClose icon-right (click)="launchCursoUnoPage()">
+      <ion-thumbnail item-left>
+         <img src="assets/icon/phpicon.png">
+      </ion-thumbnail>
+      <h2>Sintaxis</h2>
+      </button>
+
+       <button ion-item menuClose icon-right (click)="launchBienvenidoPhpPage()">
+      <ion-thumbnail item-left>
+         <img src="assets/icon/phpicon.png">
+      </ion-thumbnail>
+      <h2>Control de Flujo: If/Else y Switch</h2>
+      </button>
+
+       <button ion-item menuClose icon-right (click)="launchBienvenidoPhpPage()">
+      <ion-thumbnail item-left>
+         <img src="assets/icon/phpicon.png">
+      </ion-thumbnail>
+      <h2>Arrays en PHP'</h2>
+      </button>
+
+       <button ion-item menuClose icon-right (click)="launchBienvenidoPhpPage()">
+      <ion-thumbnail item-left>
+         <img src="assets/icon/phpicon.png">
+      </ion-thumbnail>
+      <h2>Ciclos: For, While y Do-While</h2>
+      </button>
+
+       <button ion-item menuClose icon-right (click)="launchBienvenidoPhpPage()">
+      <ion-thumbnail item-left>
+         <img src="assets/icon/phpicon.png">
+      </ion-thumbnail>
+      <h2>Funciones en PHP</h2>
+      </button>
+
+       <button ion-item menuClose icon-right (click)="launchBienvenidoPhpPage()">
+      <ion-thumbnail item-left>
+         <img src="assets/icon/phpicon.png">
+      </ion-thumbnail>
+      <h2>POO</h2>
+      </button>
+
+     
+
+</ion-content>
