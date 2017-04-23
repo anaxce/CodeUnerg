@@ -4,6 +4,7 @@ import { Platform, MenuController, Nav } from 'ionic-angular';
 
 import { StatusBar, Splashscreen } from 'ionic-native';
 
+import { NoticiasService} from '../providers/noticias.service';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ListPage } from '../pages/list/list';
 import { CursosPage } from '../pages/cursos/cursos';
@@ -27,7 +28,8 @@ export interface PageInterface{
 }
 
 @Component({
-  templateUrl: 'app.html'
+  templateUrl: 'app.html',
+  providers: [NoticiasService]
   
 })
 export class MyApp {

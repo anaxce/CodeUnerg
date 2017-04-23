@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { NoticiasService } from '../../providers/noticias.service'
 
 /*
   Generated class for the Noticias page.
@@ -9,14 +10,20 @@ import { NavController, NavParams } from 'ionic-angular';
 */
 @Component({
   selector: 'page-noticias',
-  templateUrl: 'noticias.html'
+  templateUrl: 'noticias.html',
+  providers: [NoticiasService]
 })
 export class NoticiasPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  constructor(public navCtrl: NavController, public noticiasService:NoticiasService) {
+     this.loadRestData();
+  }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad NoticiasPage');
+  loadRestData() {
+    this.noticiasService.load()
+      .then(data => {
+        console.log(data);
+      });
   }
 
 }

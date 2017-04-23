@@ -6,12 +6,14 @@ import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { ListPage } from '../pages/list/list';
 import { TabsPage } from '../pages/tabs/tabs';
 import { CursosPage } from '../pages/cursos/cursos';
+import { AbsoluteDrag } from '../components/absolute-drag/absolute-drag';
 
 //Cursos de PHP
 import { BienvenidoPhpPage } from '../pages/php/cursos/bienvenido-php/bienvenido-php';
 import { PhpPage } from '../pages/php/php';
 import { CursoUnoPage } from '../pages/php/cursos/curso-uno/curso-uno';
-import { CursoUnoParteUnoPage} from '../pages/php/cursos/curso-uno/curso-uno-parte-uno/curso-uno-parte-uno';
+import { CursoUnoParteUnoPage } from '../pages/php/cursos/curso-uno/curso-uno-parte-uno/curso-uno-parte-uno';
+import { CursoUnoParteDosPage } from '../pages/php/cursos/curso-uno/curso-uno-parte-dos/curso-uno-parte-dos';
 
 import { NoticiasPage } from '../pages/noticias/noticias';
 import { RepositorioPage } from '../pages/repositorio/repositorio';
@@ -36,12 +38,14 @@ const cloudSettings: CloudSettings = {
     ListPage,
     TabsPage,
     CursosPage,
+    AbsoluteDrag,
     
     // Cursos de PhP
     PhpPage,
     BienvenidoPhpPage,
     CursoUnoPage,
     CursoUnoParteUnoPage,
+    CursoUnoParteDosPage,
 
     NoticiasPage,
     RepositorioPage,
@@ -69,7 +73,7 @@ const cloudSettings: CloudSettings = {
     BienvenidoPhpPage,
     CursoUnoPage,
     CursoUnoParteUnoPage,
-
+    CursoUnoParteDosPage,
 
     NoticiasPage,
     RepositorioPage,

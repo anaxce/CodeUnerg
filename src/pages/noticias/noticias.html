@@ -14,7 +14,13 @@
   </ion-navbar>
 
 </ion-header>
-
+<div *ngFor="let data of restData" class="">
+  <h2 class="news-overlay-title">{{data.title[0]}}</h2>
+  <div class="text-content">
+    <div class="data" [innerHTML]='data.body[0].value'>
+    </div>
+  </div>
+</div>
 
 <ion-content padding>
 
