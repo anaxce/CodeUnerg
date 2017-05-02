@@ -15,7 +15,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { SignupPage } from '../pages/signup/signup';
 import { LoginPage } from '../pages/login/login';
 import { PhpPage } from '../pages/php/php';
-
+import { TutorialPage } from '../pages/tutorial/tutorial';
 
 
 export interface PageInterface{
@@ -48,7 +48,7 @@ export class MyApp {
       { title: 'PHP', component: PhpPage, icon: 'code'}
   ];
   // make HelloIonicPage the root (or first) page
-  rootPage: any = TabsPage;
+  rootPage: any = TutorialPage;
   activePage: any;
   pages: Array<{title: string, component: any}>;
 
@@ -56,6 +56,8 @@ export class MyApp {
     public platform: Platform,
     public menu: MenuController
   ) {
+
+    
     this.initializeApp();
 
     // set our app's pages
@@ -71,6 +73,11 @@ export class MyApp {
       { title: 'Informacion', component: ListPage },
       
     ];
+  }
+
+  
+openTutorial() {
+    this.nav.setRoot(TutorialPage);
   }
 
   initializeApp() {

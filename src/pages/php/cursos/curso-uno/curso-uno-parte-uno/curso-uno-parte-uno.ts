@@ -16,35 +16,37 @@ export class CursoUnoParteUnoPage {
   testRadioOpen: boolean;
   testRadioResult;
 
-  constructor(public alerCtrl: AlertController, public navCtrl: NavController) { }
+  constructor(public alertCtrl: AlertController, public navCtrl: NavController) { }
+
+  
 
  doRadio() {
-    let alert = this.alerCtrl.create();
+    let alert = this.alertCtrl.create();
     alert.setTitle('Respuesta');
 
     alert.addInput({
       type: 'radio',
-      label: 'function miFuncion() ',
-      value: 'function miFuncion() ',
+      label: 'print "Hola Mundo"; ',
+      value: 'A',
       checked: true
     });
 
     alert.addInput({
       type: 'radio',
-      label: 'create function miFuncion() ',
-      value: 'create function miFuncion() '
+      label: 'echo "Hola Mundo"; ',
+      value: 'B'
     });
 
     alert.addInput({
       type: 'radio',
-      label: 'sub miFuncion() ',
-      value: 'sub miFuncion() '
+      label: 'console.log "Hola Mundo": ',
+      value: 'C'
     });
 
     alert.addInput({
       type: 'radio',
-      label: 'method miFuncion() ',
-      value: 'method miFuncion() '
+      label: 'Imprimir "Hola Mundo"; ',
+      value: 'D'
     });
 
   
@@ -56,6 +58,22 @@ export class CursoUnoParteUnoPage {
         console.log('Radio data:', data);
         this.testRadioOpen = false;
         this.testRadioResult = data;
+        if (this.testRadioResult == "B") {
+          let alert = this.alertCtrl.create({
+            title: 'Respuesta Correcta',
+            subTitle: '¡Bien hecho!',
+            buttons: ['Continuar']
+                });
+                alert.present();
+          
+        } else {
+          let alert = this.alertCtrl.create({
+            title: 'Respuesta Incorrecta :(',
+            subTitle: '¡Sigue intentando!',
+            buttons: ['Continuar']
+                });
+              alert.present();
+        }
       }
     });
 
@@ -66,6 +84,7 @@ export class CursoUnoParteUnoPage {
 
  launchCursoUnoParteDosPage(){
     this.navCtrl.push(CursoUnoParteDosPage);
+   
 
 }
 

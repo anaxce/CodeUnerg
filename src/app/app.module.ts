@@ -23,6 +23,7 @@ import { LoginPage } from '../pages/login/login';
 import { ResetPasswordPage } from '../pages/reset-password/reset-password';
 import {CloudSettings, CloudModule} from '@ionic/cloud-angular';
 import { DragulaModule } from '../../node_modules/ng2-dragula/ng2-dragula';
+import { TutorialPage } from '../pages/tutorial/tutorial';
 
 const cloudSettings: CloudSettings = {
   'core': {
@@ -39,6 +40,7 @@ const cloudSettings: CloudSettings = {
     TabsPage,
     CursosPage,
     AbsoluteDrag,
+    TutorialPage,
     
     // Cursos de PhP
     PhpPage,
@@ -67,6 +69,7 @@ const cloudSettings: CloudSettings = {
     ListPage,
     TabsPage,
     CursosPage,
+    TutorialPage,
 
     //Cursos de PhP
     PhpPage,
