@@ -17,6 +17,7 @@ import { CursoUnoParteDosPage } from '../pages/php/cursos/curso-uno/curso-uno-pa
 import { CursoDosPage } from '../pages/php/cursos/curso-dos/curso-dos';
 import { CursoDosParteUnoPage } from '../pages/php/cursos/curso-dos/curso-dos-parte-uno/curso-dos-parte-uno';
 import { CursoDosParteDosPage } from '../pages/php/cursos/curso-dos/curso-dos-parte-dos/curso-dos-parte-dos';
+import { CursoDosParteTresPage } from '../pages/php/cursos/curso-dos/curso-dos-parte-tres/curso-dos-parte-tres';
 
 import { NoticiasPage } from '../pages/noticias/noticias';
 import { RepositorioPage } from '../pages/repositorio/repositorio';
@@ -56,6 +57,7 @@ const cloudSettings: CloudSettings = {
     CursoDosPage,
     CursoDosParteUnoPage,
     CursoDosParteDosPage,
+    CursoDosParteTresPage,
 
 
     NoticiasPage,
@@ -91,6 +93,7 @@ const cloudSettings: CloudSettings = {
     CursoDosPage,
     CursoDosParteUnoPage,
     CursoDosParteDosPage,
+    CursoDosParteTresPage,
 
     NoticiasPage,
     RepositorioPage,

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { CursoDosParteTresPage } from '../curso-dos-parte-tres/curso-dos-parte-tres';
 
 /*
   Generated class for the CursoDosParteDos page.
@@ -17,6 +18,11 @@ export class CursoDosParteDosPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CursoDosParteDosPage');
+  }
+
+    launchCursoDosParteTresPage(){
+    this.navCtrl.push(CursoDosParteTresPage);
+
   }
 
 }

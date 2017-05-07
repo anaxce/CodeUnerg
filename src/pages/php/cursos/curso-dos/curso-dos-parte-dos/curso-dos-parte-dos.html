@@ -7,12 +7,135 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>CursoDosParteDos</ion-title>
+    <ion-title>Operadores Logicos</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+
+<p>Los <b>Operadores Logicos</b> son usados en expresiones condicionales que retornan <b>verdadero</b>(TRUE) o <b>falso</b> (FALSE)</p>
+<b>Verdadero = True </b><br>
+<b>Cierto = True </b><br>
+
+  <ion-row>
+    <ion-col><div><b>Operador</b></div></ion-col>
+    <ion-col><div><b>Nombre</b></div></ion-col>
+    <ion-col><div><b>Ejemplo</b></div></ion-col>
+    <ion-col><div><b>Descripción</b></div></ion-col>
+
+  </ion-row>
+
+   <ion-row>
+    <ion-col><div>and</div></ion-col>
+    <ion-col><div>Y</div></ion-col>
+    <ion-col><div>$a and $b</div></ion-col>
+    <ion-col><div>Si ambos son ciertos, $a and $b son verdadero</div></ion-col>
+
+  </ion-row>
+
+   <ion-row>
+    <ion-col><div>or</div></ion-col>
+    <ion-col><div>O(Inclusivo)</div></ion-col>
+    <ion-col><div>$a or $b</div></ion-col>
+    <ion-col><div>Si uno es verdadero, $a or $b son verdadero</div></ion-col>
+
+  </ion-row>
+
+
+   <ion-row>
+    <ion-col><div>xor</div></ion-col>
+    <ion-col><div>O(Exclusivo)</div></ion-col>
+    <ion-col><div>$a xor $b</div></ion-col>
+    <ion-col><div>Es verdadero si $a o $b son ciertas, pero no ambas</div></ion-col>
+
+  </ion-row>
+
+  <ion-row>
+    <ion-col><div>!</div></ion-col>
+    <ion-col><div>Not(no)</div></ion-col>
+    <ion-col><div>!$a</div></ion-col>
+    <ion-col><div>Es verdadero si $a no es verdadero</div></ion-col>
+
+  </ion-row>
+
+  <ion-row>
+    <ion-col><div> && </div></ion-col>
+    <ion-col><div>And (y)</div></ion-col>
+    <ion-col><div>$a && $b</div></ion-col>
+    <ion-col><div>Es verdadero, Si tanto $a como $b son verdadero</div></ion-col>
+
+  </ion-row>
+
+   <ion-row>
+    <ion-col><div> || </div></ion-col>
+    <ion-col><div>Or (o inclusivo)</div></ion-col>
+    <ion-col><div>$a && $b</div></ion-col>
+    <ion-col><div>Es verdadero si cualquiera de $a o $b es verdadera</div></ion-col>
+
+  </ion-row>
+
+  <p>La razón para tener las dos variaciones diferentes de los 
+    operadores "<b>and</b>" y "<b>or</b>" es que ellos operan con precedencias diferentes.(Vease Precedencia de operadores)</p>
+
+<ion-card>
+    <ion-card-header>
+      <span class="blanco">Ejemplo</span>
+    </ion-card-header>
+
+    <ion-card-content>
+      <span class="naranja">$x </span> = <span class="amarillo"> 100 </span>;<br>
+      <span class="naranja">$y </span> = <span class="amarillo"> 80 </span>;<br><br>
+
+      
+      <span class="rojo">if </span> (<span class="naranja"> $x </span> == <span class="amarillo"> 100 </span> <span class="rojo"> and </span> <span class="naranja"> $y </span> == <span class="amarillo"> 50 </span>)<span class="llave1"></span><br>
+      <span class="azul">echo</span> <span class="amarillo">"Operador and";</span><br>
+      <span class="llave2"></span><br>
+
+      <span class="rojo">if </span> (<span class="naranja"> $x </span> == <span class="amarillo"> 100 </span> <span class="rojo"> or </span> <span class="naranja"> $x </span> == <span class="amarillo"> 80 </span>)<span class="llave1"></span><br>
+      <span class="azul">echo</span> <span class="amarillo">"Operador or (o)";</span><br>
+      <span class="llave2"></span><br>
+
+      <span class="rojo">if </span> (<span class="naranja"> $x </span> == <span class="amarillo"> 100 </span> <span class="rojo"> xor </span> <span class="naranja"> $x </span> == <span class="amarillo"> 80 </span>)<span class="llave1"></span><br>
+      <span class="azul">echo</span> <span class="amarillo">"Operador xor (o)";</span><br>
+      <span class="llave2"></span><br>
+
+      <span class="rojo">if </span> (<span class="naranja"> $x </span> == <span class="amarillo"> 100 </span> <span class="rojo"> && </span> <span class="naranja"> $x </span> == <span class="amarillo"> 50 </span>)<span class="llave1"></span><br>
+      <span class="azul">echo</span> <span class="amarillo">"Operador && (and, y)";</span><br>
+      <span class="llave2"></span><br>
+
+      <span class="rojo">if </span> (<span class="naranja"> $x </span> == <span class="amarillo"> 100 </span> <span class="rojo"> || </span> <span class="naranja"> $x </span> == <span class="amarillo"> 80 </span>)<span class="llave1"></span><br>
+      <span class="azul">echo</span> <span class="amarillo">"Operador || (Or, o)";</span><br>
+      <span class="llave2"></span><br>
+
+      <span class="rojo">if</span>(<span class="naranja">$x</span> !== <span class="amarillo">90</span>)<span class="llave1"></span><br>
+      <span class="azul">echo</span> <span class="amarillo">"Operador != (Not)";</span><br>
+      <span class="llave2"></span><br>
+
+    
+
+    </ion-card-content>
+
+  </ion-card>
+
+   <ion-card>
+
+        <ion-card-header class="blanco">
+        Salida en la web
+        </ion-card-header>
+
+        <ion-card-content>
+
+          <span class="blanco">Operador or (o)</span><br>
+          <span class="blanco">Operador || (Or, o)</span><br>
+          <span class="blanco">Operador != (Not)</span><br>
+      
+        </ion-card-content>
+
+      </ion-card>
+
+        <button ion-button full menuClose (click)="launchCursoDosParteTresPage()" color="dark">Continuar</button>
+
 
 </ion-content>

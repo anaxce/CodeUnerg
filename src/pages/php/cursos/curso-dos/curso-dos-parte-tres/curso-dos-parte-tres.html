@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>CursoDosParteTres</ion-title>
+    <ion-title>Operadores para Arrays</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,4 +15,126 @@
 
 <ion-content padding>
 
+<p>Los <b>Operadores de Arrays(Matrices)</b> son usados para comparar Arrays.</p>
+
+  <ion-row>
+    <ion-col><div><b>Operador</b></div></ion-col>
+    <ion-col><div><b>Nombre</b></div></ion-col>
+    <ion-col><div><b>Ejemplo</b></div></ion-col>
+    <ion-col><div><b>Descripción</b></div></ion-col>
+
+  </ion-row>
+
+    <ion-row>
+      <ion-col><div>+</div></ion-col>
+      <ion-col><div>Unión</div></ion-col>
+      <ion-col><div>$a + $b</div></ion-col>
+      <ion-col><div>Union entre $a y $b</div></ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col><div>==</div></ion-col>
+      <ion-col><div>Igualdad</div></ion-col>
+      <ion-col><div>$a == $b</div></ion-col>
+      <ion-col><div>Devuelve verdadero si $a y $b tienen las mismas parejas clave/valor.</div></ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col><div>===</div></ion-col>
+      <ion-col><div>Identidad</div></ion-col>
+      <ion-col><div>$a === $b</div></ion-col>
+      <ion-col><div>Devuelve verdadero si $a y $b tienen las mismas parejas clave/valor en el mismo orden y de los mismos tipos</div></ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col><div>!=</div></ion-col>
+      <ion-col><div>Desigualdad</div></ion-col>
+      <ion-col><div>$a != $b</div></ion-col>
+      <ion-col><div>Devuelve verdadero si $a no es igual a $b</div></ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col><div> < > </div></ion-col>
+      <ion-col><div>Desigualdad</div></ion-col>
+      <ion-col><div>$a != $b</div></ion-col>
+      <ion-col><div>Devuelve verdadero si $a no es igual a $b</div></ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col><div> !== </div></ion-col>
+      <ion-col><div>No-Identidad</div></ion-col>
+      <ion-col><div>$a !== $b</div></ion-col>
+      <ion-col><div>Devuelve verdadero si $a no es identica a $b</div></ion-col>
+    </ion-row>
+
+    <p>El operador <b>+</b> devuelve el array del lado derecho añadido al array del lado izquierdo; 
+      para las claves que existan en ambos arrays, serán utilizados los elementos 
+      del <b>array de la izquierda</b> y serán ignorados los elementos correspondientes del <b>array de la derecha</b>.</p>
+
+      <ion-card>
+    <ion-card-header>
+      <span class="blanco">Ejemplo</span>
+    </ion-card-header>
+
+    <ion-card-content>
+      <span class="naranja">$x </span> = <span class="rojo"> array </span>(<br>
+      <span class="amarillo"> "a"</span> => <span class="amarillo">"php"</span>,<br>
+      <span class="amarillo"> "b"</span> => <span class="amarillo">"java"</span><br>
+      <span class="blanco">);</span>
+
+      <span class="naranja">$y </span> = <span class="rojo"> array </span>(<br>
+      <span class="amarillo"> "c"</span> => <span class="amarillo">"html"</span>,<br>
+      <span class="amarillo"> "d"</span> => <span class="amarillo">"javascript"</span><br>
+      <span class="blanco">);</span><br>
+
+      <span class="gris">// Union</span><br>
+      <span class="blanco">print_r</span> ( <span class="naranja">$x</span>+<span class="naranja">$y</span>);<br>
+
+      <span class="gris">// Igualdad</span><br>
+      <span class="blanco">var_dump</span> ( <span class="naranja">$x</span>==<span class="naranja">$y</span>);<br>
+
+      <span class="gris">// Identidad</span><br>
+      <span class="blanco">var_dump</span> ( <span class="naranja">$x</span>===<span class="naranja">$y</span>);<br>
+
+      <span class="gris">// Desigualdad</span><br>
+      <span class="blanco">var_dump</span> ( <span class="naranja">$x</span>!=<span class="naranja">$y</span>);<br>
+
+      <span class="gris">// Desigualdad</span><br>
+      <span class="blanco">var_dump</span> ( <span class="naranja">$x</span> < > <span class="naranja">$y</span>);<br>
+
+      <span class="gris">// No Identidad</span><br>
+      <span class="blanco">var_dump</span> ( <span class="naranja">$x</span>!==<span class="naranja">$y</span>);<br>
+
+    </ion-card-content>
+
+  </ion-card>
+
+   <ion-card>
+
+        <ion-card-header class="blanco">
+        Salida en la web
+        </ion-card-header>
+
+        <ion-card-content>
+
+          <span class="blanco">Array</span><br>
+          <span class="blanco">(</span><br>
+          <div class="margensito">
+          <span class="blanco">[a] => php</span><br>
+          <span class="blanco">[b] => java</span><br>
+          <span class="blanco">[c] => html</span><br>
+          <span class="blanco">[d] => javascript</span><br>
+          </div>
+          <span class="blanco">)</span><br>
+          <span class="blanco">bool(false)</span><br>
+          <span class="blanco">bool(false)</span><br>
+          <span class="blanco">bool(true)</span><br>
+          <span class="blanco">bool(true)</span><br>
+          <span class="blanco">bool(true)</span><br>
+
+        </ion-card-content>
+
+      </ion-card>
+
 </ion-content>
+
