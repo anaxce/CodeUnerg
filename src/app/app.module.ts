@@ -14,6 +14,9 @@ import { PhpPage } from '../pages/php/php';
 import { CursoUnoPage } from '../pages/php/cursos/curso-uno/curso-uno';
 import { CursoUnoParteUnoPage } from '../pages/php/cursos/curso-uno/curso-uno-parte-uno/curso-uno-parte-uno';
 import { CursoUnoParteDosPage } from '../pages/php/cursos/curso-uno/curso-uno-parte-dos/curso-uno-parte-dos';
+import { CursoDosPage } from '../pages/php/cursos/curso-dos/curso-dos';
+import { CursoDosParteUnoPage } from '../pages/php/cursos/curso-dos/curso-dos-parte-uno/curso-dos-parte-uno';
+import { CursoDosParteDosPage } from '../pages/php/cursos/curso-dos/curso-dos-parte-dos/curso-dos-parte-dos';
 
 import { NoticiasPage } from '../pages/noticias/noticias';
 import { RepositorioPage } from '../pages/repositorio/repositorio';
@@ -23,6 +26,8 @@ import { LoginPage } from '../pages/login/login';
 import { ResetPasswordPage } from '../pages/reset-password/reset-password';
 import {CloudSettings, CloudModule} from '@ionic/cloud-angular';
 import { DragulaModule } from '../../node_modules/ng2-dragula/ng2-dragula';
+
+
 import { TutorialPage } from '../pages/tutorial/tutorial';
 
 const cloudSettings: CloudSettings = {
@@ -48,18 +53,24 @@ const cloudSettings: CloudSettings = {
     CursoUnoPage,
     CursoUnoParteUnoPage,
     CursoUnoParteDosPage,
+    CursoDosPage,
+    CursoDosParteUnoPage,
+    CursoDosParteDosPage,
+
 
     NoticiasPage,
     RepositorioPage,
     ComunidadPage,
     SignupPage,
     LoginPage,
-    ResetPasswordPage
+    ResetPasswordPage,
+
   ],
   imports: [
     IonicModule.forRoot(MyApp),
     CloudModule.forRoot(cloudSettings),
-    DragulaModule
+    DragulaModule,
+    
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -77,13 +88,17 @@ const cloudSettings: CloudSettings = {
     CursoUnoPage,
     CursoUnoParteUnoPage,
     CursoUnoParteDosPage,
+    CursoDosPage,
+    CursoDosParteUnoPage,
+    CursoDosParteDosPage,
 
     NoticiasPage,
     RepositorioPage,
     ComunidadPage,
     SignupPage,
     LoginPage,
-    ResetPasswordPage
+    ResetPasswordPage,
+
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

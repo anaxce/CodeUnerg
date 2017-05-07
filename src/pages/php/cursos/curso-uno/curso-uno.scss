@@ -1,52 +1,45 @@
+
+.amarillo{
+  color: #FFFB93;
+}
+
+.fondito{
+  background-color: #1A1A1F;
+  color: white;
+
+}
+.margen{
+  margin-left: 20px;
+}
+.azul{
+color: #93B0FF;
+}
+
+.naranja{
+  color: #FFBD66;
+}
+
+.rojo{
+  color: #FF2D2D;
+}
+
+.gris{
+  color: #ADADAD ;
+}
+
 ion-card-content{
-
-background: #83a4d4;
-background: -webkit-linear-gradient(to left, #83a4d4 , #b6fbff); 
-background: linear-gradient(to left, #83a4d4 , #b6fbff); 
-font-family: Arial, Helvetica, sans-serif;
-text-align: justify;
-
-}
- 
-.left {
-  border-right: 1px solid #000000;
-  padding: 0px;
-  overflow: scroll;
-}
- 
-.right {
-  padding: 0px;
-  overflow: scroll;
-}
- 
-// Dragula stuff
- 
-.gu-mirror {
-  position: fixed !important;
-  margin: 0 !important;
-  z-index: 9999 !important;
-  opacity: 0.8;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-  filter: alpha(opacity=80);
-}
- 
-.gu-hide {
-  display: none !important;
-}
- 
-.gu-unselectable {
-  -webkit-user-select: none !important;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
-  user-select: none !important;
-}
- 
-.gu-transit {
-  opacity: 0.2;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
-  filter: alpha(opacity=20);
+  background-color: #1A1A1F;
+  color: white;
 }
 
-ion-list{
-  
+ion-card-header{
+  background-color: #1A1A1F;
+}
+
+.blanco{
+  color:white;
+}
+
+p{
+  text-align: justify;
 }

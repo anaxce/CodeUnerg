@@ -1,0 +1,179 @@
+<!--
+  Generated template for the CursoDos page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Operadores</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+<p>Hay 6 grupos de operadores: <b>aritmética</b>, <b>asignación</b>, <b>incremento / decremento</b>, <b>comparación</b>, <b>operadores lógicos y de matriz</b></p>
+<p><b><u>Operadores Aritméticos</u></b></p>
+
+<ion-row>
+    <ion-col><div><b>Operador</b></div></ion-col>
+    <ion-col><div><b>Descripcion</b></div></ion-col>
+   
+  </ion-row>
+<ion-row>
+    <ion-col><div>+</div></ion-col>
+    <ion-col><div>Suma</div></ion-col>
+   
+  </ion-row>
+  <ion-row>
+    <ion-col><div>-</div></ion-col>
+    <ion-col><div>Resta</div></ion-col>
+   
+  </ion-row>
+  <ion-row>
+    <ion-col><div>*</div></ion-col>
+    <ion-col><div>Multiplicación</div></ion-col>
+   
+  </ion-row>
+  <ion-row>
+    <ion-col><div>/</div></ion-col>
+    <ion-col><div>División</div></ion-col>
+   
+  </ion-row>
+   <ion-row>
+    <ion-col><div>%</div></ion-col>
+    <ion-col><div>Modulo</div></ion-col>
+   
+  </ion-row>
+
+  <ion-card>
+    <ion-card-header>
+      <span class="blanco">Ejemplo</span>
+    </ion-card-header>
+
+    <ion-card-content>
+      <span class="naranja">$num1 </span> = <span class="amarillo"> 2 </span>;<br>
+      <span class="naranja">$num2 </span> = <span class="amarillo"> 9 </span>;<br>
+      <span class="amarillo">//Agregamos el "< br>" para hacer un salto de linea </span><br>
+      <span class="azul">echo </span><span class="amarillo"> $num1 + $num2 . </span><span class="amarillo">"< br>"</span>;<br>
+      <span class="azul">echo </span><span class="amarillo"> $num1 - $num2 . </span><span class="amarillo">"< br>"</span>;<br>
+      <span class="azul">echo </span><span class="amarillo"> $num1 * $num2 . </span><span class="amarillo">"< br>"</span>;<br>
+      <span class="azul">echo </span><span class="amarillo"> $num1 / $num2 . </span><span class="amarillo">"< br>"</span>;<br>
+      <span class="azul">echo </span><span class="amarillo"> $num1 % $num2 . </span><span class="amarillo">"< br>"</span>;<br>
+
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+
+  <ion-card-header class="blanco">
+   Salida en la web
+  </ion-card-header>
+
+  <ion-card-content>
+
+    <span class="blanco">11</span><br>
+    <span class="blanco">-7</span><br>
+    <span class="blanco">18</span><br>
+    <span class="blanco">0.222</span><br>
+    <span class="blanco">2</span><br>
+  
+  </ion-card-content>
+
+</ion-card>
+
+<p><b><u>Operadores de Asignación</u></b></p>
+
+<p>El " <b>=</b> " es usado para asignar un valor a la variable.</p>
+
+ <ion-card>
+    <ion-card-header>
+      <span class="blanco">Ejemplo</span>
+    </ion-card-header>
+
+    <ion-card-content>
+      <span class="naranja">$num1 </span> = <span class="amarillo"> 3 </span>;<br>
+      <span class="naranja">$num1 </span> += <span class="naranja"> $num1 </span>;<br>
+      <span class="azul">echo </span><span class="amarillo"> $num1 . </span><span class="amarillo">"< br>"</span>;<br>
+      <span class="naranja">$num2 </span> = <span class="amarillo"> 7 </span>;<br>
+      <span class="naranja">$num2 </span> *= <span class="naranja"> $num2 </span>;<br>
+      <span class="azul">echo </span><span class="naranja"> $num2 </span>;<br>
+
+    </ion-card-content>
+
+  </ion-card>
+
+    <ion-card>
+
+  <ion-card-header class="blanco">
+   Salida en la web
+  </ion-card-header>
+
+  <ion-card-content>
+
+    <span class="blanco">6</span><br>
+    <span class="blanco">49</span><br>
+ 
+  
+  </ion-card-content>
+
+</ion-card>
+
+<p><b>Explicación</b></p>
+<p>La variable <b>$num1</b>, se añade a sí misma, lo que da 6. el <b>$num2</b>, se multiplica por sí mismo, lo que da 49.</p>
+
+<p><b><u>Incremento y Reducción de operadores</u></b></p>
+<p>Hay <b>4</b> posibles resultados de Incremento y Reducción</p>
+
+
+<ion-card>
+    <ion-card-header>
+      <span class="blanco">Ejemplo</span>
+    </ion-card-header>
+
+    <ion-card-content>
+      <span class="naranja">$num1 </span> = <span class="amarillo"> 3 </span>;<br>
+      <span class="naranja">$num2 </span> = <span class="amarillo"> 3 </span>;<br>
+      <span class="naranja">$num3 </span> = <span class="amarillo"> 7 </span>;<br>
+      <span class="naranja">$num4 </span> = <span class="amarillo"> 7 </span>;<br>
+      <span class="azul">echo </span><span class="naranja"> ++$num1 </span>.<span class="amarillo">"< br>"</span>;<br>
+      <span class="azul">echo </span><span class="naranja"> $num2++ </span>.<span class="amarillo">"< br>"</span>;<br>
+      <span class="azul">echo </span><span class="naranja"> - -$num3 </span>.<span class="amarillo">"< br>"</span>;<br>
+      <span class="azul">echo </span><span class="naranja"> $num3- - </span>.<span class="amarillo">"< br>"</span>;<br>
+
+
+    </ion-card-content>
+
+  </ion-card>
+
+   <ion-card>
+
+  <ion-card-header class="blanco">
+   Salida en la web
+  </ion-card-header>
+
+  <ion-card-content>
+
+    <span class="blanco">4</span><br>
+    <span class="blanco">3</span><br>
+    <span class="blanco">6</span><br>
+    <span class="blanco">7</span><br>
+ 
+  </ion-card-content>
+
+</ion-card>
+
+<p><b>Explicación</b></p>
+<p>echo <b>++$num1;</b>, incrementa la variable antes de repetirla. Sin embargo, echo <b>$num2++</b> No incrementa la variable 
+hasta después de que se imprima en la pantalla</p>
+<h3 class="montserrat">En PHP, para calcular el módulo (el resto) de una división, se emplea el operador...</h3>
+  <button ion-button block light (click)="doRadio()">Introduce tu respuesta</button><br>
+
+
+<button ion-button full menuClose (click)="launchCursoDosParteUnoPage()" color="dark">Continuar</button>
+
+</ion-content>

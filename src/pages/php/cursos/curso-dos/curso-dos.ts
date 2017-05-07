@@ -1,24 +1,24 @@
 import { Component } from '@angular/core';
-import { NavController, AlertController } from 'ionic-angular';
-import { CursoUnoParteDosPage } from '../curso-uno-parte-dos/curso-uno-parte-dos';
- 
+import { NavController, NavParams, AlertController } from 'ionic-angular';
+import { CursoDosParteUnoPage } from './curso-dos-parte-uno/curso-dos-parte-uno';
+
+
 /*
-  Generated class for the CursoUnoParteUno page.
+  Generated class for the CursoDos page.
 
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 */
 @Component({
-  selector: 'page-curso-uno-parte-uno',
-  templateUrl: 'curso-uno-parte-uno.html'
+  selector: 'page-curso-dos',
+  templateUrl: 'curso-dos.html'
 })
-export class CursoUnoParteUnoPage {
+export class CursoDosPage {
   testRadioOpen: boolean;
   testRadioResult;
 
-  constructor(public alertCtrl: AlertController, public navCtrl: NavController) { }
+  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {}
 
-  
 
  doRadio() {
     let alert = this.alertCtrl.create();
@@ -26,26 +26,26 @@ export class CursoUnoParteUnoPage {
 
     alert.addInput({
       type: 'radio',
-      label: '$17age;',
+      label: '#',
       value: 'A',
       checked: true
     });
 
     alert.addInput({
       type: 'radio',
-      label: '#myName;',
+      label: '%',
       value: 'B'
     });
 
     alert.addInput({
       type: 'radio',
-      label: '$var12;',
+      label: '/',
       value: 'C'
     });
 
     alert.addInput({
       type: 'radio',
-      label: '$myName%;',
+      label: '&',
       value: 'D'
     });
 
@@ -58,7 +58,7 @@ export class CursoUnoParteUnoPage {
         console.log('Radio data:', data);
         this.testRadioOpen = false;
         this.testRadioResult = data;
-        if (this.testRadioResult == "C") {
+        if (this.testRadioResult == "B") {
           let alert = this.alertCtrl.create({
             title: 'Respuesta Correcta',
             subTitle: '¡Bien hecho!',
@@ -68,7 +68,7 @@ export class CursoUnoParteUnoPage {
           
         } else {
           let alert = this.alertCtrl.create({
-            title: 'Respuesta Incorrecta :(',
+            title: 'Respuesta Incorrecta',
             subTitle: '¡Sigue intentando!',
             buttons: ['Continuar']
                 });
@@ -82,10 +82,14 @@ export class CursoUnoParteUnoPage {
     });
   }
 
- launchCursoUnoParteDosPage(){
-    this.navCtrl.push(CursoUnoParteDosPage);
-   
 
-}
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad CursoDosPage');
+  }
+
+    launchCursoDosParteUnoPage(){
+    this.navCtrl.push(CursoDosParteUnoPage);
+
+  }
 
 }

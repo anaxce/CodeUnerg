@@ -2,23 +2,39 @@ page-bienvenido-php {
 
 }
 
-ion-card{
 
+
+.amarillo{
+  color: #FFFB93;
+}
+
+.fondito{
+  background-color: #1A1A1F;
+  color: white;
+
+}
+.margen{
+  margin-left: 20px;
+}
+.azul{
+color: #93B0FF;
+}
+
+.naranja{
+  color: #FFBD66;
+}
+
+
+
+ion-card-content{
+  background-color: #1A1A1F;
+  color: white;
 }
 
 ion-card-header{
-
-background: #83a4d4;
-background: -webkit-linear-gradient(to left, #83a4d4 , #b6fbff); 
-background: linear-gradient(to left, #83a4d4 , #b6fbff); 
+  background-color: #1A1A1F;
 }
 
-ion-card-content{
-
-background: #83a4d4;
-background: -webkit-linear-gradient(to left, #83a4d4 , #b6fbff); 
-background: linear-gradient(to left, #83a4d4 , #b6fbff); 
-font-family: Arial, Helvetica, sans-serif;
-text-align: justify;
-
+.blanco{
+  color:white;
 }

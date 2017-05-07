@@ -14,12 +14,9 @@
 
 
 <ion-content padding>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="PhpPage(item)" icon-left>
-      <ion-icon [name]="'logo-' + item.icon" [ngStyle]="{'color': item.color}" item-left></ion-icon>
-      {{ item.title }}
-    </button>
-  </ion-list>
+ 
+
+
 
      <button ion-item menuClose icon-right (click)="launchBienvenidoPhpPage()">
       <ion-thumbnail item-left>
@@ -29,17 +26,17 @@
       </button>
 
       <button ion-item menuClose icon-right (click)="launchCursoUnoPage()">
-      <ion-thumbnail item-left>
+      <ion-thumbnail item-left item-avatar>
          <img src="assets/icon/phpicon.png">
       </ion-thumbnail>
-      <h2>Sintaxis</h2>
+      <h2>Primeros Pasos</h2>
       </button>
 
-       <button ion-item menuClose icon-right (click)="launchBienvenidoPhpPage()">
+       <button ion-item menuClose icon-right (click)="launchCursoDosPage()">
       <ion-thumbnail item-left>
          <img src="assets/icon/phpicon.png">
       </ion-thumbnail>
-      <h2>Control de Flujo: If/Else y Switch</h2>
+      <h2>Operadores</h2>
       </button>
 
        <button ion-item menuClose icon-right (click)="launchBienvenidoPhpPage()">

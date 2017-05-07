@@ -7,23 +7,35 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>CursoUnoParteUno</ion-title>
+    <ion-title>Nombrando una variable</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <ion-card>
+  <p>
+    Darle un buen correcto nombre a tus <b>variables</b>, <b>funciones</b> y <b>clases</b> siempre es muy importante.
+</p>
+<p>Si define las siguientes variables.</p>
+<ion-card>
   <ion-card-content>
-    Una de las herramientas más importantes en cualquier lenguaje de programación son las funciones. 
-    Una función es un conjunto de instrucciones que a lo largo del programa van a ser ejecutadas multitud de veces. 
-    Es por ello, que este conjunto de instrucciones se agrupan en una función. Las funciones pueden ser llamadas y ejecutadas desde cualquier punto del programa.
+    <span class="naranja"> $programming_language </span> = <span class="amarillo">"PHP"</span>;<br>
+    <span class="naranja"> $menu_items </span> = <span class="amarillo">7</span>;<br>
   </ion-card-content>
-  </ion-card>
-<h3>En PHP, ¿cuál es la forma correcta de imprimir un mensaje?</h3>
-  <button ion-button block light (click)="doRadio()">Introduce tu respuesta</button>
+</ion-card>
+<p><b>$programming_language</b>, por ejemplo no es un buen nombre, es demasiado largo. Un mejor nombre seria quizas <b>$prg_language</b>,ya que es mas corto y entendible.</p>
+<ion-card>
+  <ion-card-content>
+    <span class="azul"> //El lenguaje de programacion utilizado para escribir este script.</span><br>
+    <span class="naranja"> $prg_language </span> = <span class="amarillo">"PHP"</span>;<br>
+    <span class="azul"> //El maximo numero de items permitidos en mi menu personal.</span><br>
+    <span class="naranja"> $menu_items </span> = <span class="amarillo">7</span>;<br>
+  </ion-card-content>
+</ion-card>
+<h3 class="center">¿Cual es la forma correcta de declarar una variable?</h3>
+  <button ion-button block light (click)="doRadio()">Introduce tu respuesta</button><br>
 
-  <button ion-button round menuClose (click)="launchCursoUnoParteDosPage()" color="dark">Continuar</button>
+  <button ion-button full menuClose (click)="launchCursoUnoParteDosPage()" color="dark">Continuar</button>
 
 </ion-content>

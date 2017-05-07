@@ -7,22 +7,51 @@
 
 
 
-<ion-header absolute-drag>
+<ion-header>
   <ion-navbar>
     <ion-title>
-      Sintaxis
+      Variables
     </ion-title>
   </ion-navbar>
 </ion-header>
  
-<ion-content fullscreen>
+<ion-content padding>
  
-    <button ion-button absolute-drag startLeft="20" startTop="100">Drag Me!</button>
- 
-    <button ion-button absolute-drag>Drag Me!</button>
+  <p> Las variables son <b>contenedores</b> (Espacios en la memoria) que contienen datos. Estos datos tambien pueden ser cambiados o modificados.
 
+  <p> <b>Reglas para declarar variables</b></p>
+  <ul>
+    <li>Una variable debe comenzar con el signo "<span class="amarillo">$</span>" seguido del nombre de la variable.</li><br>
+    <li>El nombre de la variable debe comenzar con una <b>letra</b> o el carácter de subrayado "<b>_</b>"</li><br>
+    <li>El nombre de la variable <b>no puede</b> comenzar con un numero</li><br>
+    <li>El nombre de la variable sólo puede contener caracteres <b>alpha-numeric</b> y <b>subrayados</b> (A-z, 0-9 y _)</li><br>
+    <li>Los nombres de variable son sensibles a <b>mayúsculas</b> y <b>minúsculas</b> ($edad y $EDAD son dos variables diferentes)</li>
+  </ul>
  
+<ion-card>
+  <ion-card-header class="blanco">
+   Ejemplo:
+  </ion-card-header>
+
+
+  <ion-card-content>
+    <span class="naranja"> $myName </span> = <span class="amarillo">"Nestor"</span>;<br>
+    <span class="azul"> echo </span> = <span class="naranja">$myName</span>;<br>
+  </ion-card-content>
  
-    <button ion-button round menuClose (click)="launchCursoUnoParteUnoPage()" color="dark">Continuar</button>
+</ion-card>
+
+<ion-card>
+  <ion-card-header class="blanco">
+   Salida en la web
+  </ion-card-header>
+
+  <ion-card-content>
+    Nestor
+  </ion-card-content>
+
+</ion-card>
+ 
+    <button ion-button full menuClose (click)="launchCursoUnoParteUnoPage()" color="dark">Continuar</button>
  
 </ion-content>

@@ -17,25 +17,42 @@
 <ion-slides pager>
 
   <ion-slide>
+<h1>¿Por que aprender PHP?</h1>
+<p>PHP es un lenguaje totalmente <b>libre</b> y <b>abierto</b>. </p>
+  <p> Tiene una <b>curva de aprendizaje muy baja</b>, su sintaxis es simple y cumple estándares básicos de la programación orientada a objetos.</p> 
+  <p>No son necesarios complejos <b>entornos de desarrollo</b>, que incluso necesitan su propio periodo de aprendizaje. </p>
+ <p> Puedes programar en PHP sin más ayuda que el bloc de notas, todos los IDEs disponibles son gratuitos y los entornos de desarrollo son de <b>rápida</b> y <b>fácil configuración</b>.</p>
+  </ion-slide>
+
+  <ion-slide>
+<p>Una de las sentencias que más usaremos en Php es la que ordena que se muestre un contenido en la página web. </p>
+<p>Esa sentencia se llama <b>echo</b> y se usa escribiéndola dentro de la zona de php (entre las etiquetas de principio y final) seguida del mensaje a mostrar encerrado entre dobles comillas, así: </p>  
+ <ion-card>
+  <ion-card-header class="blanco">
+    Ejemplo
+  </ion-card-header>
+  <ion-card-content>
+    <span class="azul"> echo </span> <span class="amarillo">"Hola Mundo"</span>;<br>
+  </ion-card-content>
+</ion-card>
+
 <ion-card>
-<ion-card-header>
-<h1>¿Por qué aprender PHP?</h1>
-</ion-card-header>
+  <ion-card-header class="blanco">
+   Salida en la web
+  </ion-card-header>
 
   <ion-card-content>
-     PHP es un lenguaje totalmente libre y abierto. Tiene una curva de aprendizaje muy baja, su sintaxis es simple y cumple estándares básicos de la programación orientada a objetos. No son necesarios complejos entornos de desarrollo, que incluso necesitan su propio periodo de aprendizaje. Puedes programar en PHP sin más ayuda que el bloc de notas, todos los IDEs disponibles son gratuitos y los entornos de desarrollo son de rápida y fácil configuración.
+   Hola Mundo
   </ion-card-content>
 
 </ion-card>
+
+
   </ion-slide>
 
   <ion-slide>
-    <h2>Slide 2</h2>
-  </ion-slide>
-
-  <ion-slide>
-    <h2>Slide 3</h2>
-    <button ion-button round menuClose (click)="launchCursoUnoPage()" color="dark">Continuar</button>
+    <h2>¿Preparado?</h2>
+    <button ion-button full menuClose (click)="launchCursoUnoPage()" color="dark">Continuar</button>
   </ion-slide>
 
 </ion-slides>
