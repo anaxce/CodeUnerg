@@ -18,6 +18,28 @@ import { CursoDosPage } from '../pages/php/cursos/curso-dos/curso-dos';
 import { CursoDosParteUnoPage } from '../pages/php/cursos/curso-dos/curso-dos-parte-uno/curso-dos-parte-uno';
 import { CursoDosParteDosPage } from '../pages/php/cursos/curso-dos/curso-dos-parte-dos/curso-dos-parte-dos';
 import { CursoDosParteTresPage } from '../pages/php/cursos/curso-dos/curso-dos-parte-tres/curso-dos-parte-tres';
+import { CursoTresPage } from '../pages/php/cursos/curso-tres/curso-tres';
+import { CursoTresParteUnoPage } from  '../pages/php/cursos/curso-tres/curso-tres-parte-uno/curso-tres-parte-uno';
+import { CursoTresParteDosPage } from  '../pages/php/cursos/curso-tres/curso-tres-parte-dos/curso-tres-parte-dos';
+import { CursoTresParteTresPage } from  '../pages/php/cursos/curso-tres/curso-tres-parte-tres/curso-tres-parte-tres';
+import { CursoTresParteCuatroPage } from  '../pages/php/cursos/curso-tres/curso-tres-parte-cuatro/curso-tres-parte-cuatro';
+import { CursoTresParteCincoPage } from '../pages/php/cursos/curso-tres/curso-tres-parte-cinco/curso-tres-parte-cinco';
+import { CursoCuatroPage} from '../pages/php/cursos/curso-cuatro/curso-cuatro';
+
+//Cursos de Java
+import { JavaPage } from '../pages/java/java';
+
+//Cursos de Python
+import { PythonPage } from '../pages/python/python';
+
+//Cursos de Html
+import { HtmlPage } from '../pages/html/html';
+
+//Cursos de css
+import { CssPage } from '../pages/css/css';
+
+//Cursos de Javascript
+import { JavascriptPage} from '../pages/javascript/javascript';
 
 import { NoticiasPage } from '../pages/noticias/noticias';
 import { RepositorioPage } from '../pages/repositorio/repositorio';
@@ -58,6 +80,34 @@ const cloudSettings: CloudSettings = {
     CursoDosParteUnoPage,
     CursoDosParteDosPage,
     CursoDosParteTresPage,
+    CursoTresPage,
+    CursoTresParteUnoPage,
+    CursoTresParteDosPage,
+    CursoTresParteTresPage,
+    CursoTresParteCuatroPage,
+    CursoTresParteCincoPage,
+    CursoCuatroPage,
+    
+
+    // Cursos de Java
+    JavaPage,
+
+
+    // Cursos de Python
+    PythonPage,
+
+
+    // Cusos de Html
+    HtmlPage,
+
+
+    // Cursos de Css
+    CssPage,
+
+
+    // Cursos de Javascript
+    JavascriptPage,
+
 
 
     NoticiasPage,
@@ -94,6 +144,32 @@ const cloudSettings: CloudSettings = {
     CursoDosParteUnoPage,
     CursoDosParteDosPage,
     CursoDosParteTresPage,
+    CursoTresPage,
+    CursoTresParteUnoPage,
+    CursoTresParteDosPage,
+    CursoTresParteTresPage,
+    CursoTresParteCuatroPage,
+    CursoTresParteCincoPage,
+    CursoCuatroPage,
+
+    // Cursos de Java
+    JavaPage,
+
+    // Cursos de Python
+    PythonPage,
+
+
+    // Cusos de Html
+    HtmlPage,
+
+
+    // Cursos de Css
+    CssPage,
+
+
+    // Cursos de Javascript
+    JavascriptPage,
+    
 
     NoticiasPage,
     RepositorioPage,

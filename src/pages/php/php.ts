@@ -3,6 +3,8 @@ import { NavController, NavParams } from 'ionic-angular';
 import { BienvenidoPhpPage } from './cursos/bienvenido-php/bienvenido-php';
 import { CursoUnoPage } from './cursos/curso-uno/curso-uno';
 import { CursoDosPage } from './cursos/curso-dos/curso-dos';
+import { CursoTresPage } from './cursos/curso-tres/curso-tres';
+import { CursoCuatroPage } from './cursos/curso-cuatro/curso-cuatro';
 @Component({
   selector: 'page-php',
   templateUrl: 'php.html'
@@ -26,6 +28,16 @@ items = [];
 
   launchCursoDosPage(){
     this.navCtrl.push(CursoDosPage);
+
+  }
+
+ launchCursoTresPage(){
+    this.navCtrl.push(CursoTresPage);
+
+  }
+
+  launchCursoCuatroPage(){
+    this.navCtrl.push(CursoCuatroPage);
 
   }
 

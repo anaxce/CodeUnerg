@@ -47,7 +47,7 @@ export class MyApp {
   cursosPages: PageInterface[] = [
       { title: 'PHP', component: PhpPage, icon: 'code'}
   ];
-  // make HelloIonicPage the root (or first) page
+  // Aqui iniciara la pagina principal de bienvenida
   rootPage: any = TutorialPage;
   activePage: any;
   pages: Array<{title: string, component: any}>;
@@ -80,6 +80,10 @@ openTutorial() {
     this.nav.setRoot(TutorialPage);
   }
 
+  openCursos() {
+    this.nav.setRoot(CursosPage);
+  }
+
   initializeApp() {
     this.platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
@@ -96,6 +100,8 @@ openTutorial() {
     this.nav.setRoot(page.component);
     this.activePage = page;
   }
+
+  
 
   checkActive(page){
     return page == this.activePage;

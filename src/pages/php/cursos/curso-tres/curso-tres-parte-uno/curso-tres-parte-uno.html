@@ -1,0 +1,83 @@
+<!--
+  Generated template for the CursoTresParteUno page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Sentencia Switch</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <p>La sentencia <b>switch</b> es similar a una serie de sentencias <b>IF</b> en la misma expresión. 
+    En muchas ocasiones, es posible que se quiera comparar la misma variable (o expresión) con muchos valores diferentes, 
+    y ejecutar una parte de código distinta dependiendo de a que valor es igual. 
+    Para esto es exactamente la expresión <b>switch</b>.</p>
+
+  <ion-card>
+  <ion-card-header class="blanco">
+   Ejemplo:
+  </ion-card-header>
+
+
+  <ion-card-content>
+
+    <span class="naranja"> $x </span> = <span class="amarillo">3</span>;<br>
+    <span class="rojo">switch</span>(<span class="naranja">$x</span>)<br>
+    <span class="llave1"></span><br>
+    <span class="rojo">case</span> <span class="amarillo">1</span>: <span class="gris"> // Esta sentencia es lo mismo a if($x == 1)</span><br>
+    <span class="margensito"></span> <span class="azul">echo </span> <span class="amarillo">'Case 1 fue ejecutado'</span>;<br>
+    <span class="margensito"></span> <span class="rojo">break</span>;<br>
+    <span class="rojo">case</span> <span class="amarillo">2</span>: <span class="gris"> // Esta sentencia es lo mismo a if($x == 2)</span><br>
+    <span class="margensito"></span> <span class="azul">echo </span> <span class="amarillo">'Case 2 fue ejecutado'</span>;<br>
+    <span class="margensito"></span> <span class="rojo">break</span>;<br>
+    <span class="rojo">case</span> <span class="amarillo">3</span>: <span class="gris"> // Esta sentencia es lo mismo a if($x == 3)</span><br>
+    <span class="margensito"></span> <span class="azul">echo </span> <span class="amarillo">'Case 3 fue ejecutado'</span>;<br>
+    <span class="margensito"></span> <span class="rojo">break</span>;<br>
+    <span class="rojo">case</span> <span class="amarillo">4</span>: <span class="gris"> // Esta sentencia es lo mismo a if($x == 4)</span><br>
+    <span class="margensito"></span> <span class="azul">echo </span> <span class="amarillo">'Case 4 fue ejecutado'</span>;<br>
+    <span class="margensito"></span> <span class="rojo">break</span>;<br>
+    <span class="rojo">default</span>: <span class="gris">// Esta sentencia es lo mismo a if $x no es igual a las otras condiciones</span>
+    <span class="margensito"></span> <span class="azul">echo </span> <span class="amarillo">'Default fue ejecutado'</span>;<br>
+    <span class="margensito"></span> <span class="rojo">break</span>;<br>
+    <span class="llave2"></span>
+
+  </ion-card-content>
+
+</ion-card>
+
+ <ion-card>
+
+  <ion-card-header class="blanco">
+   Salida en la web
+  </ion-card-header>
+
+  <ion-card-content>
+    <br>
+    <span class="blanco">Case 3 fue ejecutado</span><br>
+ 
+ 
+  </ion-card-content>
+
+</ion-card>
+
+<p><b>Explicación:</b></p>
+
+<p>Es importante entender cómo la sentencia <b>switch</b> es ejecutada con el fin de evitar errores. 
+La sentencia <b>switch</b> ejecuta línea por línea (en realidad, sentencia por sentencia).
+Al principio, ningún código es ejecutado. Solo cuando se encuentra una sentencia <b>case</b> 
+cuya expresión se evalúa a un valor que coincide con el valor de la expresión <b>switch</b>, PHP comienza 
+a ejecutar la sentencias. PHP continúa ejecutando las sentencias hasta el final del bloque <b>switch</b>, 
+o hasta la primera vez que vea una sentencia <b>break</b>. Si no se escribe una sentencia <b>break</b> al 
+final de la lista de sentencias de un caso, PHP seguirá ejecutando las sentencias del caso siguiente. </p>
+
+  <button ion-button full menuClose (click)="launchCursoTresParteDosPage()" color="dark">Continuar</button>
+
+
+</ion-content>

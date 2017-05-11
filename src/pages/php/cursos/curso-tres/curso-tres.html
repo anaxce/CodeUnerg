@@ -1,0 +1,110 @@
+<!--
+  Generated template for the CursoTres page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Declaración If</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <p>las <b>sentencias</b> contienen declaraciones que sólo se ejecutan, cuando la condición se cumple</p>
+
+<ion-card>
+  <ion-card-header class="blanco">
+   Ejemplo:
+  </ion-card-header>
+
+
+  <ion-card-content>
+    <span class="naranja"> $name </span> = <span class="amarillo">"Jon Snow"</span>;<br>
+    <span class="rojo">if</span>(<span class="naranja">$name</span> == <span class="amarillo">"Jon Snow"</span>)<br>
+    <span class="llave1"></span><br>
+    <span class="margensito"></span><span class="azul">echo</span><span class="amarillo">"Funcionó"(El Rey en el norte)</span>;<br>
+    <span class="llave2"></span>
+  </ion-card-content>
+ 
+</ion-card>
+
+ <ion-card>
+
+  <ion-card-header class="blanco">
+   Salida en la web
+  </ion-card-header>
+
+  <ion-card-content>
+
+    <span class="blanco">"Funcionó"(El Rey en el norte)</span><br>
+  
+  </ion-card-content>
+
+</ion-card>
+
+<p><b>Explicación</b></p>
+
+<p>La declaración <b>If</b> simplemente dice, Si la variable <b>$name</b> es igual a "Jon Snow", se ejecuta la sentencia dentro de los corchetes. 
+Si su variable tenía cualquier otro valor entonces las declaraciones dentro de los corchetes no se habria ejecutado. ¿Sencillo no? vamos a entenderlo poco a poco.</p><br>
+<p><b><u>If, else if, and else:</u></b></p>
+
+<p><b>elseif</b>, como su nombre lo sugiere, es una combinación de <b>if</b> y <b>else</b>. Del mismo modo que <b>else</b>, 
+  extiende una sentencia <b>if</b> para ejecutar una sentencia diferente en caso que la expresión <b>if</b> 
+  original se evalúe como <b>FALSE</b>. Sin embargo, a diferencia de <b>else</b>, 
+  esa expresión alternativa sólo se ejecutará si la expresión condicional del <b>elseif</b> se evalúa como <b>TRUE</b>.</p>
+
+
+  <ion-card>
+  <ion-card-header class="blanco">
+   Ejemplo:
+  </ion-card-header>
+
+
+  <ion-card-content>
+
+    <span class="naranja"> $rank </span> = <span class="amarillo">65</span>;<br>
+    <span class="rojo">if</span>(<span class="naranja">$rank</span> <= <span class="amarillo">100</span> <span class="rojo">and</span> <span class="naranja">$rank</span> >= <span class="amarillo">75</span>)<br>
+    <span class="llave1"></span><br>
+    <span class="margensito"></span><span class="azul"> echo </span><span class="amarillo"> "Rango Diamante"</span>;<br>
+    <span class="llave2"></span><br>
+    <span class="rojo">elseif</span> ( <span class="naranja">$rank</span> < <span class="amarillo">75</span><span class="rojo"> and </span> <span class="naranja">$rank</span> >= <span class="amarillo">60</span>)<br>
+    <span class="llave1"></span><br>
+    <span class="margensito"></span><span class="azul"> echo </span><span class="amarillo"> "Rango Platino"</span>;<br>
+    <span class="llave2"></span><br>
+    <span class="rojo">elseif</span> ( <span class="naranja">$rank</span> < <span class="amarillo">60</span><span class="rojo"> and </span> <span class="naranja">$rank</span> >= <span class="amarillo">45</span>)<br>
+    <span class="llave1"></span><br>
+    <span class="margensito"></span><span class="azul"> echo </span><span class="amarillo"> "Rango Oro"</span>;<br>
+    <span class="llave2"></span><br>
+    <span class="rojo">else</span><br>
+    <span class="llave1"></span><br>
+    <span class="margensito"></span><span class="azul"> echo </span><span class="amarillo"> "Rango Plata"</span>;<br>
+    <span class="llave2"></span><br>
+
+  </ion-card-content>
+
+</ion-card>
+
+  <ion-card>
+
+  <ion-card-header class="blanco">
+   Salida en la web
+  </ion-card-header>
+
+  <ion-card-content>
+    <br>
+    <span class="blanco">Rango Platino</span><br>
+ 
+ 
+  </ion-card-content>
+
+</ion-card>
+
+    <button ion-button full menuClose (click)="launchCursoTresParteUnoPage()" color="dark">Continuar</button>
+
+
+</ion-content>

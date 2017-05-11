@@ -1,0 +1,93 @@
+<!--
+  Generated template for the CursoTresParteCuatro page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Do While Loop</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<p>La estructura repetitiva do-while (hacer… mientras) es muy similar a la estructura while, 
+  excepto que la expresión verdadera es verificada al final de cada iteración en lugar de al principio. </p>
+
+  <p><b>Veamos su sintaxis primero</b></p>
+
+<ion-card>
+
+  <ion-card-header class="blanco">
+   Sintaxis
+  </ion-card-header>
+
+  <ion-card-content>
+    <br>
+    <span class="blanco">Do</span><span class="llave1"></span><br>
+    <span class="margensito"></span><span class="blanco">// Código a ejecutar </span>;<br>
+    <span class="llave2"></span><span class="blanco">While (condición)</span>
+ 
+ 
+  </ion-card-content>
+
+</ion-card>
+
+<ion-card>
+
+  <ion-card-header class="blanco">
+   Ejemplo
+  </ion-card-header>
+
+  <ion-card-content>
+    <br>
+    <span class="naranja">$i</span> = <span class="amarillo"> 0 </span>;<br>
+    <span class="rojo">do</span><br>
+    <span class="llave1"></span><br>
+    <span class="margensito"></span><span class="gris"> // Escribe el valor de la variable</span><br>
+    <span class="margensito"></span><span class="azul">echo</span> <span class="naranja">$i</span> . <span class="amarillo"> "< br>" </span>;<br><br>
+    <span class="margensito"></span><span class="gris"> // Operador de incremento</span><br>
+    <span class="margensito"></span><span class="naranja">$i </span>++;<br>
+    <span class="llave2"></span> <span class="rojo">while</span> ( <span class="naranja">$i </span> < <span class="amarillo"> 5 </span> );<br>
+    <span class="azul">echo </span> <span class="amarillo">"Final del ciclo while"</span>;
+ 
+ 
+  </ion-card-content>
+
+</ion-card>
+
+<ion-card>
+
+  <ion-card-header class="blanco">
+   Salida en la web
+  </ion-card-header>
+
+  <ion-card-content>
+    <br>
+    <span class="blanco">0</span>
+    <span class="blanco">1</span>
+    <span class="blanco">2</span>
+    <span class="blanco">3</span>
+    <span class="blanco">4</span>
+    <span class="blanco">Final del ciclo while</span>
+ 
+ 
+  </ion-card-content>
+
+</ion-card>
+
+<p>La diferencia principal con los bucles <b>while</b> es que está garantizado que corra la primera iteración de 
+un bucle <b>do-while</b> (la expresión verdadera sólo es verificada al <b>final de la iteración</b>), 
+mientras que no necesariamente va a correr con un bucle <b>while</b> regular 
+(la expresión verdadera es verificada al <b>principio de cada iteración</b>, si se evalúa como <b>FALSE</b> 
+justo desde el comienzo, la ejecución del bucle <b>terminaría inmediatamente</b>).</p>
+
+<p>¿Notaron la diferencia entre el <b>while</b> y el <b>do-while</b>?</p>
+
+  <button ion-button full menuClose (click)="launchCursoTresParteCincoPage()" color="dark">Continuar</button>
+
+
+</ion-content>

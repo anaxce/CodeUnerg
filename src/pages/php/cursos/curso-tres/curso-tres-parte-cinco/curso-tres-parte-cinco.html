@@ -1,0 +1,193 @@
+<!--
+  Generated template for the CursoTresParteCinco page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Foreach Loop</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <p>El constructor <b>foreach</b> proporciona un modo sencillo de iterar sobre arrays. <b>foreach</b> funciona sólo sobre <b>arrays</b> y <b>objetos</b>, 
+    y emitirá un error al intentar usarlo con una variable de un tipo diferente de datos o una variable no inicializada.</p>
+
+    <p> <b>Existen dos sintaxis</b></p>
+
+
+<ion-card>
+
+  <ion-card-header class="blanco">
+   Sintaxis 1
+  </ion-card-header>
+
+  <ion-card-content>
+    <br>
+    <span class="blanco">foreach (expresión_array as $valor)</span><span class="llave1"></span><br>
+    <span class="margensito"></span><span class="blanco">sentencias</span><br>
+    <span class="llave2"></span><br>
+ 
+ 
+  </ion-card-content>
+
+</ion-card>
+
+<ion-card>
+
+  <ion-card-header class="blanco">
+   Sintaxis 2
+  </ion-card-header>
+
+  <ion-card-content>
+    <br>
+    <span class="blanco">foreach (expresión_array as $clave => $valor)</span><span class="llave1"></span><br>
+    <span class="margensito"></span><span class="blanco">sentencias</span><br>
+    <span class="llave2"></span><br>
+ 
+ 
+  </ion-card-content>
+
+</ion-card>
+
+<p>Los ciclos <b>foreach</b> son útiles cuando se trata de una <b>matriz indexada</b> con claves arbitrarias (no numéricas)</p>
+
+<ion-card>
+
+  <ion-card-header class="blanco">
+   Ejemplo
+  </ion-card-header>
+
+  <ion-card-content>
+    <br>
+   <span class="naranja">$array</span> = <span class="rojo">array</span>( <br>
+   <span class="amarillo"> "1st" </span> => <span class="amarillo">"Casa Stark"</span>,<br>
+   <span class="amarillo"> "2nd" </span> => <span class="amarillo">"Casa Lannister" </span>, <br> 
+   <span class="amarillo"> "3rd" </span> => <span class="amarillo">"Casa Targaryen" </span> <br>
+   <span class="blanco">);</span><br>
+   <span class="rojo">foreach</span> ( <span class="naranja">$array</span> <span class="rojo"> as </span> <span class="naranja"> $someVar</span>)<br>
+   <span class="llave1"></span><br>
+   <span class="margensito"></span> <span class="azul">echo</span> <span class="naranja"> $someVar</span> . <span class="amarillo"> < br></span>;<br>
+   <span class="llave2"></span>
+     
+
+  </ion-card-content>
+
+</ion-card>
+
+<ion-card>
+
+  <ion-card-header class="blanco">
+   Salida en la web
+  </ion-card-header>
+
+  <ion-card-content>
+    <br>
+    <span class="blanco"> Casa Stark</span><br>
+    <span class="blanco"> Casa Lannister</span><br>
+    <span class="blanco">Casa Targaryen</span> <br>
+
+  </ion-card-content>
+
+</ion-card>
+
+<p><b><u>Foreach con valores clave</u></b></p>
+
+<p>Si necesita usar las claves de la <b>matriz</b> en el cuerpo de su <b>bucle</b>, simplemente añada la variable 
+  como en la siguiente sentencia. La frase <b>$myKey => $value</b> hace que el valor de la clave sea accesible.</p>
+
+ <ion-card>
+
+  <ion-card-header class="blanco">
+   Ejemplo
+  </ion-card-header>
+
+  <ion-card-content>
+    <br>
+   <span class="naranja">$array</span> = <span class="rojo">array</span>( <br>
+   <span class="amarillo"> "1st" </span> => <span class="amarillo">"Casa Stark"</span>,<br>
+   <span class="amarillo"> "2nd" </span> => <span class="amarillo">"Casa Lannister" </span>, <br> 
+   <span class="amarillo"> "3rd" </span> => <span class="amarillo">"Casa Targaryen" </span> <br>
+   <span class="blanco">);</span><br>
+   <span class="rojo">foreach</span> ( <span class="naranja">$array</span> <span class="rojo"> as </span> <span class="naranja"> $key</span> => <span class="naranja">$value</span>)<br>
+   <span class ="llave1"></span><br>
+   <span class="margensito"></span><span class="azul"> echo </span> <span class="naranja"> $key </span> . <span class="amarillo"> " : " </span> . <span class="naranja"> $value </span> . <span class="amarillo"> "< br>" </span>;<br>
+   <span class="llave2"></span>
+  
+     
+
+  </ion-card-content>
+
+</ion-card>
+
+<ion-card>
+
+  <ion-card-header class="blanco">
+   Salida en la web
+  </ion-card-header>
+
+  <ion-card-content>
+    <br>
+    <span class="blanco">1st: Casa Stark</span><br>
+    <span class="blanco">2nd: Casa Lannister</span><br>
+    <span class="blanco">3rd: Casa Targaryen</span> <br>
+
+  </ion-card-content>
+
+</ion-card>
+
+<p><b>Valor de actualización de una matriz en el bucle foreach</b></p>
+
+ <ion-card>
+
+  <ion-card-header class="blanco">
+   Ejemplo
+  </ion-card-header>
+
+  <ion-card-content>
+    <br>
+   <span class="naranja">$array</span> = <span class="rojo">array</span>( <br>
+   <span class="amarillo"> "1st" </span> => <span class="amarillo">"Casa Stark"</span>,<br>
+   <span class="amarillo"> "2nd" </span> => <span class="amarillo">"Casa Lannister" </span>, <br> 
+   <span class="amarillo"> "3rd" </span> => <span class="amarillo">"Casa Targaryen" </span> <br>
+   <span class="blanco">);</span><br>
+   <span class="rojo">foreach</span> ( <span class="naranja">$array</span> <span class="rojo"> as </span> <span class="naranja"> $key</span> => <span class="naranja">$value</span>)<br>
+   <span class ="llave1"></span><br>
+   <span class="margensito"></span><span class="gris">//Esto actualizará la matriz </span><br>
+   <span class="margensito"></span> <span class="rojo">if</span> ( <span class="naranja"> $value </span> == <span class="amarillo"> 'Casa Targaryen' </span> ) <br>
+   <span class="llave1"></span><br>
+   <span class="margensito"></span><span class="naranja">$array[$key]</span> = <span class="amarillo"> 'Fuego y Sangre'</span>;<br>
+   <span class="margensito"></span><span class="llave2"></span><br>
+   <span class ="llave2"></span><br>
+   <span class="rojo">foreach</span> ( <span class="naranja"> $array </span> <span class="rojo"> as </span> <span class="naranja"> $value </span> ) <br>
+   <span class="llave1"></span><br>
+   <span class="margensito"></span><span class="azul">echo </span> <span class="naranja"> $value </span> . <span class="amarillo"> "< br>"</span>;<br>
+   <span class="llave2"></span>
+     
+
+  </ion-card-content>
+
+</ion-card>
+
+<ion-card>
+
+  <ion-card-header class="blanco">
+   Salida en la web
+  </ion-card-header>
+
+  <ion-card-content>
+    <br>
+    <span class="blanco">Casa Stark</span><br>
+    <span class="blanco">Casa Lannister</span><br>
+    <span class="blanco">Fuego y Sangre</span> <br>
+
+  </ion-card-content>
+
+</ion-card>
+
+</ion-content>

@@ -1,6 +1,11 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { PhpPage } from '../php/php';
+import { JavaPage } from '../java/java';
+import { PythonPage } from '../python/python';
+import { HtmlPage } from '../html/html';
+import { CssPage } from '../css/css';
+import { JavascriptPage } from '../javascript/javascript';
 
 /*
   Generated class for the Cursos page.
@@ -20,6 +25,26 @@ export class CursosPage {
 
   launchPhpPage(){
     this.navCtrl.push(PhpPage);
+  }
+
+  launchJavaPage(){
+    this.navCtrl.push(JavaPage);
+  }
+
+   launchPythonPage(){
+    this.navCtrl.push(PythonPage);
+  }
+
+   launchHtmlPage(){
+    this.navCtrl.push(HtmlPage);
+  }
+
+   launchCssPage(){
+    this.navCtrl.push(CssPage);
+  }
+
+   launchJavascriptPage(){
+    this.navCtrl.push(JavascriptPage);
   }
 
 }

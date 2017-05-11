@@ -1,0 +1,114 @@
+<!--
+  Generated template for the CursoCuatro page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Array</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <p>Una <b>matriz (Array)</b> es una variable, que puede contener más de un <b>valor</b> a la vez</p>
+
+  <ul>
+    <li>Los <b>arrays</b> pueden almacenar <b>cadenas</b>, <b>enteros</b> o incluso otras <b>matrices</b> en un formato de tipo lista</li><br>
+    <li>Los <b>arrays</b> pueden ser accedidos usando el índice o el valor dominante y el índice del <b>array</b> comienza a partir de 0</li><br>
+    <li>Los <b>arrays</b> se utilizan a menudo siempre que haya <b>x</b> cantidad desconocida de <b>variables</b> que necesitan almacenarse para su posterior recuperación</li><br>
+  </ul>
+
+  <p><b>¿Como definimos un array?</b></p>
+
+
+ 
+ <ion-card>
+    <ion-card-header>
+      <span class="blanco">Sintaxis</span>
+    </ion-card-header>
+
+    <ion-card-content>
+      <span class="gris">// Definiendo numeros enteros en la matriz</span><br>
+      <span class="naranja">$numList</span> = <span class="rojo">array</span>(<span class="amarillo">1,3,7</span>);<br>
+      <br>
+      <span class="gris">//Accediendo al elemento 0 de la matriz</span><br>
+      <span class="azul">echo</span>(<span class="naranja">$numList</span>[<span class="amarillo">0</span>] . <span class="amarillo">"< br>"</span>);<br>
+      <br>
+      <span class="gris">//Accediendo al segundo elemento de la matriz</span><br>
+      <span class="azul">echo</span>(<span class="naranja">$numList</span>[<span class="amarillo">2</span>]);<br>
+
+
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <span class="blanco">Salida en la web</span>
+    </ion-card-header>
+
+    <ion-card-content>
+
+     <span class="blanco">1</span><br>
+     <span class="blanco">7</span>
+
+
+    </ion-card-content>
+
+  </ion-card>
+
+  <p><b><u>Variables dinamicas (Arrays):</u></b></p>
+
+  <p><b>print_r</b>: Imprime información legible para humanos sobre una variable</p>
+
+   <ion-card>
+    <ion-card-header>
+      <span class="blanco">Ejemplo 1</span>
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <span class="naranja">$numList3</span> = <span class="rojo">array</span>();<br>
+      <span class="rojo">for</span>( <span class="naranja">$i</span> = <span class="amarillo">0</span> ; <span class="naranja">$i</span> < <span class="amarillo"> 10 </span>; <span class="naranja">$i</span>++)<br>
+      <span class="llave1"></span><br>
+      <span class="margensito"></span><span class="naranja">$numList3</span>[<span class="naranja">$i</span>] = <span class="naranja">$i</span>;<br>
+      <span class="llave2"></span><br>
+      <span class="naranja">print_r</span>(<span class="naranja">$numList3</span>);<br>
+
+
+    </ion-card-content>
+
+  </ion-card>
+
+   <ion-card>
+    <ion-card-header>
+      <span class="blanco">Salida en la web</span>
+    </ion-card-header>
+
+    <ion-card-content>
+     <span class="blanco">Array</span><br>
+     <span class="llave1"></span><br>
+     <span class="margensito"></span><span class="blanco">[0] => 0</span><br>
+     <span class="margensito"></span><span class="blanco">[1] => 1</span><br>
+     <span class="margensito"></span><span class="blanco">[2] => 2</span><br>
+     <span class="margensito"></span><span class="blanco">[3] => 3</span><br>
+     <span class="margensito"></span><span class="blanco">[4] => 4</span><br>
+     <span class="margensito"></span><span class="blanco">[5] => 5</span><br>
+     <span class="margensito"></span><span class="blanco">[6] => 6</span><br>
+     <span class="margensito"></span><span class="blanco">[7] => 7</span><br>
+     <span class="margensito"></span><span class="blanco">[8] => 8</span><br>
+     <span class="margensito"></span><span class="blanco">[9] => 9</span><br>
+     <span class="llave2"></span>
+
+
+
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>

@@ -42,4 +42,5 @@ export class CursoUnoParteDosPage {
     });
     toast.present();
   }
+
 }
