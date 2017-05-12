@@ -78,7 +78,7 @@
       <span class="llave1"></span><br>
       <span class="margensito"></span><span class="naranja">$numList3</span>[<span class="naranja">$i</span>] = <span class="naranja">$i</span>;<br>
       <span class="llave2"></span><br>
-      <span class="naranja">print_r</span>(<span class="naranja">$numList3</span>);<br>
+      <span class="azul">print_r</span>(<span class="naranja">$numList3</span>);<br>
 
 
     </ion-card-content>
@@ -92,7 +92,7 @@
 
     <ion-card-content>
      <span class="blanco">Array</span><br>
-     <span class="llave1"></span><br>
+     <span class="blanco">(</span><br>
      <span class="margensito"></span><span class="blanco">[0] => 0</span><br>
      <span class="margensito"></span><span class="blanco">[1] => 1</span><br>
      <span class="margensito"></span><span class="blanco">[2] => 2</span><br>
@@ -103,12 +103,142 @@
      <span class="margensito"></span><span class="blanco">[7] => 7</span><br>
      <span class="margensito"></span><span class="blanco">[8] => 8</span><br>
      <span class="margensito"></span><span class="blanco">[9] => 9</span><br>
-     <span class="llave2"></span>
+     <span class="blanco">)</span>
 
+    </ion-card-content>
+
+  </ion-card>
+
+  <p><b><u>Funciones comunes en Arrays de php</u></b></p>
+  <p>Las funciones de Arrays son las siguientes:</p>
+
+  <p><b>1. array_pop()</b> - Elimina el ultimo elemento</p>
+
+   <ion-card>
+    <ion-card-header>
+      <span class="blanco">Ejemplo</span>
+    </ion-card-header>
+
+    <ion-card-content>
+     <span class="naranja">$pelis</span> = <span class="rojo"> array </span> (<span class="amarillo">"Los Vengadores", "Rapido y Furioso", "Interestellar"</span>);<br>
+     <span class="azul">array_pop</span>(<span class="naranja">$pelis</span>);<br>
+     <span class="azul">print_r</span>(<span class="naranja">$pelis</span>);<br>
+
+    </ion-card-content>
+
+  </ion-card>
+
+   <ion-card>
+    <ion-card-header>
+      <span class="blanco">Salida en la web</span>
+    </ion-card-header>
+
+    <ion-card-content>
+     <span class="blanco">Array</span><br>
+     <span class="blanco">(</span><br>
+     <span class="margensito"></span><span class="blanco">[0] => Los Vengadores</span><br>
+     <span class="margensito"></span><span class="blanco">[1] => Rapido y Furioso</span><br>
+     <span class="blanco">)</span><br>
 
 
     </ion-card-content>
 
   </ion-card>
+
+    <p><b>2. array_push()</b> - Añade un elemento al final</p>
+
+      <ion-card>
+    <ion-card-header>
+      <span class="blanco">Ejemplo</span>
+    </ion-card-header>
+
+    <ion-card-content>
+     <span class="naranja">$names</span> = <span class="rojo"> array </span> (<span class="amarillo">"Clark", "Bruce", "Diana"</span>);<br>
+     <span class="azul">array_push</span>(<span class="naranja">$names</span>,<span class="amarillo">"Barry"</span>);<br>
+     <span class="azul">print_r</span>(<span class="naranja">$names</span>);<br>
+
+    </ion-card-content>
+
+  </ion-card>
+
+   <ion-card>
+    <ion-card-header>
+      <span class="blanco">Salida en la web</span>
+    </ion-card-header>
+
+    <ion-card-content>
+     <span class="blanco">Array</span><br>
+     <span class="blanco">(</span><br>
+     <span class="margensito"></span><span class="blanco">[0] => Clark</span><br>
+     <span class="margensito"></span><span class="blanco">[1] => Bruce</span><br>
+     <span class="margensito"></span><span class="blanco">[2] => Diana</span><br>
+     <span class="margensito"></span><span class="blanco">[3] => Barry</span><br>
+     <span class="blanco">)</span><br>
+
+
+    </ion-card-content>
+
+  </ion-card>
+
+    <p><b>3. array_search()</b> - Busca un valor determinado en un array y devuelve la primera clave correspondiente en caso de éxito</p>
+  
+  <ion-card>
+    <ion-card-header>
+      <span class="blanco">Ejemplo</span>
+    </ion-card-header>
+
+    <ion-card-content>
+     <span class="naranja">$series</span> = <span class="rojo"> array </span> (<span class="amarillo">"The Walking Dead", "Game of Trhones", "Daredevil"</span>);<br>
+     <span class="azul">echo</span><span class="rojo">array_search</span>(<span class="amarillo">"Daredevil"</span>,<span class="naranja">$series</span>);<br>
+    
+
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <span class="blanco">Salida en la web</span>
+    </ion-card-header>
+
+    <ion-card-content>
+     <span class="blanco">2</span><br>
+
+    </ion-card-content>
+
+  </ion-card>
+
+      <p><b>4. array_shift()</b> - Quita un elemento del principio del array</p>
+
+<ion-card>
+    <ion-card-header>
+      <span class="blanco">Ejemplo</span>
+    </ion-card-header>
+
+    <ion-card-content>
+     <span class="naranja">$dArray</span> = <span class="rojo"> array </span> (<span class="amarillo">"a", "b", "c"</span>);<br>
+     <span class="azul">echo </span><span class="rojo"> array_shift</span>(<span class="naranja">$dArray</span>);<br>
+     <span class="azul">print_r</span>(<span class="naranja">$dArray</span>);<br>
+    
+    </ion-card-content>
+
+  </ion-card>
+
+   <ion-card>
+    <ion-card-header>
+      <span class="blanco">Salida en la web</span>
+    </ion-card-header>
+
+    <ion-card-content>
+     <span class="blanco">(</span><br>
+     <span class="margensito"></span><span class="blanco">[0] => b</span><br>
+     <span class="margensito"></span><span class="blanco">[1] => c</span><br>
+     <span class="blanco">)</span>
+    </ion-card-content>
+
+  </ion-card>
+
+  <button ion-button full menuClose (click)="launchCursoCuatroParteUnoPage()" color="dark">Continuar</button>
+
 
 </ion-content>

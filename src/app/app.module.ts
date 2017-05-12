@@ -25,6 +25,7 @@ import { CursoTresParteTresPage } from  '../pages/php/cursos/curso-tres/curso-tr
 import { CursoTresParteCuatroPage } from  '../pages/php/cursos/curso-tres/curso-tres-parte-cuatro/curso-tres-parte-cuatro';
 import { CursoTresParteCincoPage } from '../pages/php/cursos/curso-tres/curso-tres-parte-cinco/curso-tres-parte-cinco';
 import { CursoCuatroPage} from '../pages/php/cursos/curso-cuatro/curso-cuatro';
+import { CursoCuatroParteUnoPage } from '../pages/php/cursos/curso-cuatro/curso-cuatro-parte-uno/curso-cuatro-parte-uno';
 
 //Cursos de Java
 import { JavaPage } from '../pages/java/java';
@@ -87,6 +88,7 @@ const cloudSettings: CloudSettings = {
     CursoTresParteCuatroPage,
     CursoTresParteCincoPage,
     CursoCuatroPage,
+    CursoCuatroParteUnoPage,
     
 
     // Cursos de Java
@@ -151,6 +153,7 @@ const cloudSettings: CloudSettings = {
     CursoTresParteCuatroPage,
     CursoTresParteCincoPage,
     CursoCuatroPage,
+    CursoCuatroParteUnoPage,
 
     // Cursos de Java
     JavaPage,

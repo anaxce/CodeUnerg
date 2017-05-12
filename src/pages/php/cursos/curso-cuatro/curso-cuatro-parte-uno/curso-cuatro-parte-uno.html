@@ -1,0 +1,210 @@
+<!--
+  Generated template for the CursoCuatroParteUno page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Arrays 2</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+
+<p><b>5. array_slice()</b> - Devuelve elementos seleccionados </p>
+
+<ion-card>
+    <ion-card-header>
+      <span class="blanco">Ejemplo</span>
+    </ion-card-header>
+
+    <ion-card-content>
+     <span class="naranja">$movies</span> = <span class="rojo"> array </span> (<span class="amarillo">"Sherk", "The Matrix", "Tarzan"</span>);<br>
+     <span class="azul">print_r</span>(<span class="rojo">array_slice</span>(<span class="naranja">$movies</span><span class="amarillo">1,1</span>));<br>
+    
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <span class="blanco">Salida en la web</span>
+    </ion-card-header>
+
+    <ion-card-content>
+     <span class="blanco">(</span><br>
+     <span class="margensito"></span><span class="blanco">[0] => The Matriz</span><br>
+     <span class="blanco">)</span><br>
+    
+    </ion-card-content>
+
+  </ion-card>
+
+  <p><b>6. array_splice()</b> - Elimina una porción del array y la reemplaza con otra cosa</p>
+
+  <ion-card>
+    <ion-card-header>
+      <span class="blanco">Ejemplo</span>
+    </ion-card-header>
+
+    <ion-card-content>
+     <span class="naranja">$movies</span> = <span class="rojo"> array </span> (<span class="amarillo">"The Lion King", "Jurassic Park", "Aladdin"</span>);<br>
+     <span class="naranja">$newmovies</span> = <span class="rojo"> array </span> (<span class="amarillo">"Skyfall", "Interstellar", "Gravity"</span>);<br>
+     <span class="rojo">array_splice</span>(<span class="naranja">$movies</span><span class="amarillo"> ,1 ,2 </span><span class="naranja">$newmovies</span>);<br>
+     <span class="azul">print_r</span>(<span class="naranja">$movies</span>);
+
+   </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <span class="blanco">Salida en la web</span>
+    </ion-card-header>
+
+    <ion-card-content>
+     <span class="blanco">(</span><br>
+     <span class="margensito"></span><span class="blanco">[0] => The Lion King</span><br>
+     <span class="margensito"></span><span class="blanco">[1] => Skyfall</span><br>
+     <span class="margensito"></span><span class="blanco">[2] => Interstellar</span><br>
+     <span class="margensito"></span><span class="blanco">[3] => Gravity</span><br>
+     <span class="blanco">)</span><br>
+    
+    </ion-card-content>
+
+  </ion-card>
+
+    <p><b>7. array_unique()</b> - Elimina valores duplicados de un array</p>
+
+    <ion-card>
+    <ion-card-header>
+      <span class="blanco">Ejemplo</span>
+    </ion-card-header>
+
+    <ion-card-content>
+     <span class="naranja">$letras</span> = <span class="rojo"> array </span> (<span class="amarillo">"a", "b", "b", "c", "c", "c"</span>);<br>
+     <span class="azul">print_r</span>(<span class="rojo">array_unique</span>(<span class="naranja">$letras</span>));<br>
+   </ion-card-content>
+
+  </ion-card>
+
+
+  <ion-card>
+    <ion-card-header>
+      <span class="blanco">Salida en la web</span>
+    </ion-card-header>
+
+    <ion-card-content>
+    <span class="blanco">Array</span>
+     <span class="blanco">(</span><br>
+     <span class="margensito"></span><span class="blanco">[0] => a</span><br>
+     <span class="margensito"></span><span class="blanco">[1] => b</span><br>
+     <span class="margensito"></span><span class="blanco">[3] => c</span><br>
+     <span class="blanco">)</span><br>
+    
+    </ion-card-content>
+
+  </ion-card>
+
+  <p><b>8. array_unshift()</b> - Añade al inicio de un array uno a más elementos</p>
+
+ <ion-card>
+    <ion-card-header>
+      <span class="blanco">Ejemplo</span>
+    </ion-card-header>
+
+    <ion-card-content>
+     <span class="naranja">$myArray</span> = <span class="rojo"> array </span> (<span class="amarillo">"b", "c", "d", </span>);<br>
+     <span class="rojo">array_unshift</span>(<span class="naranja">$myArray</span>, <span class="amarillo"> "a" </span>);<br>
+     <span class="azul">print_r</span>(<span class="naranja">$myArray</span>);
+   </ion-card-content>
+
+  </ion-card>
+
+    <ion-card>
+    <ion-card-header>
+      <span class="blanco">Salida en la web</span>
+    </ion-card-header>
+
+    <ion-card-content>
+    <span class="blanco">Array</span>
+     <span class="blanco">(</span><br>
+     <span class="margensito"></span><span class="blanco">[0] => a</span><br>
+     <span class="margensito"></span><span class="blanco">[1] => b</span><br>
+     <span class="margensito"></span><span class="blanco">[2] => c</span><br>
+     <span class="margensito"></span><span class="blanco">[3] => d</span><br>
+
+     <span class="blanco">)</span><br>
+    
+    </ion-card-content>
+
+  </ion-card>
+
+    <p><b>9. count()</b> - Cuenta todos los elementos de un array</p>
+
+     <ion-card>
+    <ion-card-header>
+      <span class="blanco">Ejemplo</span>
+    </ion-card-header>
+
+    <ion-card-content>
+     <span class="naranja">$miembros</span> = <span class="rojo"> array </span> (<span class="amarillo">"Tony Stark", "Steve Rogers", "Natasha Romanoff", </span>);<br>
+     <span class="azul">echo</span>(<span class="rojo">count</span>(<span class="naranja">$miembros</span>);<br>
+   </ion-card-content>
+
+  </ion-card>
+
+    <ion-card>
+    <ion-card-header>
+      <span class="blanco">Salida en la web</span>
+    </ion-card-header>
+
+    <ion-card-content>
+    <span class="blanco">3</span>
+    
+    
+    </ion-card-content>
+
+  </ion-card>
+
+      <p><b>10. sort()</b> - Ordena un Array en orden ascendente</p>
+
+  <ion-card>
+    <ion-card-header>
+      <span class="blanco">Ejemplo</span>
+    </ion-card-header>
+
+    <ion-card-content>
+     <span class="naranja">$letras</span> = <span class="rojo"> array </span> (<span class="amarillo">"c", "b", "a", </span>);<br>
+     <span class="rojo">count</span>(<span class="naranja">$letras</span>);<br>
+     <span class="azul">print_r</span>(<span class="naranja">$letras</span>);
+   </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <span class="blanco">Salida en la web</span>
+    </ion-card-header>
+
+    <ion-card-content>
+     <span class="blanco">Array</span><br>
+     <span class="blanco">(</span><br>
+     <span class="margensito"></span><span class="blanco">[0] => a</span><br>
+     <span class="margensito"></span><span class="blanco">[1] => b</span><br>
+     <span class="margensito"></span><span class="blanco">[2] => c</span><br>
+     <span class="blanco">)</span><br>
+    
+    </ion-card-content>
+
+  </ion-card>
+
+  <p><b>¿Cual función es la encargada de agregar uno o mas elementos al inicio del array?</b><p>
+  <button ion-button block light (click)="doRadio()">Introduce tu respuesta</button><br>
+
+</ion-content>
