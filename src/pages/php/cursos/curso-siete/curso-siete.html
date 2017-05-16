@@ -1,0 +1,67 @@
+<!--
+  Generated template for the CursoSietePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Iniciar Sesión</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <p><b><u>¿Que es una Sesión?</u></b></p>
+<p>No, no es una sesión al psicologo, Una <b>sesión</b> en <b>PHP</b> funciona para <b>almacenar informacion</b> de un usuario 
+  en el <b>servidor</b> para posteriormente ser <b>utilizada</b>(username, shopping cart items, etc). </p>
+  <p>Sin embargo, esta información de <b>sesión</b> es 
+  <b>temporal</b> y suele eliminarse muy rápidamente después de que el <b>usuario ha dejado el sitio web</b> que utiliza sesiones.</p> 
+
+  <p>Las variables de <b>sesión</b> contienen información sobre un <b>único usuario</b> y están disponibles 
+    para todas las páginas de una <b>aplicación</b></p>
+
+    <p><b>Fin de sesiones</b></p>
+    <p>Cuando el usuario <b>cierra el navegador</b> o cuando el servidor web <b>elimina</b> la información de la
+      sesión o cuando el programador explícitamente <b>destruye la sesión</b></p>
+
+      <p><b><u>Iniciar una sesión</u></b></p>
+
+      <p>Antes de almacenar la <b>información del usuario</b> en la sesión de <b>PHP</b>, primero debe iniciar la sesión.
+        Cuando inicia una sesión, debe estar al <b>principio</b> de su código, antes de enviar cualquier codigo <b>HTML</b> o texto</p>
+
+        <ion-card>
+          <ion-card-content>
+            <span class="blanco">session_start();</span>
+          </ion-card-content>
+        </ion-card>
+
+<p><b>Las variables de sesión</b> se establecen con la variable global de <b>PHP</b> <b>$_SESSION</b></p>
+
+      <ion-card>
+          <ion-card-content>
+            <span class="gris"><?php</span><br>
+            <span class="gris">//Iniciar la sesión</span><br>
+            <span class="blanco">session_start();</span><br>
+            <span class="gris"> ?> </span><br>
+            <span class="blanco"> < !DOCTYPE html> </span><br>
+            <span class="magenta"> < html> </span><br>
+            <span class="magenta"> < body> </span><br><br>
+            <span class="gris"><?php</span><br>
+            <span class="margensito"></span><span class="gris">// Variables de session</span><br>
+            <span class="margensito"></span><span class="naranja">$_SESSION</span>[<span class="amarillo">"nombre"</span>] = <span class="amarillo"> "Daenerys"</span>;<br>
+            <span class="margensito"></span><span class="naranja">$_SESSION</span>[<span class="amarillo">"apellido"</span>] = <span class="amarillo"> "Targaryen"</span>;<br>
+            <span class="margensito"></span><span class="azul">echo</span> <span class="amarillo"> " Se establecieron las variables "</span>;<br>
+
+            <span class="gris"> ?> </span><br>
+            <span class="magenta"> < /body></span><br>
+            <span class="magenta"> < /html></span><br>
+          </ion-card-content>
+        </ion-card>
+
+      <button ion-button full menuClose (click)="launchCursoSieteParteUnoPage()" color="dark">Continuar</button>
+
+</ion-content>

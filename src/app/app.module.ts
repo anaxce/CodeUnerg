@@ -28,6 +28,14 @@ import { CursoTresParteCuatroPage } from  '../pages/php/cursos/curso-tres/curso-
 import { CursoTresParteCincoPage } from '../pages/php/cursos/curso-tres/curso-tres-parte-cinco/curso-tres-parte-cinco';
 import { CursoCuatroPage} from '../pages/php/cursos/curso-cuatro/curso-cuatro';
 import { CursoCuatroParteUnoPage } from '../pages/php/cursos/curso-cuatro/curso-cuatro-parte-uno/curso-cuatro-parte-uno';
+import { CursoCincoPage } from '../pages/php/cursos/curso-cinco/curso-cinco';
+import { CursoCincoParteUnoPage } from '../pages/php/cursos/curso-cinco/curso-cinco-parte-uno/curso-cinco-parte-uno';
+import { CursoSeisPage } from '../pages/php/cursos/curso-seis/curso-seis';
+import { CursoSeisParteUnoPage } from '../pages/php/cursos/curso-seis/curso-seis-parte-uno/curso-seis-parte-uno';
+import { CursoSietePage } from '../pages/php/cursos/curso-siete/curso-siete';
+import { CursoSieteParteUnoPage } from '../pages/php/cursos/curso-siete/curso-siete-parte-uno/curso-siete-parte-uno';
+import { CursoOchoPage } from '../pages/php/cursos/curso-ocho/curso-ocho';
+
 
 //Cursos de Java
 import { JavaPage } from '../pages/java/java';
@@ -51,7 +59,6 @@ import { SignupPage } from '../pages/signup/signup';
 import { LoginPage } from '../pages/login/login';
 import { ResetPasswordPage } from '../pages/reset-password/reset-password';
 import {CloudSettings, CloudModule} from '@ionic/cloud-angular';
-import { DragulaModule } from '../../node_modules/ng2-dragula/ng2-dragula';
 
 
 import { TutorialPage } from '../pages/tutorial/tutorial';
@@ -91,6 +98,14 @@ const cloudSettings: CloudSettings = {
     CursoTresParteCincoPage,
     CursoCuatroPage,
     CursoCuatroParteUnoPage,
+    CursoCincoPage,
+    CursoCincoParteUnoPage,
+    CursoSeisPage,
+    CursoSeisParteUnoPage,
+    CursoSietePage,
+    CursoSieteParteUnoPage,
+    CursoOchoPage,
+    
     
 
     // Cursos de Java
@@ -126,8 +141,7 @@ const cloudSettings: CloudSettings = {
   	BrowserModule,
   	HttpModule,
     IonicModule.forRoot(MyApp),
-    CloudModule.forRoot(cloudSettings),
-    DragulaModule,
+    CloudModule.forRoot(cloudSettings)
     
   ],
   bootstrap: [IonicApp],
@@ -158,6 +172,14 @@ const cloudSettings: CloudSettings = {
     CursoTresParteCincoPage,
     CursoCuatroPage,
     CursoCuatroParteUnoPage,
+    CursoCincoPage,
+    CursoCincoParteUnoPage,
+    CursoSeisPage,
+    CursoSeisParteUnoPage,
+    CursoSietePage,
+    CursoSieteParteUnoPage,
+    CursoOchoPage,
+    
 
     // Cursos de Java
     JavaPage,

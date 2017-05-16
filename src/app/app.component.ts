@@ -38,11 +38,17 @@ export class MyApp {
 
    appPages: PageInterface[] = [
     { title: 'Cursos', component: TabsPage, tabComponent: CursosPage, icon: 'code' },
+  
+  ];
+
+appPages2: PageInterface[] = [
+
     { title: 'Noticias', component: TabsPage, tabComponent: NoticiasPage, index: 1, icon: 'clipboard' },
     { title: 'Repositorio', component: TabsPage, tabComponent: RepositorioPage, index: 2, icon: 'folder' },
     { title: 'Comunidad', component: TabsPage, tabComponent: ComunidadPage, index: 3, icon: 'contacts' },
-    
-  ];
+
+];
+
 
   cursosPages: PageInterface[] = [
       { title: 'PHP', component: PhpPage, icon: 'code'}

@@ -1,0 +1,45 @@
+<!--
+  Generated template for the CursoSeisParteUnoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Cookies</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <p><b><u>Modificando el valor de una cookie</u></b></p>
+
+  <p>Para modificar una <b>cookie</b>, establezca el valor de una <b>cookie</b> utilizando la función <b>setcookie()</b></p>
+
+  <ion-card>
+    <ion-card-content>
+      <span class="naranja">$cookie_name </span> = <span class="amarillo">'Rick'</span>;<br>
+      <span class="naranja">$cookie_value </span> = <span class="amarillo">'El nuevo valor de la cookie es Rick'</span>;<br>
+      <span class="rojo">setcookie</span> (<span class="naranja">$cookie_name</span>, <span class="naranja">$cookie_value</span>, time() + (<span class="amarillo">86400</span> * <span class="amarillo">30</span>), <span class="amarillo"> "/"</span>);<br>
+      <span class="gris"> // 86400 = 1 day</span>
+
+    </ion-card-content>  
+  </ion-card> 
+
+    <p><b><u>Borrando Cookies</u></b></p>
+
+<p>Para eliminar una cookie, usa la función setcookie() con una fecha de caducidad en el pasado.</p>
+
+
+  <ion-card>
+    <ion-card-content>
+      <span class="gris">// Establecer la fecha de caducidad una hora antes</span><br>
+      <span class="rojo">setcookie</span> (<span class="amarillo"> "Rick" </span>, <span class="amarillo"> "" </span>, time() - <span class="amarillo"> "3600" </span>);<br>
+
+    </ion-card-content>  
+  </ion-card> 
+
+</ion-content>

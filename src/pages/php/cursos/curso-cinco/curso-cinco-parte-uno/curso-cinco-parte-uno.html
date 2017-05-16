@@ -1,0 +1,85 @@
+<!--
+  Generated template for the CursoCuatroParteUno page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Funciones Parte 2</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+<p>Veamos otro ejemplo de como funcionan las <b>funciones</b> para estar un poco mas claro.</p>
+
+<p><b>Funciones dentro de Funciones</b></p>
+
+
+  <ion-card>
+
+    <ion-card-content>
+      <span class="rojo">function</span> <span class="amarillo">nombre</span>()<br>
+      <span class="llave1"></span><br>
+      <span class="margensito"></span><span class="rojo">function</span> <span class="amarillo">apellido</span>()<br>
+      <span class="margensito"></span><span class="llave1"></span><br>
+      <span class="margensito"><span class="azul">echo</span> <span class="amarillo">"No existo hasta que se llame la funcion nombre()"</span>;<br>
+      <span class="margensito"></span><span class="llave2"></span><br>
+      </span><span class="llave2"></span><br><br>
+
+      <span class="gris">/* No podemos llamar aun a apellido() ya que no existe.*/</span><br>
+      <span class="blanco">nombre();</span><br><br>
+      <span class="gris">/* Ahora podemos llamar a apellido(), el procesamiento de nombre() la ha hecho accesible. */</span><br>
+      <span class="blanco">apellido();</span>
+    </ion-card-content>
+
+  </ion-card>
+
+  <p>Todas las <b>funciones</b> y <b>clases</b> de <b>PHP</b> tienen ámbito global. Se pueden llamar desde fuera de una <b>función</b> incluso
+    si fueron definidas <b>dentro</b>, y <b>viceversa</b>.
+  </p>
+<p><b>PHP</b> no admite la <b>sobrecarga de funciones</b>, ni es posible '<b>desdefinir</b>' ni <b>redefinir funciones</b> previamente declaradas.</p>
+
+<ion-card>
+
+    <ion-card-content>
+     <span class="rojo">Nota: </span><span class="blanco"> Los nombres de las fuciones son insensibles a mayúsculas-minúsculas, 
+       aunque es una buena idea llamar a las funciones tal y como aparecen en sus declaraciones.</span>
+    </ion-card-content>
+
+  </ion-card>
+
+<p><b>Funciones recursivas</b></p>
+
+  <ion-card>
+
+    <ion-card-content>
+      <span class="rojo">function</span> <span class="amarillo">recursividad</span>(<span class="amarillo">$a</span>)<br>
+      <span class="llave1"></span><br>
+      <span class="margensito"></span><span class="rojo">if</span>(<span class="amarillo">$a</span> < <span class="amarillo"> 20 </span>) <br>
+      <span class="margensito"></span><span class="llave1"></span><br>
+      <span class="margensito"></span><span class="azul">echo</span> <span class="amarillo">"$a /n"</span>;<br>
+      <span class="margensito"></span><span class="amarillo">recursividad</span> (<span class="naranja">$a</span> + <span class="amarillo"> 1</span>);<br>
+      <span class="margensito"></span><span class="llave2"></span><br>
+      <span class="llave2"></span><br>
+
+    </ion-card-content>
+
+  </ion-card>
+
+
+<ion-card>
+
+    <ion-card-content>
+     <span class="rojo">Nota: </span><span class="blanco"> Las llamadas a funciones/métodos recursivos con más de 100-200 
+       niveles de recursividad pueden agotar la pila y ocasionar la finalización del script en curso. 
+       Especialmente, las recurisvidades infinitas están consideradas un error de programación.</span>
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>

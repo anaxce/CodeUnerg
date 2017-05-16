@@ -1,0 +1,83 @@
+<!--
+  Generated template for the CursoSeisPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Creando una Cookie</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <p>Una <b>cookie</b>, tambien conocida como <b>HTTP cookie</b>, <b>web cookie</b>, o <b>browser cookie</b>, Es una pequeña pieza de <b>datos</b> enviados 
+    desde un sitio web y <b>almacenados</b> en el navegador <b>web</b> de un usuario mientras el usuario está navegando en ese <b>sitio web</b>
+ </p>
+
+ <p>
+   Cada vez que el usuario carga el <b>sitio web</b>, el navegador envía la <b>cookie</b> de vuelta al <b>servidor</b>
+   para notificar al sitio web de la actividad anterior del usuario
+ </p>
+
+<p><b><u>Creando una Cookie</u></b></p>
+
+<p>Para crear una <b>Cookie</b>, se utiliza la funcion <b>setcookie()</b></p>
+
+<p><b>Sintaxis</b></p>
+
+<ion-card>
+
+  <ion-card-content>
+
+   <span class="blanco"> setcookie(name, value, expire, path, domain, security);</span> 
+  </ion-card-content>
+</ion-card>
+
+<p>Debe especificar <b>tres argumentos</b>, los otros son opcionales.</p>
+<p>Esos argumentos son <b>setcookie(name,value,expiration)</b></p>
+
+<ul>
+  <li><b>1. name: </b> El nombre de tu <b>cookie</b> Este nombre lo utilizaras mas tarde para recuperar tu <b>cookie</b>, <span class="rojo">¡asi que no la olvides!</span></li><br>
+  <li><b>2. value:</b> El valor que se <b>almacena</b> en su <b>cookie</b>, los valores mas comunes son
+  <b>username(string)</b> y <b>ultima visita(date)</b></li><br>
+  <li><b>3. expiration:</b> La fecha en que la cookie <b>expirará</b> y se <b>eliminará</b>. Si no establece esta fecha de <b>caducidad</b>, 
+    se tratará como una <b>cookie de sesión</b> y se <span class="rojo">eliminará</span> cuando se <b>reinicie el explorador</b>.
+ </li>
+</ul>
+
+<ion-card>
+  <ion-card-content>
+    <span class="naranja">$cookie_name</span> = <span class="amarillo">"Daryl"</span>;<br>
+    <span class="naranja">$cookie_value</span> = <span class="amarillo">"Dixon"</span>;<br>
+    <span class="rojo">setcookie</span> (<span class="naranja">$cookie_name</span>, <span class="naranja">$cookie_value</span>, time() + (<span class="amarillo">86400</span> * <span class="amarillo">30</span>), <span class="amarillo"> "/"</span>);<br>
+    <span class="gris"> // 86400 = 1 day</span>
+  </ion-card-content>
+</ion-card>
+
+<p><b><u>Recuperar una Cookie</u></b></p>
+<p>Para recuperar una <b>Cookie</b> se utiliza <b>$_COOKIE</b></p>
+<p>Para saber si la Cookie esta configurara o no, utilizamos isset() function</p>
+
+<ion-card>
+  <ion-card-content>
+    <span class="rojo">if</span>(!<span class="rojo">isset</span>(<span class="naranja">$_COOKIE</span> [<span class="naranja">$cookie_name</span>]))<br>
+    <span class="llave1"></span><br>
+    <span class="margensito"></span><span class="azul">echo</span> <span class="amarillo"> "Nombre de la Cookie '" </span> . <span class="naranja">$cookie_name</span> . <span class="amarillo">"' No esta establecido! "</span>;<br>
+    <span class="llave2"></span><br>
+    <span class="rojo">else</span><br>
+    <span class="llave1"></span><br>
+    <span class="margensito"></span><span class="azul">echo </span> <span class="amarillo"> "Cookie '"</span> . <span class="naranja"> $cookie_name</span> . <span class="amarillo"> "' Esta establecido! /n"</span>;<br>
+    <span class="margensito"></span><span class="azul">echo </span> <span class="amarillo"> " Valor es '"</span> . <span class="naranja"> $_COOKIE</span>[<span class="naranja">$cookie_name</span>] ;<br>
+    <span class="llave2"></span>
+  </ion-card-content>
+</ion-card>
+
+      <button ion-button full menuClose (click)="launchCursoSeisParteUnoPage()" color="dark">Continuar</button>
+
+
+</ion-content>

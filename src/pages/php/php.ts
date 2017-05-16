@@ -5,6 +5,10 @@ import { CursoUnoPage } from './cursos/curso-uno/curso-uno';
 import { CursoDosPage } from './cursos/curso-dos/curso-dos';
 import { CursoTresPage } from './cursos/curso-tres/curso-tres';
 import { CursoCuatroPage } from './cursos/curso-cuatro/curso-cuatro';
+import { CursoCincoPage } from './cursos/curso-cinco/curso-cinco';
+import { CursoSeisPage } from './cursos/curso-seis/curso-seis';
+import { CursoSietePage } from './cursos/curso-siete/curso-siete';
+import { CursoOchoPage } from './cursos/curso-ocho/curso-ocho';
 @Component({
   selector: 'page-php',
   templateUrl: 'php.html'
@@ -38,6 +42,26 @@ items = [];
 
   launchCursoCuatroPage(){
     this.navCtrl.push(CursoCuatroPage);
+
+  }
+
+    launchCursoCincoPage(){
+    this.navCtrl.push(CursoCincoPage);
+
+  }
+
+     launchCursoSeisPage(){
+    this.navCtrl.push(CursoSeisPage);
+
+  }
+
+     launchCursoSietePage(){
+    this.navCtrl.push(CursoSietePage);
+
+  }
+
+     launchCursoOchoPage(){
+    this.navCtrl.push(CursoOchoPage);
 
   }
 

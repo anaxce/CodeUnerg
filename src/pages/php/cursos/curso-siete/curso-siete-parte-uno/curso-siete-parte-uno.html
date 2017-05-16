@@ -1,0 +1,41 @@
+<!--
+  Generated template for the CursoSieteParteUnoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+<p><b><u>Obtener valores de la variable de sesión</u></b></p>
+
+<p>Crear otra página php. Desde esta página, accederemos a la información de sesión que establecimos en la primera página.</p>
+
+ <ion-card>
+          <ion-card-content>
+            <span class="gris"><?php</span><br>
+            <span class="gris">//Iniciar la sesión</span><br>
+            <span class="blanco">session_start();</span><br>
+            <span class="gris"> ?> </span><br>
+            <span class="blanco"> < !DOCTYPE html> </span><br>
+            <span class="magenta"> < html> </span><br>
+            <span class="magenta"> < body> </span><br><br>
+            <span class="gris"><?php</span><br>
+            <span class="margensito"></span><span class="gris"> // haremos un echo a las variables de sesión que se establecieron en la página anterior</span><br>
+            <span class="margensito"></span><span class="azul">echo</span><span class="amarillo">"Nombre : "</span> . <span class="naranja"> $_SESSION</span>[<span class="amarillo"> "nombre"</span>];<br>
+            <span class="margensito"></span><span class="azul">echo</span><span class="amarillo">"Apellido : "</span> . <span class="naranja"> $_SESSION</span>[<span class="amarillo"> "apellido"</span>];<br>
+            <span class="gris"> ?> </span><br>
+            <span class="magenta"> < /body></span><br>
+            <span class="magenta"> < /html></span><br>
+          </ion-card-content>
+        </ion-card>
+
+</ion-content>

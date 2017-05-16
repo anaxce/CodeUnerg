@@ -12,7 +12,11 @@
         Menu
       </ion-list-header>
       <button ion-item menuClose *ngFor="let p of appPages" [class.activeHighLight]="checkActive(p)" (click)="openPage(p)">
-        <ion-icon item-left [name]="p.icon"></ion-icon>
+        <ion-icon item-left [name]="p.icon" color="rojiso"></ion-icon>
+       {{p.title}}
+      </button>
+      <button ion-item menuClose *ngFor="let p of appPages2" [class.activeHighLight]="checkActive(p)" (click)="openPage(p)">
+        <ion-icon item-left [name]="p.icon" color="amarillo"></ion-icon>
        {{p.title}}
       </button>
 
@@ -21,6 +25,8 @@
        </ion-list-header>
       <button ion-item *ngFor="let p of pages" [class.activeHighLight]="checkActive(p)" (click)="openPage(p)">
         <ion-icon item-left name="person"></ion-icon>
+
+
         {{p.title}}
       </button>
     
@@ -32,7 +38,7 @@
         Tutorial
       </ion-list-header>
       <button ion-item menuClose (click)="openTutorial()">
-        <ion-icon item-left name="hammer"></ion-icon>
+        <ion-icon item-left name="hammer" color="danger"></ion-icon>
         Ver Tutorial
       </button>
     </ion-list>
