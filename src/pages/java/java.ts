@@ -9,6 +9,8 @@ import { JavaCincoPage } from './cursos/java-cinco/java-cinco';
 import { JavaSeisPage } from './cursos/java-seis/java-seis';
 import { JavaSietePage } from './cursos/java-siete/java-siete';
 import { JavaOchoPage } from './cursos/java-ocho/java-ocho';
+import { JavaNuevePage } from './cursos/java-nueve/java-nueve';
+
  
 
 
@@ -75,6 +77,11 @@ export class JavaPage {
 
           launchJavaOchoPage(){
     this.navCtrl.push(JavaOchoPage);
+
+  }
+
+      launchJavaNuevePage(){
+    this.navCtrl.push(JavaNuevePage);
 
   }
 

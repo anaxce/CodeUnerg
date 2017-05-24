@@ -62,6 +62,9 @@ import { JavaSieteParteUnoPage } from '../pages/java/cursos/java-siete/java-siet
 import { JavaOchoPage} from '../pages/java/cursos/java-ocho/java-ocho';
 import { JavaOchoParteUnoPage } from '../pages/java/cursos/java-ocho/java-ocho-parte-uno/java-ocho-parte-uno';
 import { JavaOchoParteDosPage } from '../pages/java/cursos/java-ocho/java-ocho-parte-dos/java-ocho-parte-dos';
+import { JavaNuevePage } from '../pages/java/cursos/java-nueve/java-nueve';
+import { JavaNueveParteUnoPage } from '../pages/java/cursos/java-nueve/java-nueve-parte-uno/java-nueve-parte-uno';
+import { JavaNueveParteDosPage } from '../pages/java/cursos/java-nueve/java-nueve-parte-dos/java-nueve-parte-dos';
 
 //Cursos de Python
 import { PythonPage } from '../pages/python/python';
@@ -157,6 +160,9 @@ const cloudSettings: CloudSettings = {
     JavaOchoPage,
     JavaOchoParteUnoPage,
     JavaOchoParteDosPage,
+    JavaNuevePage,
+    JavaNueveParteUnoPage,
+    JavaNueveParteDosPage,
 
 
     // Cursos de Python
@@ -257,6 +263,9 @@ const cloudSettings: CloudSettings = {
     JavaOchoPage,
     JavaOchoParteUnoPage,
     JavaOchoParteDosPage,
+    JavaNuevePage,
+    JavaNueveParteUnoPage,
+    JavaNueveParteDosPage,
 
     // Cursos de Python
     PythonPage,
