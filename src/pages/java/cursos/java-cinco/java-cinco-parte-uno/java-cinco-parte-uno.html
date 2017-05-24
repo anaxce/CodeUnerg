@@ -1,0 +1,93 @@
+<!--
+  Generated template for the JavaCincoParteUnoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Inicializando</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <p><b><u> Sintaxis </u></b></p>
+
+  <ion-card>  
+    <ion-card-content>  
+      <span class="blanco"> arrayNombre[index] = value;<br>
+      </span>
+    </ion-card-content>
+  </ion-card>
+
+  <p> Las siguientes líneas asignan valores a cada elemento de la <b>matriz</b></p>
+
+  <ion-card>
+    <ion-card-content>
+
+      <span class="amarillo"> Incializar el primer elemento</span><br>
+      <span class="blanco">anArray</span>[<span class="amarillo">0</span>] = <span class="amarillo">100</span>;<br>
+      <span class="amarillo"> Incializar el segundo elemento</span><br>
+      <span class="blanco">anArray</span>[<span class="amarillo">1</span>] = <span class="amarillo">200</span>;<br>
+      <span class="amarillo"> Etcétera </span><br>
+      <span class="blanco">anArray</span> [<span class="amarillo">2 </span>] = <span class="amarillo">300</span>;
+
+    </ion-card-content>
+  </ion-card>
+
+  <p>Declarar una variable de matriz, crear una matriz y asignar la referencia de la matriz a 
+    la variable se pueden combinar en una sentencia, como se muestra a continuación.</p>
+
+    <ion-card>
+      <ion-card-content>
+        <span class="amarillo">// crear un array de enteros</span><br>
+        <span class="rojo"> int </span> [ ] anArray = <span class="rojo">new int </span>[<span class="amarillo">10</span>];<br>
+
+      </ion-card-content>
+    </ion-card>
+
+    <p>Alternativamente, puede crear matrices de la siguiente manera</p>
+
+    <ion-card>
+      <ion-card-content>
+        <span class="blanco"> dataType[ ] anArray = </span> <span class="llave1"></span>valor0, valor1, ..., valuek <span class="llave2">; </span>
+
+      </ion-card-content>
+    </ion-card>
+
+    <p><b>Ejemplo</b></p>
+
+    <ion-card>
+      <ion-card-content>
+        <span class="rojo">int</span> [] anArray = <span class="llave1"> </span> <span class="amarillo">100, 200, 300, 400, 500, 600, 700, 800, 900, 1000</span><span class="llave2"></span>;
+      </ion-card-content>
+    </ion-card>
+
+    <p>Puede acceder a la longitu(<b>length</b>)d de una matriz a través de su campo de longitud.</p>
+
+    <p><b> Sintaxis </b></p>
+
+    <ion-card>
+      <ion-card-content>
+        <span class="blanco"> arrayNombre.length </span>
+      </ion-card-content>
+    </ion-card>
+
+    <p><b>Ejemplo</b></p>
+
+    <ion-card>
+      <ion-card-content>
+        <span class="rojo">int</span>[ ] anArray = <span class="rojo">new int</span>[ <span class="amarillo">10</span>];<br>
+        <span class="rojo">int</span> arrayLength = anArray.length;<br>
+      </ion-card-content>
+    </ion-card>
+
+    <p>En este ejemplo la variable llamada arrayLength contendrá el valor <b>10</b></p>
+
+    <button ion-button full menuClose (click)="launchJavaCincoParteDosPage()" color="dark">Continuar</button>
+
+</ion-content>

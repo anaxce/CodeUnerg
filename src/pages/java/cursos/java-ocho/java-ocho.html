@@ -1,0 +1,111 @@
+<!--
+  Generated template for the JavaOchoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Métodos</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <p><b><u>¿Que son los métodos en java?</u></b></p>
+
+  <p>Un <b>método</b> es un grupo de instrucciones java que realizan alguna operación en 
+    algunos datos y pueden o no devolver un resultado</p>
+
+    <p>Los métodos java deben estar ubicados dentro de una clase java</p>
+
+    <p><b><u>Sintaxis</u></b></p>
+
+    <ion-card>  
+      <ion-card-content>  
+        <span class="blanco"> modifier returnType</span> <span class="naranja"> nameOfMethod</span> (Parameter List)<br>
+        <span class="llave1"> </span><br>
+        <span class="margensito"> </span> <span class="amarillo"> // Cuerpo del metodo</span><br>
+        <span class="llave2"> </span>
+      </ion-card-content>
+    </ion-card>
+
+    <ul>
+      <li><b>modifier:</b> Define el tipo de acceso del método y es opcional utilizar.</li> <br>
+      <li><b>returnType:</b> El método puede devolver un valor.</li><br>
+      <li><b>nameOfMethod:</b> Este es el nombre del metodo. La firma del método consiste en el nombre del 
+      método y la lista de parámetros</li><br>
+      <li><b>Parameter List: </b> La lista de parámetros, es el tipo, orden y número de parámetros de un método. Estos son 
+      opcionales. Método puede contener cero parámetros</li><br>
+      <li><b>method body: </b> El cuerpo del método define lo que hace el método con las sentencias</li>
+    </ul>
+
+    <p><b>Ejemplo</b></p>
+
+    <ion-card>
+      <ion-card-content>
+        <span class="rojo"> public static int</span> <span class="naranja"> nombreMetodo</span> (<span class="rojo">int </span> a, <span class="rojo">int</span> b)<br>
+        <span class="llave1"></span><br>
+        <span class="naranja"></span> <span class="amarillo">// Body</span><br>
+        <span class="llave2"> </span>
+      </ion-card-content>
+    </ion-card>
+
+    <ul>
+      <li>
+        <b>public static:</b> modifier.
+      </li><br>
+
+      <li>
+        <b>int:</b> returnType.
+      </li><br>
+
+      <li>
+        <b>nombreMetodo:</b> Nombre del metodo
+      </li><br>
+
+      <li>
+        <b>a, b:</b>Parametros formales
+      </li><br>
+
+      <li>
+        <b>int a, int b:</b> Lista de parametros (Parameter List)
+      </li>
+    </ul><br><br>
+
+   <p><b><u> Modificadores de acceso a métodos y parámetros</u></b></p>
+
+   <p>Usted puede haber notado la palabra pública en el ejemplo anterior,
+     esta palabra es el modificador de acceso para el método. El modificador de acceso determina qué código se le
+     permite llamar a este método</p>
+
+    <p><b><u>Parametros del método</u></b></p>
+
+    <ul>
+      <li>Parámetros del método hace posible pasar valores al método</li><br>
+      <li>Los parámetros del método se declaran dentro de los paréntesis después del nombre del método.
+         En el ejemplo siguiente los parámetros del método están marcados en negrita</li><br>
+      <li>Puede utilizar cualquier tipo de datos primitivo o una clase java incorporada como tipo de 
+           datos para los parámetros. También puede utilizar sus propias clases como tipos de parámetros</li><br>
+      <li>Un parámetro de método es similar a una variable. Usted puede leer su valor, y cambiar su valor también</li>
+    </ul>
+    
+    <ion-card>
+      <ion-card-content>
+        <span class="rojo">public void</span> <span class="naranja">mimetodo</span> <span class="azul"> (String texto1, String texto2)</span><br>
+        <span class="llave1"></span><br>
+        <span class="margensito"></span> System.out.println(texto1);<br>
+        <span class="margensito"></span> System.out.println(texto2);<br>
+        <span class="llave2"></span>
+      </ion-card-content>
+    </ion-card>
+
+    <p>El método <b>mimetodo</b> método en el ejemplo anterior toma dos parámetros llamados <b>texto1</b> <b>texto2</b> los dos son de tipo <b>String</b></p>
+
+    <button ion-button full menuClose (click)="launchJavaOchoParteUnoPage()" color="dark">Continuar</button>
+
+
+</ion-content>

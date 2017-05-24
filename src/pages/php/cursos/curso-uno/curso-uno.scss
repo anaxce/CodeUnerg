@@ -21,6 +21,7 @@ color: #93B0FF;
 
 .rojo{
   color: #FF2D2D;
+  
 }
 
 .gris{
@@ -30,11 +31,14 @@ color: #93B0FF;
 ion-card-content{
   background-color: #1A1A1F;
   color: white;
+
 }
 
 ion-card-header{
   background-color: #1A1A1F;
 }
+
+
 
 .blanco{
   color:white;
@@ -42,7 +46,13 @@ ion-card-header{
 
 p{
   text-align: justify;
-  font-size: 1.2em;
+  font-size: 1.1em; 
+  color: #0F0F0F;
+  font-style: bold;
+}
+
+li{
+  text-align: justify;
 }
 
 .llave1:before{
@@ -61,4 +71,18 @@ color: white;
 
 .magenta{
   color: #F41E7B;
+}
+
+.verde{
+  color: #01E997;
+}
+
+.javafondo{
+  background-color: #2B2B2B;
+}
+
+
+img{
+    width: 100%;
+    height: auto;
 }

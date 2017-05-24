@@ -7,12 +7,63 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>CursoOcho</ion-title>
+    <ion-title>Conectar a MySQL</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+
+  <p><b><u>Que es MySQL</u></b></p>
+
+  <p><b>MySQL</b> Permite a los usuarios crear tablas, donde los datos se pueden almacenar mucho más 
+  eficientemente que la forma en que los datos se almacenan en las matrices.</p> 
+
+  <p>Con el fin de utilizar MySQL o alguna otra bases de datos en general con eficacia, es necesario comprender SQL, o Query estructurado.</p>
+
+  <p>Estas guias estan basadas en funciones Mysqli y no las funciones antiguas de mysql</p>
+
+  <p><b><u>Paso a Paso</u></b></p>
+
+  <p><b><u>1. Conectando al servidor MySQL </u></b></p>
+  <p>Php tiene la función <b>mysqli</b> para conectarse a un servidor MySQL que maneja todo el manejo de socket de bajo nivel.</p>
+
+  <p>Hay 3 argumentos que utilizaremos mucho</p>
+  <ul>
+    <li><b>1. Nombre del servidor MySQL</b></li>
+    <li><b>2. Nombre de usuario del MySQL</b></li>
+    <li><b>3. Contraseña del MySQL</b></li>
+  </ul>
+
+  <p><b>Veamos un ejemplo</b></p>
+
+  <ion-card>
+    <ion-card-content>
+      <span class="naranja">$servername</span> = <span class="amarillo"> "localhost" </span>;<br>
+      <span class="naranja">$username</span> = <span class="amarillo"> "username" </span>;<br>
+      <span class="naranja">$password</span> = <span class="amarillo"> "password" </span>;<br><br>
+
+      <span class="gris">// Creando conexión</span><br>
+      <span class="naranja">$cn</span> = <span class="rojo">new</span> mysqli (<span class="amarillo">$servername, $username, $password</span>);<br><br>
+      <span class="gris">// Verificando Conexión</span><br>
+      <span class="rojo">if </span> (<span class="amarillo">$cn</span>->connect_error)<br>
+      <span class="llave1"></span><br>
+      <span class="margensito"></span><span class="azul">echo</span> <span class="amarillo"> "Conexion Fallida : "</span> . <span class="naranja">$cn</span>->connect_error;<br>
+      <span class="llave2"></span><br>
+      <span class="azul">echo</span><span class="amarillo">"Conexión Exitosa"</span>;<br>
+    </ion-card-content>
+  </ion-card>
+
+  <p><b><u>Cerrar la conexión</u></b></p>
+  <p>Para cerrar la conexion use lo siguiente</p>
+  <ion-card>
+    <ion-card-content>
+      <span class="naranja">$cn</span>->close();<br>
+    </ion-card-content>
+  </ion-card>
+
+    <button ion-button full menuClose (click)="launchCursoOchoParteUnoPage()" color="dark">Continuar</button>
+
 
 </ion-content>

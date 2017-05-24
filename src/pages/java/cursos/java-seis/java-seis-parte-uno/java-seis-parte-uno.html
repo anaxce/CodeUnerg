@@ -1,0 +1,74 @@
+<!--
+  Generated template for the JavaSeisParteUnoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Clases en Java</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <p><b><u>Clases con metodos</u></b></p>
+
+<p>Vamos a agregar un metodo a la clase Ashe</p>
+
+<ion-card>  
+  <ion-card-content>  
+    <span class="rojo"> public class</span> <span class="naranja"> Ashe</span><br>
+    <span class="llave1"> </span><br>
+    <span class="margensito"></span> <span class="rojo">public </span> String croma1 = <span class="rojo">null</span>;<br>
+    <span class="margensito"> </span> <span class="rojo">public </span> String croma2 = <span class="amarillo">null</span>;<br>
+    <span class="margensito"> </span> <span class="rojo">public </span> String croma3 = <span class="amarillo">null</span>;<br><br>
+    <span class="margensito"> </span><span class="rojo">public void </span> <span class="naranja">setColor</span> (String newColor)<br>
+    <span class="margensito"> </span> <span class="llave1"></span><br>
+    <span class="margensito"> </span><span class="margensito"> </span> <span class="rojo">this</span>.color = newColor;<br>
+    <span class="margensito"> </span> <span class="llave2"> </span><br>
+    <span class="llave2"></span>
+
+  </ion-card-content>
+</ion-card>
+<br>
+<p>En la definición de clase se ha agregado un método llamado <b>setColor()</b>. Cuando se llama, este método establece 
+  la variable de <b>color</b> interno (campo) a un nuevo valor. </p>
+
+  <p><b><u>Clases y Objetos</u></b></p>
+
+  <p>Para crear objetos de una determinada clase, se utiliza la palabra clave <b>new</b></p>
+
+<p><b>Sintaxis</b></p>
+<ion-card>
+  <ion-card-content>
+    <span class="blanco"> ClassNombre </span> objectNombre = <span class="rojo">new </span> ClassNombre();
+  </ion-card-content>
+</ion-card>
+
+<p><b>Ejemplo</b></p>
+
+<ion-card>
+  <ion-card-content>
+    <span class="blanco">Croma croma1 = <span class="rojo">new </span> Croma();</span><br>
+    <span class="blanco">Croma croma2 = <span class="rojo">new </span> Croma();</span><br>
+    <span class="blanco">Croma croma2 = <span class="rojo">new </span> Croma();</span><br>
+    <span class="blanco"> croma1.setColor("<span class="amarillo">Rosado</span>");</span><br>
+    <span class="blanco"> croma2.setColor("<span class="amarillo">Rojo</span>");</span><br>
+    <span class="blanco"> croma3.setColor("<span class="amarillo">Azul</span>");</span><br>
+  </ion-card-content>
+</ion-card>
+
+<p>Este ejemplo crea tres variables <b>Croma</b> y asigna una nueva instancia de la clase <b>Croma</b> a 
+  cada variable, cada variable ahora hace referencia a un objeto <b>Croma</b>.</p>
+
+  <p>Después de crear los tres objetos croma, el método setColor () se llama a cada objeto. Ahora el color 
+    (<b>representado como un texto</b>) se fija individualmente para cada objeto de Croma</p>
+
+    <p>La creación de un objeto de una determinada clase también se llama <b>instanciar</b> un objeto. Por lo tanto, 
+      el objeto también se llama una <b>instancia</b> de la clase dada. Por ejemplo, cada uno de los objetos de <b>croma</b> 
+      arriba también se llaman una <b>instancia</b> de la clase de <b>croma</b>, o simplemente las <b>instancias</b> de <b>croma</b></p>
+
+</ion-content>

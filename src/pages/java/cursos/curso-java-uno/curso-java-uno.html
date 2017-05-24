@@ -1,0 +1,75 @@
+<!--
+  Generated template for the CursoJavaUnoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Sintaxis Basica</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <p><b>Sensibilidad de Mayusculas</b>: Java es sensible a mayúsculas y minúsculas, lo que significa identificador Hello 
+  y hello tendría significado diferente en java</p>
+
+  <p><b>Nombre de clases</b>: Para todos los nombres de clase la primera letra debe estar en mayúsculas</p>
+
+  <ul>
+    <li>Si se utilizan varias palabras para formar un nombre de la clase, la <b>primera 
+      letra</b> de cada palabra interior debe estar en <b>mayúsculas</b></li><br>
+      <li>Un ejemplo seria, <b>MyPrimeraClaseJava</b></li>
+  </ul>
+
+  <p><b>Nombres de metodos</b>: Todos los nombres de <b>métodos</b> deben comenzar con una letra <b>minúscula</b></p>
+  <ul>
+    <li>Si se usan varias palabras para formar el nombre del <b>método</b>, 
+      entonces la <b>primera letra de cada palabra interna</b> debe estar en <b>mayúsculas</b></li><br>
+      <li>Un ejemplo seria, <b>myNombreMetodo()</b></li>
+  </ul>
+
+  <p><b>Nombre del archivo del programa</b>: Nombre del archivo de programa debe coincidir 
+  exactamente con el nombre de la clase</p>
+
+  <ul>
+    <li>Al guardar el archivo, debe guardarlo usando el nombre de la clase (<b>Recuerde que java es sensible a mayúsculas 
+      y minúsculas</b>) y agregue '.java' al final del nombre (<b>si el nombre del archivo y el nombre de la clase no 
+      coinciden con su programa no se compilará</b>)</li><br>
+      <li><b>Ejemplo:</b> asumamos que "<b>MiPrimerProgramaJava</b>" es el nombre de la <b>clase</b>. Entonces el archivo debe <b>guardarse</b> como
+        '<b>MiPrimerProgramaJava.java</b>'
+      </li>
+  </ul>
+
+  <p><b>public static void main</b>(<b>String args</b>[]): El procesamiento se inicia desde el <b>método main()</b> que es una parte 
+  <b>obligatoria</b> de todos los programas <b>java</b></p><br>
+
+  <p><b><u>Hagamos nuestro primer codigo en Java</u></b></p>
+
+  <ion-card>
+    <ion-card-content class="javafondo">
+      <span class="rojo"> class </span> <span class="naranja"> HolaMundo</span><br>
+      <span class="llave1"></span><br>
+      <span class="rojo"> public static void </span> <span class="naranja"> main</span> <span class="azul">(String args[])</span><br>
+      <span class="llave1"></span><br>
+      <span class="blanco"> System.out.println</span>(<span class="verde">Hola, Mundo!</span>);<br>
+      <span class="llave2"></span><br>
+      <span class="llave2"></span><br>
+    </ion-card-content>
+  </ion-card>
+
+  <p><b>Si todo va bien, deberías ver la siguiente salida por consola</b></p>
+
+  <ion-card>
+    <ion-card-content>
+      <span class="blanco">Hola, Mundo!</span>
+    </ion-card-content>
+  </ion-card>
+
+      <button ion-button full menuClose (click)="launchJavaUnoParteUnoPage()" color="dark">Continuar</button>
+
+</ion-content>

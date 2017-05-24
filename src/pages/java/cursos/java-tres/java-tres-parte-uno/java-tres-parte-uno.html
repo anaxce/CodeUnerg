@@ -1,0 +1,85 @@
+<!--
+  Generated template for the JavaTresParteUnoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Declaración Switch</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  
+  <p><b>Switch</b> también se usan cuando necesitamos que nuestro programa tome una <b>decisión</b> 
+    determinada basada en una <b>condición</b> y luego ejecute en consecuencia</p>
+
+    <p>La sentencia switch se encarga de estructurar una selección múltiple. Al contrario del enunciado if-else que sólo 
+      podemos indicar dos alternativas, maneja un número finito de posibilidades.</p>
+    <p>Es mas sencillo de lo que suena, veamos un ejemplo</p>
+
+<ion-card>
+  <ion-card-content>
+    <span class="amarillo"> /* Ejemplo metodo que usa switch */</span><br>
+    <span class="rojo"> public void </span> <span class="naranja"> dimeSiEdadEsCritica()</span><br>
+    <span class="llave1"></span><br>
+    <span class="margensito"></span><span class="rojo">switch</span>(<span class="naranja">edad</span>)<br>
+    <span class="margensito"></span><span class="llave1"></span><br>
+    <span class="margensito"></span><span class="rojo">case </span><span class="amarillo"> 0</span>;<br>
+    <span class="margensito"></span>System.out.println("<span class="amarillo">Aun no cumple el primer año</span>");<br>
+    <span class="margensito"></span><span class="rojo">break</span>;<br>
+    <span class="margensito"></span><span class="rojo">case </span><span class="amarillo">18</span>: System.out.println("<span class="amarillo">Esta justo en la mayoría de edad</span>");<br>
+    <span class="margensito"></span><span class="rojo">break</span>;<br>
+    <span class="margensito"></span><span class="rojo">case</span><span class="amarillo"> 65</span>: System.out.println("<span class="amarillo">Está en la edad de jubilación</span>");<br>
+    <span class="margensito"></span><span class="rojo">break</span>;<br>
+    <span class="margensito"></span><span class="rojo">default</span>: System.out.println ("<span class="amarillo">La edad no es crítica</span>");<br>
+    <span class="margensito"></span><span class="rojo">break</span>;<br>
+    <span class="margensito"></span><span class="llave2"> </span><br>
+    <span class="llave2"></span>
+  </ion-card-content>
+</ion-card>
+
+<p><b>Otro Ejemplo</b></p>
+
+<ion-card>
+  <ion-card-content>
+
+    <span class="rojo">public class</span><span class="naranja"> SwitchDemo1</span><br>
+    <span class="llave1"></span><br><br>
+    <span class="margensito"></span><span class="rojo">public static void </span> <span class="naranja">main</span> (String args[])<br>
+    <span class="margensito"></span><span class="llave1"></span><br>
+    <span class="margensito"></span><span class="margensito"></span><span class="rojo">int</span> eleccion = <span class="amarillo">2</span>;<br><br>
+    <span class="margensito"></span><span class="margensito"></span><span class="rojo">switch</span> (eleccion)<br>
+    <span class="margensito"></span><span class="margensito"></span><span class="llave1"></span><br>
+    <span class="margensito"></span><span class="margensito"></span><span class="rojo">case</span><span class="amarillo"> 1</span>:<br>
+    <span class="margensito"></span><span class="margensito"></span><span class="margensito"></span>System.out.println("<span class="amarillo">Menu Banco</span>")<br>
+    <span class="margensito"></span><span class="margensito"></span><span class="margensito"></span><span class="rojo">break</span>;<br><br>
+    <span class="margensito"></span><span class="margensito"></span><span class="rojo">case</span><span class="amarillo"> 2</span>:<br>
+    <span class="margensito"></span><span class="margensito"></span><span class="margensito"></span>System.out.println("<span class="amarillo">Menu Prestamo</span>")<br>
+    <span class="margensito"></span><span class="margensito"></span><span class="margensito"></span><span class="rojo">break</span>;<br><br>
+    <span class="margensito"></span><span class="margensito"></span><span class="rojo">case</span><span class="amarillo"> 3</span>:<br>
+    <span class="margensito"></span><span class="margensito"></span><span class="margensito"></span>System.out.println("<span class="amarillo">Menu Tarjeta de Credito</span>")<br>
+    <span class="margensito"></span><span class="margensito"></span><span class="margensito"></span><span class="rojo">break</span>;<br><br>
+    <span class="margensito"></span><span class="margensito"></span><span class="rojo">default</span>:<br>
+    <span class="margensito"></span><span class="margensito"></span><span class="margensito"></span>System.out.println("<span class="amarillo">No se consigue el resultado</span>")<br>
+    <span class="margensito"></span><span class="margensito"></span><span class="rojo">break</span>;<br><br>
+    <span class="margensito"></span><span class="margensito"></span><span class="llave2"></span><br>
+    <span class="margensito"></span><span class="llave2"></span><br>
+    <span class="llave2"></span>
+    
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-content>
+    <span class="blanco">Consola</span><br><br>
+    <span class="blanco"> Menu Prestamo</span>
+  </ion-card-content>
+</ion-card>
+
+<p>Aquí el programa mostró el mensaje "<b>menú prestamo</b>" porque la variable "<b>eleccion</b>" está asignada como <b>2</b></p>
+</ion-content>

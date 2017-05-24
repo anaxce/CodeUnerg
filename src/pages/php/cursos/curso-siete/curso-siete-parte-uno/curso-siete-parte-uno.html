@@ -17,7 +17,7 @@
 
 <p><b><u>Obtener valores de la variable de sesión</u></b></p>
 
-<p>Crear otra página php. Desde esta página, accederemos a la información de sesión que establecimos en la primera página.</p>
+<p>Crear otra página php. Desde esta página, accederemos a la <b>información de sesión</b> que establecimos en la primera página.</p>
 
  <ion-card>
           <ion-card-content>
@@ -32,6 +32,55 @@
             <span class="margensito"></span><span class="gris"> // haremos un echo a las variables de sesión que se establecieron en la página anterior</span><br>
             <span class="margensito"></span><span class="azul">echo</span><span class="amarillo">"Nombre : "</span> . <span class="naranja"> $_SESSION</span>[<span class="amarillo"> "nombre"</span>];<br>
             <span class="margensito"></span><span class="azul">echo</span><span class="amarillo">"Apellido : "</span> . <span class="naranja"> $_SESSION</span>[<span class="amarillo"> "apellido"</span>];<br>
+            <span class="gris"> ?> </span><br>
+            <span class="magenta"> < /body></span><br>
+            <span class="magenta"> < /html></span><br>
+          </ion-card-content>
+        </ion-card>
+
+        <p><b><u>Modificar una variable de sesión php</u></b></p>
+<p>Modificar una <b>variable de sesión</b>, nuevamente</p>
+
+
+ <ion-card>
+          <ion-card-content>
+            <span class="gris"><?php</span><br>
+            <span class="gris">//Iniciar la sesión</span><br>
+            <span class="blanco">session_start();</span><br>
+            <span class="gris"> ?> </span><br>
+            <span class="blanco"> < !DOCTYPE html> </span><br>
+            <span class="magenta"> < html> </span><br>
+            <span class="magenta"> < body> </span><br><br>
+            <span class="gris"><?php</span><br>
+            <span class="margensito"></span><span class="gris"> // para cambiar una variable de sesión, solo escribalo</span><br>
+            <span class="margensito"></span><span class="naranja">$_SESSION</span>[<span class="amarillo">"nombre"</span>] = <span class="amarillo"> "Jorfrey"</span>;<br>
+            <span class="margensito"></span><span class="azul">print_r</span>(<span class="naranja">$_SESSION</span>);<br>
+            <span class="gris"> ?> </span><br>
+            <span class="magenta"> < /body></span><br>
+            <span class="magenta"> < /html></span><br>
+          </ion-card-content>
+        </ion-card>
+
+    <p><b><u>Destruir una sesión</u></b></p>
+
+    <p>Con el fin de <b>eliminar</b> todas las <b>variables</b> de sesión global y <b>destruir</b> la <b>sesión</b>, usamos <b>session_unset()</b> y <b>session_destroy</b></p>
+
+      <ion-card>
+          <ion-card-content>
+            <span class="gris"><?php</span><br>
+            <span class="gris">//Iniciar la sesión</span><br>
+            <span class="blanco">session_start();</span><br>
+            <span class="gris"> ?> </span><br>
+            <span class="blanco"> < !DOCTYPE html> </span><br>
+            <span class="magenta"> < html> </span><br>
+            <span class="magenta"> < body> </span><br><br>
+            <span class="gris"><?php</span><br>
+            <span class="margensito"></span><span class="gris"> // Remover todas las variables de sesión</span><br>
+            <span class="margensito"></span><span class="blanco"> session_unset();</span><br>
+
+            <span class="margensito"></span><span class="gris"> // Destruir la sesión</span><br>
+            <span class="margensito"></span><span class="blanco"> session_destroy();</span><br>
+
             <span class="gris"> ?> </span><br>
             <span class="magenta"> < /body></span><br>
             <span class="magenta"> < /html></span><br>

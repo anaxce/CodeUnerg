@@ -1,0 +1,100 @@
+<!--
+  Generated template for the JavaCincoParteDosPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Array Ejemplo</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+<p><b>Accediendo al Array</b></p>
+
+  <p>Se accede a los elementos de la matriz a través del índice. Los índices de matriz están basados 
+    en 0, es decir: comienzan desde 0 hasta una longitud de <b>anArray.length-1</b></p>
+
+    <p><b>Ejemplo</b>
+
+    <ion-card> 
+      <ion-card-content>
+        <span class="amarillo"> // Imprime el valor del primer elemento </span><br>
+        <span class="blanco">System.out.println(<span class="amarillo">" Elemento 1 en el indice 0: "</span> + anArray[<span class="amarillo">0</span>]</span>);<br><br>
+
+        <span class="amarillo"> // Imprime el valor del segundo elemento </span><br>
+        <span class="blanco">System.out.println(<span class="amarillo">" Elemento 2 en el indice 1: "</span> + anArray[<span class="amarillo">1</span>]</span>);<br><br>
+
+        <span class="amarillo"> // Imprime el valor del tercer elemento </span><br>
+        <span class="blanco">System.out.println(<span class="amarillo">" Elemento 3 en el indice 2: "</span> + anArray[<span class="amarillo">2</span>]</span>);<br><br>
+
+        <span class="amarillo"> // Imprime el valor del ultimo elemento </span><br>
+        <span class="blanco">System.out.println(<span class="amarillo">" Ultimo elemento : "</span></span> + anArray[anArray.length-<span class="amarillo">1</span>]);<br>
+      </ion-card-content>
+    </ion-card>
+
+    
+<p><b><u>Ejemplo Array</u></b></p>
+
+  <ion-card>  
+    <ion-card-content>  
+      <span class="rojo"> class </span> <span class="naranja"> Ejemplo</span><br>
+      <span class="llave1"> </span><br>
+      <span class="margensito"> </span> <span class="rojo">public static void </span> <span class="naranja">main</span>(String[ ] args)<br>
+      <span class="margensito"></span> <span class="llave1"></span><br>
+      <span class="margensito"></span><span class="margensito"></span> <span class="amarillo"> // declarar el array entero</span><br>
+      <span class="margensito"></span><span class="margensito"></span><span class="rojo">int </span>[ ] anArray;<br><br>
+      <span class="margensito"></span><span class="margensito"></span><span class="amarillo"></span> <span class="amarillo">// alojar 10 enteros en la memoria</span><br>
+      <span class="margensito"></span><span class="margensito"></span>anArray = <span class="rojo">new int</span>[<span class="amarillo">10</span>];<br><br>
+      <span class="margensito"></span><span class="margensito"></span><span class="amarillo">//inicializa el primer elemento</span><br>
+      <span class="margensito"></span><span class="margensito"></span>anArray[<span class="amarillo">0</span>] = <span class="amarillo">100</span>;<br>
+      <span class="margensito"></span><span class="margensito"></span><span class="amarillo">inicializa el segundo elemento</span><br>
+      <span class="margensito"></span><span class="margensito"></span>anArray[<span class="amarillo">1</span>] = <span class="amarillo">200</span>;<br>
+      <span class="margensito"></span><span class="margensito"></span><span class="amarillo">// Asi con los demas...</span><br>
+      <span class="margensito"></span><span class="margensito"></span>anArray[<span class="amarillo">2</span>] = <span class="amarillo">300</span>;<br>
+      <span class="margensito"></span><span class="margensito"></span>anArray[<span class="amarillo">3</span>] = <span class="amarillo">400</span>;<br>
+      <span class="margensito"></span><span class="margensito"></span>anArray[<span class="amarillo">4</span>] = <span class="amarillo">500</span>;<br>
+      <span class="margensito"></span><span class="margensito"></span>anArray[<span class="amarillo">5</span>] = <span class="amarillo">600</span>;<br>
+      <span class="margensito"></span><span class="margensito"></span>anArray[<span class="amarillo">6</span>] = <span class="amarillo">700</span>;<br>
+      <span class="margensito"></span><span class="margensito"></span>anArray[<span class="amarillo">7</span>] = <span class="amarillo">800</span>;<br>
+      <span class="margensito"></span><span class="margensito"></span>anArray[<span class="amarillo">8</span>] = <span class="amarillo">900</span>;<br>
+      <span class="margensito"></span><span class="margensito"></span>anArray[<span class="amarillo">9</span>] = <span class="amarillo">1000</span>;<br><br>
+      <span class="margensito"></span> System.out.println(<span class="amarillo">"Elemento en el indice 0"</span> + anArray[<span class="amarillo">0</span>]);<br>
+      <span class="margensito"></span> System.out.println(<span class="amarillo">"Elemento en el indice 1"</span> + anArray[<span class="amarillo">1</span>]);<br>
+      <span class="margensito"></span> System.out.println(<span class="amarillo">"Elemento en el indice 2"</span> + anArray[<span class="amarillo">2</span>]);<br>
+      <span class="margensito"></span> System.out.println(<span class="amarillo">"Elemento en el indice 3"</span> + anArray[<span class="amarillo">3</span>]);<br>
+      <span class="margensito"></span> System.out.println(<span class="amarillo">"Elemento en el indice 4"</span> + anArray[<span class="amarillo">4</span>]);<br>
+      <span class="margensito"></span> System.out.println(<span class="amarillo">"Elemento en el indice 5"</span> + anArray[<span class="amarillo">5</span>]);<br>
+      <span class="margensito"></span> System.out.println(<span class="amarillo">"Elemento en el indice 6"</span> + anArray[<span class="amarillo">6</span>]);<br>
+      <span class="margensito"></span> System.out.println(<span class="amarillo">"Elemento en el indice 7"</span> + anArray[<span class="amarillo">7</span>]);<br>
+      <span class="margensito"></span> System.out.println(<span class="amarillo">"Elemento en el indice 8"</span> + anArray[<span class="amarillo">8</span>]);<br>
+      <span class="margensito"></span> System.out.println(<span class="amarillo">"Elemento en el indice 9"</span> + anArray[<span class="amarillo">9</span>]);<br>
+      <span class="margensito"></span> <span class="llave2">  </span><br>
+      <span class="llave2"></span>
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      <span class="blanco"> Consola: </span><br><br>
+      <span class="blanco"> Elemento en el idice 0: 100</span><br>
+      <span class="blanco"> Elemento en el idice 1: 200</span><br>
+      <span class="blanco"> Elemento en el idice 2: 300</span><br>
+      <span class="blanco"> Elemento en el idice 3: 400</span><br>
+      <span class="blanco"> Elemento en el idice 4: 500</span><br>
+      <span class="blanco"> Elemento en el idice 5: 600</span><br>
+      <span class="blanco"> Elemento en el idice 6: 700</span><br>
+      <span class="blanco"> Elemento en el idice 7: 800</span><br>
+      <span class="blanco"> Elemento en el idice 8: 900</span><br>
+      <span class="blanco"> Elemento en el idice 9: 1000</span><br>
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

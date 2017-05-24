@@ -1,0 +1,81 @@
+<!--
+  Generated template for the JavaSietePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Constructores</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <p><b><u>Constructores en Java</u></b></p>
+
+  <p>Cuando se construye un objeto es necesario inicializar sus variables con valores <b>coherentes</b>, imaginemos un <b>objeto</b> de la 
+    clase <b>Persona</b> cuyo atributo color de pelo al nacer sea <b>verde</b>, un estado incorrecto tras construir el objeto persona. <br><br>
+    La <b>solución</b> en los lenguajes orientados a objetos es emplear los <b>constructores</b>. Un constructor es un <b>método</b> perteneciente 
+    a la clase que posee unas características especiales:</p>
+
+    <ul>
+      <li>Se llama igual que la clase.</li><br>
+      <li>No devuelve nada, ni siquiera void.</li><br>
+      <li>Pueden existir varios, pero siguiendo las reglas de la sobrecarga de funciones</li><br>
+      <li>De entre los que existan, tan solo uno se ejecutara al crear un objeto de la clase.</li>
+    </ul>
+
+    <p><b><u>Hay dos tipos de constructores:</u></b></p>
+
+    <ul>
+      <li>Constructor por defecto</li><br>
+      <li>Constructor parametrizado</li>
+    </ul>
+
+    <p><b><u>Constructor por defecto</u></b></p>
+
+    <p>Un constructor que no tiene parametros se conoce como un constructor por defecto(predeterminado)</p>
+
+    <p><b>Sintaxis</b></p>
+
+    <ion-card>  
+      <ion-card-content>  
+        <span class="blanco"> class_nombre() </span><br>
+        <span class="llave1"> </span><br><br>
+        <span class="llave2"></span>
+      </ion-card-content>
+    </ion-card>
+
+    <p>En este ejemplo, estamos creando el constructor <b>no-arg</b> en la clase candy. Se invocará en el momento de la creación del objeto.</p>
+
+    <ion-card>
+      <ion-card-content>
+        <span class="rojo"> class </span> <span class="naranja">Yasuo</span><br>
+        <span class="llave1"></span><br>
+        <span class="margensito"> </span> Yasuo()<br>
+        <span class="margensito"></span><span class="llave1"></span><br>
+        <span class="margensito"></span><span class="margensito"></span> System.out.println(<span class="amarillo"> Yasuo is broken </span>);<br>
+        <span class="margensito"></span> <span class="llave2"></span><br><br>
+        <span class="margensito"></span> <span class="rojo"> public static void</span> <span class="naranja">main</span>(String args[ ])<br>
+        <span class="margensito"></span> <span class="llave1"></span><br>
+        <span class="margensito"></span><span class="margensito"></span> Yasuo c = <span class="rojo">new</span> Yasuo();<br>
+        <span class="margensito"></span> <span class="llave2"></span><br>
+        <span class="llave2"></span>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-content>
+        <span class="blanco">Consola: </span><br><br>
+        Yasuo is broken
+      </ion-card-content>
+    </ion-card>
+
+    <button ion-button full menuClose (click)="launchJavaSieteParteUnoPage()" color="dark">Continuar</button>
+
+
+</ion-content>

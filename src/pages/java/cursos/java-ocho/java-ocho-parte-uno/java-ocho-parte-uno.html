@@ -1,0 +1,80 @@
+<!--
+  Generated template for the JavaOchoParteUnoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Tipos de retorno</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+<p><b><u>Tipos de retorno del método</u></b></p>
+
+<p>Un metodo en java puede devolver un valor</p>
+
+<ion-card>  
+  <ion-card-content>  
+    <span class="rojo"> public int</span> <span class="naranja"> suma</span>(<span class="rojo">int</span> <span class="azul"> valor1</span>, <span class="rojo">int</span> <span class="azul">valor2</span>)<br>
+    <span class="llave1"> </span><br>
+    <span class="margensito"> </span> <span class="rojo">return </span> texto1 + texto2;<br>
+    <span class="llave2"> </span>
+  </ion-card-content>
+</ion-card>
+
+<ul>
+  <li>El tipo de retorno es un int(entero), que esta marcado en negrita antes de la suma de nombre del método. Este tipo de retorno indica que este método devuelve un int</li>
+  <li>La instrucción return determina qué valor es devuelto por el método</li>
+</ul>
+
+<p><b>Ejemplo</b></p>
+
+<ion-card>
+  <ion-card-content>
+    <span class="rojo">public </span> String <span class="naranja">cuenta</span> <span class="azul">(String texto1, String texto2)</span><br>
+    <span class="llave1"></span><br>
+    <span class="margensito"></span> <span class="rojo">return</span> texto1 + texto2;<br>
+    <span class="llave2"></span>
+  </ion-card-content>
+</ion-card>
+
+<p>El método cuenta método en el ejemplo anterior toma dos parámetros llamados texto1 y texto2 de tipo String</p><br>
+
+<p><b><u>Declaraciones de devoluciones múltiples</u></b></p>
+
+  
+<p>Es posible tener más de una declaración de retorno en un método. Sin embargo, ambos no se pueden ejecutar. 
+  Sólo se puede ejecutar una declaración de devolución. Una vez que se ejecuta una instrucción return,
+   no se ejecuta más código en ese método</p>
+
+   <p><b> Ejemplo</b></p>
+   
+    <ion-card>
+      <ion-card-content>
+        <span class="rojo">public </span> String cuenta <span class="azul">(String string1, String string2, <span class="rojo">boolean </span> flag)</span><br>
+        <span class="llave1"></span><br>
+        <span class="margensito"></span> <span class="rojo">if </span> (flag)<br>
+        <span class="margensito"></span> <span class="llave1"></span><br>
+        <span class="margensito"></span><span class="margensito"></span><span class="rojo">return </span> string2 + string1;<br>
+        <span class="margensito"></span> <span class="llave2"></span><br>
+        <span class="margensito"></span> <span class="rojo">return </span> string1 + string2;<br>
+        <span class="llave2"></span>
+      </ion-card-content>
+    </ion-card>
+
+    <ul>
+      <li>Si el parámetro flag tiene el valor true, entonces el método devuelve las dos cadenas pasadas como
+         parámetros, concatenadas en orden inverso (primera string2, luego string1)</li><br>
+
+      <li>Si el parámetro flag tiene el valor false, entonces el método omite el cuerpo de la instrucción if. 
+        Entonces continúa a la segunda declaración de retorno.Esta instrucción return devuelve los dos parámetros concatenados en orden normal (string1, y string2)
+    </ul>
+
+   <button ion-button full menuClose (click)="launchJavaOchoParteDosPage()" color="dark">Continuar</button>
+</ion-content>

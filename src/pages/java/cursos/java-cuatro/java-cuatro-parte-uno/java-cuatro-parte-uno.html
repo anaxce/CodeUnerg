@@ -1,0 +1,68 @@
+<!--
+  Generated template for the JavaCuatroParteUnoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Do While Loop</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <p>El bucle <b>do-while</b> es muy similar al bucle <b>while</b>, pero hace las cosas en orden inverso</p>
+  <p>El código dentro de un bucle <b>do-while</b> siempre se ejecutará al menos <b>una</b> vez, incluso si 
+    la condición especificada es <b>falsa</b>. Esto se debe a que el código se <b>ejecuta</b> antes de probar la <b>condición</b>.</p>
+
+    <p><b><u>Sintaxis</u></b></p>
+
+    <ion-card>
+      <ion-card-content>
+        <span class="blanco"> do</span><br>
+        <span class="llave1"></span><br>
+        <span class="margensito"></span> Ejecutar <span class="rojo">Este</span> codigo;<br>
+        <span class="llave2"></span><br>
+        <span class="rojo">while</span> (condición);<br>
+      </ion-card-content>
+    </ion-card>
+
+    <p><b><u>Ejemplo</u></b></p>
+
+    <ion-card>
+      <ion-card-content>
+        <span class="rojo"> class </span> <span class="naranja">  DoWhileLoop </span><br>
+        <span class="llave1"> </span><br>
+        <span class="margensito"></span> <span class="rojo">public static void </span> <span class="naranja"> main </span> (String args [])<br>
+        <span class="margensito"></span> <span class="llave1"></span><br>
+        <span class="margensito"></span> <span class="rojo">int</span> num = <span class="amarillo"> 5</span>;<br><br>
+        <span class="margensito"></span>do <span class="llave1"></span> <br><br>
+        <span class="margensito"></span>num = num + <span class="amarillo">2</span>;
+        <span class="margensito"></span> System.out.print(num + <span class="amarillo"> " " </span>);<br><br>
+        <span class="margensito"></span><span class="llave2"> </span><br>
+        <span class="margensito"></span><span class="rojo">while </span> (num < <span class="amarillo"> 25 </span>);<br><br>
+        <span class="margensito"></span><span class="llave2"></span><br>
+        <span class="llave2"></span>
+
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-content>
+        <span class="blanco">Consola: </span><br><br>
+        <span class="blanco"> 7 9 11 13 15 17 19 21 23 25</span>
+      </ion-card-content>
+    </ion-card>
+
+    <p>En el <b>código</b> anterior, se inicializa una variable <b>num</b> con el valor de <b>5</b>. el número se incrementa 
+      por <b>2</b> y se imprime (junto con un solo espacio) mientras que <b>num</b> es menor que <b>25</b>. una vez que el 
+      valor de <b>num</b> sea mayor que <b>25</b>, El bucle dejará de ejecutarse</p>
+
+      <button ion-button full menuClose (click)="launchJavaCuatroParteDosPage()" color="dark">Continuar</button>
+
+
+</ion-content>

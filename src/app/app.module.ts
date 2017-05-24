@@ -35,10 +35,33 @@ import { CursoSeisParteUnoPage } from '../pages/php/cursos/curso-seis/curso-seis
 import { CursoSietePage } from '../pages/php/cursos/curso-siete/curso-siete';
 import { CursoSieteParteUnoPage } from '../pages/php/cursos/curso-siete/curso-siete-parte-uno/curso-siete-parte-uno';
 import { CursoOchoPage } from '../pages/php/cursos/curso-ocho/curso-ocho';
-
+import { CursoOchoParteUnoPage } from  '../pages/php/cursos/curso-ocho/curso-ocho-parte-uno/curso-ocho-parte-uno';
+import { CursoOchoParteDosPage } from  '../pages/php/cursos/curso-ocho/curso-ocho-parte-dos/curso-ocho-parte-dos';
+import { CursoOchoParteTresPage } from  '../pages/php/cursos/curso-ocho/curso-ocho-parte-tres/curso-ocho-parte-tres';
+import { CursoNuevePage } from '../pages/php/cursos/curso-nueve/curso-nueve';
 
 //Cursos de Java
 import { JavaPage } from '../pages/java/java';
+import { BienvenidoJavaPage } from '../pages/java/cursos/bienvenido-java/bienvenido-java';
+import { CursoJavaUnoPage } from '../pages/java/cursos/curso-java-uno/curso-java-uno';
+import { JavaUnoParteUnoPage} from '../pages/java/cursos/curso-java-uno/java-uno-parte-uno/java-uno-parte-uno';
+import { JavaDosPage } from '../pages/java/cursos/java-dos/java-dos';
+import { JavaDosParteUnoPage } from '../pages/java/cursos/java-dos/java-dos-parte-uno/java-dos-parte-uno';
+import { JavaTresPage } from '../pages/java/cursos/java-tres/java-tres';
+import { JavaTresParteUnoPage } from '../pages/java/cursos/java-tres/java-tres-parte-uno/java-tres-parte-uno';
+import { JavaCuatroPage } from '../pages/java/cursos/java-cuatro/java-cuatro';
+import { JavaCuatroParteUnoPage } from '../pages/java/cursos/java-cuatro/java-cuatro-parte-uno/java-cuatro-parte-uno';
+import { JavaCuatroParteDosPage } from '../pages/java/cursos/java-cuatro/java-cuatro-parte-dos/java-cuatro-parte-dos';
+import { JavaCincoPage} from '../pages/java/cursos/java-cinco/java-cinco';
+import { JavaCincoParteUnoPage } from '../pages/java/cursos/java-cinco/java-cinco-parte-uno/java-cinco-parte-uno';
+import { JavaCincoParteDosPage } from '../pages/java/cursos/java-cinco/java-cinco-parte-dos/java-cinco-parte-dos';
+import { JavaSeisPage} from '../pages/java/cursos/java-seis/java-seis';
+import { JavaSeisParteUnoPage } from '../pages/java/cursos/java-seis/java-seis-parte-uno/java-seis-parte-uno';
+import { JavaSietePage} from '../pages/java/cursos/java-siete/java-siete';
+import { JavaSieteParteUnoPage } from '../pages/java/cursos/java-siete/java-siete-parte-uno/java-siete-parte-uno';
+import { JavaOchoPage} from '../pages/java/cursos/java-ocho/java-ocho';
+import { JavaOchoParteUnoPage } from '../pages/java/cursos/java-ocho/java-ocho-parte-uno/java-ocho-parte-uno';
+import { JavaOchoParteDosPage } from '../pages/java/cursos/java-ocho/java-ocho-parte-dos/java-ocho-parte-dos';
 
 //Cursos de Python
 import { PythonPage } from '../pages/python/python';
@@ -105,11 +128,35 @@ const cloudSettings: CloudSettings = {
     CursoSietePage,
     CursoSieteParteUnoPage,
     CursoOchoPage,
+    CursoOchoParteUnoPage,
+    CursoOchoParteDosPage,
+    CursoOchoParteTresPage,
+    CursoNuevePage,
     
     
 
     // Cursos de Java
     JavaPage,
+    BienvenidoJavaPage,
+    CursoJavaUnoPage,
+    JavaUnoParteUnoPage,
+    JavaDosPage,
+    JavaDosParteUnoPage,
+    JavaTresPage,
+    JavaTresParteUnoPage,
+    JavaCuatroPage,
+    JavaCuatroParteUnoPage,
+    JavaCuatroParteDosPage,
+    JavaCincoPage,
+    JavaCincoParteUnoPage,
+    JavaCincoParteDosPage,
+    JavaSeisPage,
+    JavaSeisParteUnoPage,
+    JavaSietePage,
+    JavaSieteParteUnoPage,
+    JavaOchoPage,
+    JavaOchoParteUnoPage,
+    JavaOchoParteDosPage,
 
 
     // Cursos de Python
@@ -179,10 +226,37 @@ const cloudSettings: CloudSettings = {
     CursoSietePage,
     CursoSieteParteUnoPage,
     CursoOchoPage,
+    CursoOchoParteUnoPage,
+    CursoOchoParteDosPage,
+    CursoOchoParteTresPage,
+    CursoNuevePage,
+    
+   
+    
     
 
     // Cursos de Java
+    BienvenidoJavaPage,
     JavaPage,
+    CursoJavaUnoPage,
+    JavaUnoParteUnoPage,
+    JavaDosPage,
+    JavaDosParteUnoPage,
+    JavaTresPage,
+    JavaTresParteUnoPage,
+    JavaCuatroPage,
+    JavaCuatroParteUnoPage,
+    JavaCuatroParteDosPage,
+    JavaCincoPage,
+    JavaCincoParteUnoPage,
+    JavaCincoParteDosPage,
+    JavaSeisPage,
+    JavaSeisParteUnoPage,
+    JavaSietePage,
+    JavaSieteParteUnoPage,
+    JavaOchoPage,
+    JavaOchoParteUnoPage,
+    JavaOchoParteDosPage,
 
     // Cursos de Python
     PythonPage,

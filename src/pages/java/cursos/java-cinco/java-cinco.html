@@ -1,0 +1,118 @@
+<!--
+  Generated template for the JavaCincoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Arrays</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <p><b><u>Que es un Array? tambien conocida como Matriz</u></b></p>
+
+  <ul>
+    <li>
+      <p>Array es una estructura de datos proporcionada por java, 
+        que almacena una colección secuencial de tamaño fijo de elementos del mismo tipo</p>
+    </li>
+        <li>
+      <p>Array en java está basado en índices. Cada elemento de una matriz se 
+        llama un elemento, y cada elemento se accede por su índice numérico.</p>
+    </li>
+        <li>
+      <p>El primer elemento de la matriz se almacena en 0 índice.</p>
+    </li> 
+  </ul>
+
+   <img src="assets/img/arrayjava.jpg">
+
+   <p><b><u>Declarando un Array</u></b></p>
+
+   <p><b>Sintaxis</b></p>
+
+   <ion-card>
+     <ion-card-content> 
+       <span class="naranja">type</span><span class="amarillo"> [ ] </span> <span class="naranja"> arrayNombre</span>;<br>
+     </ion-card-content>
+   </ion-card>
+
+   <p><b><u>Ejemplo</u></b></p>
+
+   <ion-card>
+     <ion-card-content>
+       <span class="amarillo">// Declara una matriz de enteros</span><br>
+       <span class="rojo"> int</span> [ ] anArray;<br>
+     </ion-card-content>
+   </ion-card>
+
+   <p>Las declaraciones de Arrays se dividen en dos partes</p>
+
+   <ul>
+     <li>
+       <b>Tipo de Array:</b> Se escribe como tipo [], donde type es el tipo de datos de los elementos contenidos, 
+       los paréntesis son símbolos especiales que indican que esta variable contiene un array
+     </li>
+
+      <li>
+       <b>Nombre de Array:</b>Puede ser cualquier cosa que quieras, siempre que se siga las reglas y parametros.
+     </li>
+   </ul>
+
+   <p><b><u>De forma similar, puede declarar matrices de otros tipos.</u></b></p>
+
+   <ion-card>
+     <ion-card-content>
+       <span class="rojo">boolean</span>[ ] anArrayBooleans;<br>
+       <span class="blanco">String</span>[ ] anArrayStrings;<br>
+       <span class="rojo">double</span>[ ] anArrayDoubles;<br>
+       <span class="rojo">short</span>[ ] anArrayShorts;<br>
+       <span class="rojo">float</span>[ ] anArrayBooleans;<br>
+       <span class="rojo">char</span>[ ] anArrayChars;<br>
+       <span class="rojo">byte</span>[ ] anArrayBytes;<br>
+       <span class="rojo">long</span>[ ] anArrayLongs;<br>
+     </ion-card-content>
+   </ion-card>
+
+   <p>También puede colocar los corchetes después del nombre de la matriz. Sin embargo, la convención desalienta 
+     esto, los corchetes identifican el tipo de matriz que debe aparecer con la designación de tipo.</p>
+
+     <ion-card>
+       <ion-card-content>
+         <span class="amarillo">// Esta forma es desalentada</span><br>
+         <span class="rojo">float </span> anArrayFloat [ ];<br>
+       </ion-card-content>
+     </ion-card>
+
+     <p>Puede crear una matriz utilizando el nuevo operador con la siguiente sintaxis</p>
+
+     <p><b><u>Sintaxis</u></b></p>
+
+     <ion-card>
+       <ion-card-content>
+         <span class="blanco"> dataType[ ] arrayNombre = new dataType[arrayTamaño]</span>
+       </ion-card-content>
+     </ion-card>
+
+     <p><b>La declaración anterior hace dos cosas</b></p>
+
+     <ul>
+       <li>
+         Crear una nueva matriz usando <b>dataType[arrayTamaño]</b>.
+       </li><br>
+
+       <li>
+         Asigna la referencia de la matriz recién creada a la variable <b>arrayNombre</b>.
+       </li>
+     </ul>
+
+     <button ion-button full menuClose (click)="launchJavaCincoParteUnoPage()" color="dark">Continuar</button>
+
+
+</ion-content>

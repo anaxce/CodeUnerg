@@ -1,0 +1,139 @@
+<!--
+  Generated template for the JavaTresPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Declaración If y If Else</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<p><b><u>Declaración If</u></b></p>
+  <p>Hay dos tipos de declaraciones de toma de decisiones en java</p>
+
+  <ul>
+    <li>Declaracion If</li>
+    <li>Declracion Switch</li>
+  </ul>
+
+<p><b><u>Declaración If</u></b></p>
+
+<p>Una instrucción if consiste en una expresión booleana seguida de una o más declaraciones</p>
+
+<ion-card>
+  <ion-card-content>
+    <span class="rojo">if</span>(Boolean_expression)<br>
+    <span class="llave1"></span><br>
+    <span class="margensito"></span><span class="amarillo">//Las sentencias se ejecutarán si la expresión booleana es verdadera.</span><br>
+    <span class="llave2"></span>
+
+  </ion-card-content>
+</ion-card>
+
+<p><b>Si</b> la expresión booleana se evalúa como verdadera <b>entonces</b> se ejecutará el bloque de código dentro de la <b>sentencia if</b>.</p>
+
+<p><b>Sino</b> se ejecutará el <b>primer</b> conjunto de código después del final de la <b>sentencia if</b> (después del cierre)</p>
+
+<ion-card>
+  <ion-card-content>
+    <span class="rojo">public class</span><span class="naranja">TestIf</span><br>
+    <span class="llave1"></span><br>
+    <span class="margensito"></span><span class="rojo">public static void</span><span class="naranja">main</span>(String args[])<br>
+    <span class="margensito"></span><span class="llave1"></span><br>
+    <span class="margensito"></span><span class="margensito"></span><span class="rojo">int</span> i = <span class="amarillo">5</span>;<br>
+    <span class="margensito"></span><span class="margensito"></span><span class="rojo">if</span>( i < <span class="amarillo">10</span>)<br>
+    <span class="margensito"></span><span class="margensito"></span><span class="llave1"></span><br>
+    <span class="margensito"></span><span class="margensito"></span>System.out.print("<span class="amarillo">Esto es una declaracion If</span>");<br>
+    <span class="margensito"></span><span class="margensito"></span><span class="llave2"></span><br>
+    <span class="margensito"></span><span class="llave2"></span><br>
+    <span class="llave2"></span>
+
+  </ion-card-content>
+</ion-card>
+
+<br>
+
+<p><b><u>Declaración If Else</u></b></p>
+
+<p>Una instrucción <b>if</b> puede ser seguida por una instrucción opcional <b>else</b>,
+   que se <b>ejecuta</b> cuando la expresión booleana es <b>falsa</b></p>
+
+  <p><b>Ejemplo</b></p>
+
+  <ion-card>
+    <ion-card-content>
+      <span class="rojo">if</span>(condición)<br>
+      <span class="llave1"></span><br>
+      <span class="margensito"></span><span class="amarillo">//Declaraciones que se ejecutarán si la condición es verdadera</span><br>
+      <span class="llave2"></span><br>
+      <span class="rojo">else</span><br>
+      <span class="llave1"></span><br>
+      <span class="margensito"></span><span class="amarillo">// Declaraciones que se ejecutaran si la condición es falsa</span><br>
+      <span class="llave2"></span>
+    </ion-card-content>
+  </ion-card>
+
+  <p>Aquí si la condición es <b>verdadera</b>, el código que está escrito dentro de los corchetes del bloque <b>if</b> será <b>ejecutado</b></p>
+
+  <p>Si la condición es <b>falsa</b>, el código que se escribe dentro de los corchetes del bloque <b>else</b> se <b>ejecutará</b></p>
+
+  <p><b><u>Realizaremos un pequeño programa</u></b></p>
+
+  <ul>
+    <li>
+      Este programa mostrará un mensaje "Éxito" si un valor determinado es mayor que 5
+    </li>
+    <li>
+      Si este valor no es mayor que 5, mostrará un mensaje "fallo"
+    </li>
+    <li>
+       Entonces mostrará el mensaje "ejecutado satisfactoriamente" y completará su ejecución.
+    </li>
+  </ul>
+
+  <ion-card>
+    <ion-card-content>
+      <span class="amarillo">//FileName: IfElseDemo1.java</span><br><br>
+
+      <span class="rojo">public class</span> <span class="naranja">IfElseDemo1</span><br>
+      <span class="llave1"></span><br>
+      <span class="margensito"></span><span class="rojo">public static void</span><span class="naranja">main</span>(String args[])<br>
+      <span class="margensito"></span><span class="llave1"></span><br>
+      <span class="margensito"></span><span class="margensito"></span><span class="amarillo">//Declarando una variable "nota" e inicializarla con un valor 10</span><br>
+      <span class="margensito"></span><span class="margensito"></span><span class="rojo">int </span> nota = <span class="amarillo">10</span>;<br><br>
+      <span class="margensito"></span><span class="margensito"></span><span class="amarillo">Comprobando si "nota" es mayor que 5</span><br>
+      <span class="margensito"></span><span class="margensito"></span><span class="rojo">if</span>(nota > <span class="amarillo">5</span>)<br>
+      <span class="margensito"></span><span class="margensito"></span><span class="llave1"></span><br>
+      <span class="margensito"></span><span class="margensito"></span><span class="margensito"></span><span class="amarillo">//Comprobando si la "prueba" es mayor que 5</span><br>
+      <span class="margensito"></span><span class="margensito"></span><span class="margensito"></span>System.out.println("<span class="amarillo">Exito</span>");<br>
+      <span class="margensito"></span><span class="margensito"></span><span class="llave2"></span><br>
+      <span class="margensito"></span><span class="margensito"></span><span class="rojo">else</span><br>
+      <span class="margensito"></span><span class="margensito"></span><span class="llave1"></span><br>
+      <span class="margensito"></span><span class="margensito"></span><span class="margensito"></span><span class="amarillo">//Este bloque será ejecutado sólo si "prueba" no es mayor de 5</span><br>
+      <span class="margensito"></span><span class="margensito"></span><span class="margensito"></span>System.out.println("<span class="amarillo">Fallido</span>");<br>
+      <span class="margensito"></span><span class="margensito"></span><span class="llave2"></span><br><br>
+      <span class="margensito"></span><span class="margensito"></span><span class="amarillo">//Final bloque if else</span><br>
+      <span class="margensito"></span><span class="margensito"></span>System.out.println("<span class="amarillo">Ejecutado Satisfactoriamente</span>");<br>
+      <span class="margensito"></span><span class="llave2"></span><br>
+      <span class="llave2"></span>
+
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      <span class="blanco">Consola</span><br>
+      <span class="blanco">Ejecutado Satisfactoriamente</span>
+    </ion-card-content>
+  </ion-card>
+
+        <button ion-button full menuClose (click)="launchJavaTresParteUnoPage()" color="dark">Continuar</button>
+
+</ion-content>

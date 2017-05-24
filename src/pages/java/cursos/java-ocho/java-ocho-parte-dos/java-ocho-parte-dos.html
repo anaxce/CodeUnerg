@@ -1,0 +1,89 @@
+<!--
+  Generated template for the JavaOchoParteDosPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Excepciones y llamadas</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <p>Si ocurre un error dentro de un método, el método puede lanzar una excepción. 
+    Se deben declarar excepciones en la declaración del método.</p>
+
+    <ion-card>  
+      <ion-card-content>  
+        <span class="rojo"> public</span> String <span class="naranja"> cuenta</span> <span class="azul"> (String string1, String string2)</span> <span class="rojo">throws</span> MyException<br>
+        <span class="llave1"> </span><br>
+        <span class="margensito"> </span> <span class="rojo"> if</span> (String == <span class="rojo">null</span>)<br>
+        <span class="margensito"> </span> <span class="llave1"></span><br>
+        <span class="margensito"> </span><span class="margensito"> </span> <span class="rojo">throw new </span> MyException (<span class="amarillo"> " string1 was null"</span>);<br>
+        <span class="margensito"> </span> <span class="llave2"> </span><br>
+        <span class="margensito"> </span> <span class="rojo">if</span>(string2 == <span class="rojo">null</span>)<br>
+        <span class="margensito"> </span><span class="llave1"></span> <br>
+        <span class="margensito"> </span><span class="margensito"> </span> <span class="rojo">throw new </span> MyException(<span class="amarillo">"string2 was null"</span>);<br>
+        <span class="margensito"> </span><span class="llave2"></span><br>
+        <span class="margensito"> </span><span class="rojo">return</span> string1 + string2;<br>
+        <span class="llave2"></span>
+      </ion-card-content>
+    </ion-card>
+<p>Este método comprueba primero si uno de los dos parámetros string1 o string2 es nulo. Si lo son, se lanza una excepción</p>
+
+<p><b><u>Metodo de llamada</u></b></p>
+
+<ul>
+  <li>Para usar un método, el método debe ser llamado.</li><br>
+  <li>Hay dos maneras en que un método se llama, es decir, el método devuelve un valor o devuelve nada (sin valor de retorno) </li>
+</ul>
+
+<ion-card>
+  <ion-card-content>
+    <span class="rojo">public class</span> <span class="naranja">Ejemplo</span><br>
+    <span class="llave1"></span><br>
+    <span class="margensito"></span> <span class="rojo">public static void</span> <span class="naranja">main</span> <span class="azul">(String[ ] args)</span><br>
+    <span class="margensito"></span><span class="llave1"></span><br>
+    <span class="margensito"></span><span class="margensito"></span> <span class="amarillo">// llamada del metodo</span><br><br>
+    <span class="margensito"></span><span class="margensito"></span> mimetodo();<br>
+    <span class="margensito"></span><span class="margensito"></span> <span class="rojo">int</span> a = <span class="amarillo">11</span>;<br>
+    <span class="margensito"></span><span class="margensito"></span> <span class="rojo">int</span> b = <span class="amarillo">6</span>;<br><br>
+    <span class="margensito"></span><span class="margensito"></span> <span class="amarillo">// Llame al método addme y guarde su valor devuelto en la variable c</span><br>
+    <span class="margensito"></span><span class="margensito"></span> <span class="rojo">int</span> c = addme(a, b);<br><br>
+    <span class="margensito"></span><span class="margensito"></span> <span class="amarillo">// Llama al método printsum y pasa el valor</span><br>
+    <span class="margensito"></span><span class="margensito"></span> printsum(c);
+    <span class="margensito"></span> <span class="llave2"></span><br><br>
+    <span class="margensito"></span> <span class="amarillo">//Método simple sin declaración de retorno o parámetro</span><br>
+    <span class="margensito"></span> <span class="rojo">public void</span> <span class="naranja">mimetodo</span>()<br>
+    <span class="margensito"></span> <span class="llave1"></span><br>
+    <span class="margensito"></span><span class="margensito"></span> <span class="amarillo">//declara una variable string dentro del metodo</span><br>
+    <span class="margensito"></span><span class="margensito"></span> String s = " Esto es un ejemplo de un metodo java";<br>
+    <span class="margensito"></span><span class="margensito"></span> System.out.println(s);<br>
+    <span class="margensito"></span><span class="llave2"></span><br><br>
+    <span class="margensito"></span> <span class="amarillo">//Método con dos parámetros de entrada y retorno</span><br>
+    <span class="margensito"></span> <span class="rojo">public int</span> <span class="naranja">addme</span>(<span class="rojo">int</span> a, <span class="rojo">b</span>)<br>
+    <span class="margensito"></span> <span class="llave1"></span><br>
+    <span class="margensito"></span><span class="margensito"></span> <span class="rojo">return</span> a + b;<br>
+    <span class="margensito"></span> <span class="llave2"></span><br><br>
+    <span class="margensito"></span> <span class="amarillo">// Metodo con un parametro</span><br>
+    <span class="margensito"></span> <span class="rojo">public void</span> <span class="naranja">printSum</span>(<span class="rojo">int</span> thesum)<br>
+    <span class="margensito"></span><span class="llave1"></span><br>
+    <span class="margensito"></span><span class="margensito"></span> System.out.println("a+b = "+theSum);<br>
+    <span class="margensito"></span> <span class="llave2"></span><br>
+    <span class="llave2"></span>
+
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-content>
+    <span class="blanco"> Consola: </span><br><br>
+    <span class="blanco"> Esto es un ejemplo de un metodo java</span><br>
+    <span class="blanco"> a+b=17</span>
+  </ion-card-content>
+</ion-card>
+</ion-content>

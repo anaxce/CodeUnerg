@@ -9,6 +9,7 @@ import { CursoCincoPage } from './cursos/curso-cinco/curso-cinco';
 import { CursoSeisPage } from './cursos/curso-seis/curso-seis';
 import { CursoSietePage } from './cursos/curso-siete/curso-siete';
 import { CursoOchoPage } from './cursos/curso-ocho/curso-ocho';
+import { CursoNuevePage } from './cursos/curso-nueve/curso-nueve';
 @Component({
   selector: 'page-php',
   templateUrl: 'php.html'
@@ -62,6 +63,11 @@ items = [];
 
      launchCursoOchoPage(){
     this.navCtrl.push(CursoOchoPage);
+
+  }
+
+      launchCursoNuevePage(){
+    this.navCtrl.push(CursoNuevePage);
 
   }
 

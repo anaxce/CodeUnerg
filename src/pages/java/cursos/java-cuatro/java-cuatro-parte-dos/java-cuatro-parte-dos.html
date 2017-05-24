@@ -1,0 +1,90 @@
+<!--
+  Generated template for the JavaCuatroParteDosPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>For Loop</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <p>El bucle for se utiliza para repetir una tarea un número determinado de veces. Tiene tres partes</p>
+
+  <ul>
+    <li><b>Declaracion de variable-</b> Inicializa la variable al principio del bucle a algún valor. 
+    Este valor es el punto de partida del bucle</li>
+
+    <li><b>Condición-</b> Decide si el bucle continuará ejecutándose o no. Mientras esta condición es 
+    verdadera, el bucle continuará ejecutándose </li>
+
+    <li><b>Declaración de incremento-</b>La parte del bucle que cambia el valor de la variable creada en 
+    la parte de declaración de variable del bucle. La instrucción de incremento es la parte del bucle que 
+    eventualmente detendrá el ciclo de ejecución</li>
+  </ul>
+
+  <p><b><u>Sintaxis</u></b></p>
+
+  <ion-card>
+    <ion-card-content>
+      <span class="rojo">for </span>(<span class="rojo">int</span> a_variable = valor_inicial; a_variable < valor_final; a_variable_incremento)<br>
+      <span class="llave1"></span><br>
+      <span class="margensito"> </span> codigo a ejecutar <br>
+      <span class="llave2"> </span>
+    </ion-card-content>
+  </ion-card>
+
+<p><b><u>Ejemplo</u></b></p>
+
+<ion-card>
+  <ion-card-content>
+    <span class="rojo"> class</span> <span class="naranja"> ForLoop</span>
+    <span class="llave1"></span><br>
+    <span class="margensito"></span><span class="rojo">public static void </span> <span class="naranja">main </span> (String args[])<br>
+    <span class="margensito"></span><span class="llave2"></span><br>
+    <span class="margensito"></span><span class="margensito"></span><span class="rojo">for </span>(<span class="rojo">int</span> a = <span class="amarillo"> 1</span>; a < <span class="amarillo">  11</span>; a++)<br>
+    <span class="margensito"></span><span class="margensito"></span>System.out.print(a + <span class="amarillo"> "  "</span>);<br>
+    <span class="margensito"></span><span class="margensito"></span><span class="llave2"></span><br>
+    <span class="margensito"></span><span class="llave2"></span><br>
+    <span class="llave2"></span>
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-content>
+    <span class="blanco"> Consola: </span><br><br>
+    <span class="blanco">1 2 3 4 5 6 7 8 9 10</span>
+  </ion-card-content>
+</ion-card>
+
+<p>Vamos a desmontar el bucle del ejemplo anterior para ver lo que cada parte hace</p>
+
+<ul>
+  <li>
+    <b> int a = 1</b> - Una variable llamada <b>a</b> es declarada con el valor de 1.
+  </li>
+
+  <li>
+    <b>a < 11 </b> La condición del bucle, indica que mientras la variable <b>a</b> sea menor que 11, el bucle debe seguir funcionando.
+  </li>
+
+  <li>
+    <b>a++</b> La parte de la instrucción de incremento del bucle, indica que de cada iteración del bucle, 
+    el valor de la variable <b>a</b> debe aumentar en 1. Recuerde que inicialmente <b>a</b> es 1.
+  </li>
+
+  <li>
+    <b>System.out.print(a + " ")</b>Imprime el valor de <b>a</b> junto con un solo espacio para cada vez que se ejecuta el bucle
+  </li>
+</ul>
+
+<p>El bucle anterior ejecutará el código entre los tirantes 10 veces porque <b>a</b> comienza en 1 y termina en 10.</p>
+
+<p>Este contador es lo que ejecuta el bucle</p>
+</ion-content>

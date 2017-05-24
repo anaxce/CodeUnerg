@@ -1,0 +1,82 @@
+<!--
+  Generated template for the JavaSieteParteUnoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>JavaSieteParteUno</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <p><b><u>Constructor parametrizado</u></b></p>
+
+  <p>En este ejemplo, hemos creado el constructor de la clase 'Estudiantes' 
+    que tiene dos parámetros. Podemos tener cualquier número de parámetros en el constructor.</p>
+
+    <ion-card>  
+      <ion-card-content>  
+        <span class="rojo"> class </span> <span class="naranja"> Estudiantes</span><br>
+        <span class="llave1"> </span><br>
+        <span class="margensito"></span> <span class="rojo">int</span> id;<br>
+        <span class="margensito"></span> String nombre;<br><br>
+        <span class="margensito"></span> Estudiantes (<span class="rojo">int</span> i, String n)<br>
+        <span class="margensito"></span><span class="llave1"></span><br>
+        <span class="margensito"></span><span class="margensito"></span> id = i;<br>
+        <span class="margensito"></span><span class="margensito"></span> name = n;<br>
+        <span class="margensito"></span> <span class="llave2"> </span><br><br>
+        <span class="margensito"></span> <span class="rojo">void</span> <span class="naranja">display</span>()<br>
+        <span class="margensito"></span> <span class="llave1"></span><br>
+        <span class="margensito"></span><span class="margensito"></span> System.out.println(id+<span class="amarillo"> "  " </span>+name);<br>
+        <span class="margensito"></span> <span class="llave2"> </span><br>
+        <span class="margensito"></span> <span class="rojo">public static void </span><span class="naranja">main</span>(String args[ ])<br>
+        <span class="margensito"></span> <span class="llave1"></span><br>
+        <span class="margensito"></span><span class="margensito"></span> <span class="amarillo">//Llamando al constructor</span><br>
+        <span class="margensito"></span><span class="margensito"></span>Estudiantes s1 = <span class="rojo">new</span> Estudiantes(<span class="amarillo">1,"Luis"</span>);<br>
+        <span class="margensito"></span><span class="margensito"></span> <span class="amarillo">//Llamando al constructor</span><br>
+        <span class="margensito"></span><span class="margensito"></span>Estudiantes s2 = <span class="rojo">new</span> Estudiantes(<span class="amarillo">2,"Maria"</span>);<br>
+        <span class="margensito"></span><span class="margensito"></span> s1.display();<br>
+        <span class="margensito"></span><span class="margensito"></span> s2.display();<br>
+        <span class="margensito"></span><span class="llave2"></span><br>
+        <span class="llave2"></span>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-content>
+        <span class="blanco">Consola: </span><br><br>
+        <span class="blanco">1 Luis</span><br>
+        <span class="blanco">2 Maria</span>
+      </ion-card-content>
+    </ion-card>
+
+<p><b><u>Diferencia entre constructor y método</u></b></p>
+
+<ul>
+  <li>
+    <b>1. </b> Los constructores se utilizan para inicializar el estado de un objeto mientras que un método
+     se utiliza para exponer el comportamiento de un objeto
+  </li><br>
+    <b>2. </b> El constructor no puede tener tipo de retorno, mientras que el método puede o no tener un tipo de retorno
+  <li><br>
+    <b>3. </b>  El nombre del constructor debe ser igual que el nombre de la clase, mientras que el nombre del método puede
+     o no ser igual al nombre de la clase
+  </li><br>
+
+  <li>
+    <b>4. </b> El constructor se invoca implícitamente mientras que el método se invoca explícitamente
+  </li><br>
+
+  <li>
+    <b>5. </b> El constructor es proporcionado implícitamente por el compilador java si no especifica ningún 
+    constructor en la clase java, pero el método nunca es proporcionado por el compilador java.
+  </li>
+
+</ul>
+</ion-content>

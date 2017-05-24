@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>CursoOchoParteUno</ion-title>
+    <ion-title>Base de Datos 2</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,4 +15,67 @@
 
 <ion-content padding>
 
+  <p><b><u>Creando consulta de base de datos</u></b></p>
+
+  <p>La sentencia <b>CREATE DATABASE</b> creará la base de datos en MySQL</p>
+  <p>La creación de la <b>base de datos</b> es nuestro primer paso al acceder al servidor <b>MySql</b> backend con un script php</p>
+  <p>Esto se puede lograr conectando con el <b>servidor</b>. Y luego <b>crear</b> la base de datos.</p>
+
+  <ion-card>
+    <ion-card-content>
+      <span class="gris">//Creando conexión</span><br>
+      <span class="naranja">$cn</span> = <span class="rojo">new</span> mysqli(<span class="amarillo"> "localhost", "your_username", "my_password" </span>);<br><br>
+      <span class="gris"> //Verificando Conexion</span><br>
+      <span class="rojo">if</span>(<span class="naranja">$cn</span>->connect_error)<br>
+      <span class="llave1"></span><br>
+      <span class="margensito"></span><span class="azul">echo</span><span class="amarillo">"Error estableciendo la conexion"</span>. <span class="naranja">$cn</span>->connect_error;<br>
+      <span class="llave2"></span><br><br>
+      <span class="gris">//Creando bd</span><br>
+      <span class="naranja">$sql</span> = <span class="amarillo"> "CREATE DATABASE MyDB"</span>;<br><br>
+      <span class="rojo">if</span>(<span class="naranja">$cn</span>->query(<span class="naranja">$sql</span>) === <span class="rojo">TRUE</span>)<br>
+      <span class="llave1"></span><br>
+      <span class="margensito"></span><span class="azul">echo</span><span class="amarillo"> "Base de datos creada"</span>;<br>
+      <span class="llave2"></span><br>
+      <span class="rojo">else</span><br>
+      <span class="llave1"></span><br>
+      <span class="margensito"></span><span class="azul">echo</span> <span class="amarillo"> "Error creando la base de datos"</span> . <span class="naranja">$cn</span>->error;<br>
+      <span class="llave2"></span><br>
+      <span class="naranja">$cn</span>->close();<br>
+    </ion-card-content>
+  </ion-card>
+
+    <p><b><u>Creando la tabla</u></b></p>
+<p>El proceso de <b>creación</b> de la tabla es tan fácil como crear la <b>base de datos</b>. 
+  Tenemos que ejecutar la consulta <b>create table</b> usando el comando <span class="rojo"><b>mysqli construct</b></span></p>
+
+  <ion-card>
+    <ion-card-content>
+      <span class="gris">//Creando conexión</span><br>
+      <span class="naranja">$cn</span> = <span class="rojo"> new </span> mysqli (<br>
+      <span class="margesito"></span><span class="amarillo">"localhost"</span>,<br>
+      <span class="margesito"></span><span class="amarillo">"my_username"</span>,<br>
+      <span class="margesito"></span><span class="amarillo">"my_password"</span>,<br>
+      <span class="margesito"></span><span class="amarillo">"MyDatabase"</span><br>
+      <span class="margesito"></span><span class="blanco">);</span><br><br>
+      <span class="gris">//Verificando conexión</span><br>
+      <span class="rojo">if</span>(<span class="naranja">$cn</span>->connect_error)<br>
+      <span class="llave1"></span>
+      <span class="margensito"></span><span class="azul">echo</span><span class="amarillo"> "Conexión fallida : "</span> . <span class="naranja">$cn</span>->connect_error;<br>
+      <span class="llave2"></span><br><br>
+      <span class="gris">//sql para crear la tabla </span><br>
+      <span class="naranja">$sql</span> = <span class="amarillo"> "CREATE TABLE MyTable(nombre VARCHAR(18), apellido VARCHAR(18), salario DECIMAL(5,4)  )"</span>;<br>
+      <br>
+      <span class="rojo">if</span>(<span class="naranja">$cn</span>->query(<span class="naranja">$sql</span>) === <span class="rojo"> TRUE</span>)<br>
+      <span class="llave1"></span><br>
+      <span class="margensito"></span><span class="azul">echo</span> <span class="amarillo"> "Tabla creada"</span>;<br>
+      <span class="llave2"></span><br>
+      <span class="rojo">else</span><br>
+      <span class="llave1"></span><br>
+      <span class="margensito"></span><span class="azul">echo</span> <span class="amarillo"> "Error al crear la tabla : "</span> . <span class="naranja">$cn</span>->error;<br>
+      <span class="llave2"></span><br>
+      <span class="naranja">$cn</span>->close();<br>
+
+
+    </ion-card-content>
+  </ion-card>
 </ion-content>

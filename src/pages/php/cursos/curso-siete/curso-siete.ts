@@ -23,7 +23,7 @@ export class CursoSietePage {
     console.log('ionViewDidLoad CursoSietePage');
   }
 
-      launchCursoSieteParteUnoPage(){
+    launchCursoSieteParteUnoPage(){
     this.navCtrl.push(CursoSieteParteUnoPage);
 
   }
