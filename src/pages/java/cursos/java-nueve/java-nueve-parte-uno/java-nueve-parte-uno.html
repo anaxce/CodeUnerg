@@ -7,12 +7,80 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>JavaNueveParteUno</ion-title>
+    <ion-title>Tipos de Herencia</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+<p><b><u> Tipos de Herencia</u></b></p><br>
+  <ul>
+    <li><b>1) Single: Herencia unica</b></li><br>
+    <li><b>2) Multilevel: Herencia multinivel</b></li><br>
+    <li><b>3) Hierarchical: Herencia jerárquica</b></li><br>
+    
+  </ul>
+
+  <img src="assets/img/herencia1.jpg" class="responsiveuno"><br><br>
+
+    <ul>
+        <li><b>4) Multiple: Herencia múltiple</b></li><br>
+        <li><b>5) Hybrid: Herencia Hibrida</b></li><br>
+    </ul>  
+
+     <img src="assets/img/herencia2.jpg" class="responsiveuno"><br><br>
+
+    <ion-card>
+      <ion-card-content>
+        <span class="rojo"> La herencia múltiple no es compatible con java. 
+          Esto significa que una clase no puede extender más de una clase</span>  
+        </ion-card-content>  
+      </ion-card><br><br>
+
+<p><b><u>Herencia Unica (single)</u></b></p>
+        <p>Cuando una clase extiende una clase se llama como <b>Herencia Unica</b></p>
+
+ <img src="assets/img/singleherencia.jpg" class="responsivedos"><br><br>
+
+ <p><b>Ejemplo</b></p>
+
+ <ion-card>
+   <ion-card-content>
+     <span class="blanco">  Class A</span><br>
+     <span class="llave1"> </span><br>
+     <span class="margensito"></span> <span class="rojo">public void</span> <span class="naranja">metodoA</span>()<br>
+     <span class="margensito"></span> <span class="llave1"></span><br>
+     <span class="margensito"></span><span class="margensito"></span>System.out.println("<span class="amarillo">Metodo super clase</span>");<br>
+     <span class="margensito"></span> <span class="llave2"> </span><br>
+     <span class="llave2"></span><br><br>
+     <span class="blanco"> Class B extends A</span><br>
+     <span class="llave1"></span><br>
+     <span class="margensito"></span> <span class="rojo">public void </span> <span class="naranja">metodoB</span>()<br>
+     <span class="margensito"></span> <span class="llave1"></span><br>
+     <span class="margensito"></span><span class="margensito"></span> System.out.println("<span class="rojo">Metodo hijo de clase</span>");<br>
+     <span class="margensito"></span> <span class="llave2"></span><br><br>
+     <span class="margensito"></span> <span class="rojo"> public static void</span> <span class="naranja">main</span>(String args[ ])<br>
+     <span class="margensito"></span> <span class="llave1"></span><br>
+     <span class="margensito"></span><span class="margensito"></span> B obj = <span class="rojo">new</span> B();<br><br>
+     <span class="margensito"></span><span class="margensito"></span> <span class="amarillo">//llamando metodo super clase</span><br>
+     <span class="margensito"></span><span class="margensito"></span> obj.metodoA();<br><br>
+     <span class="margensito"></span><span class="margensito"></span> <span class="amarillo">// llamando al metodo local</span><br>
+     <span class="margensito"></span><span class="margensito"></span> obj.metodoB();<br>
+     <span class="margensito"></span> <span class="llave2"></span><br>
+     <span class="llave2"></span>
+     
+  </ion-card-content>
+ </ion-card>
+
+ <ion-card>
+   <ion-card-content>
+     <span class="blanco">Consola: </span><br><br>
+     <span class="blanco"> Metodo super clase</span><br>
+     <span class="blanco"> Metodo hijo de clase</span>
+   </ion-card-content>
+ </ion-card>
+
+   <button ion-button full menuClose (click)="launchJavaNueveParteDosPage()" color="dark">Continuar</button>
 
 </ion-content>

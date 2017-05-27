@@ -65,12 +65,20 @@ import { JavaOchoParteDosPage } from '../pages/java/cursos/java-ocho/java-ocho-p
 import { JavaNuevePage } from '../pages/java/cursos/java-nueve/java-nueve';
 import { JavaNueveParteUnoPage } from '../pages/java/cursos/java-nueve/java-nueve-parte-uno/java-nueve-parte-uno';
 import { JavaNueveParteDosPage } from '../pages/java/cursos/java-nueve/java-nueve-parte-dos/java-nueve-parte-dos';
+import { JavaDiezPage } from '../pages/java/cursos/java-diez/java-diez';
 
 //Cursos de Python
 import { PythonPage } from '../pages/python/python';
 
 //Cursos de Html
 import { HtmlPage } from '../pages/html/html';
+import { HtmlUnoPage } from '../pages/html/cursos/html-uno/html-uno';
+import { HtmlUnoParteUnoPage } from '../pages/html/cursos/html-uno/html-uno-parte-uno/html-uno-parte-uno';
+import { HtmlDosPage } from '../pages/html/cursos/html-dos/html-dos';
+import { HtmlDosParteUnoPage } from '../pages/html/cursos/html-dos/html-dos-parte-uno/html-dos-parte-uno';
+import { HtmlTresPage } from '../pages/html/cursos/html-tres/html-tres';
+import { HtmlTresParteUnoPage } from '../pages/html/cursos/html-tres/html-tres-parte-uno/html-tres-parte-uno';
+
 
 //Cursos de css
 import { CssPage } from '../pages/css/css';
@@ -163,6 +171,7 @@ const cloudSettings: CloudSettings = {
     JavaNuevePage,
     JavaNueveParteUnoPage,
     JavaNueveParteDosPage,
+    JavaDiezPage,
 
 
     // Cursos de Python
@@ -171,6 +180,13 @@ const cloudSettings: CloudSettings = {
 
     // Cusos de Html
     HtmlPage,
+    HtmlUnoPage,
+    HtmlUnoParteUnoPage,
+    HtmlDosPage,
+    HtmlDosParteUnoPage,
+    HtmlTresPage,
+    HtmlTresParteUnoPage,
+    
 
 
     // Cursos de Css
@@ -266,13 +282,25 @@ const cloudSettings: CloudSettings = {
     JavaNuevePage,
     JavaNueveParteUnoPage,
     JavaNueveParteDosPage,
+    JavaDiezPage,
 
     // Cursos de Python
     PythonPage,
 
 
+
+    // FRONTEND
+
+
+
     // Cusos de Html
     HtmlPage,
+    HtmlUnoPage,
+    HtmlUnoParteUnoPage,
+    HtmlDosPage,
+    HtmlDosParteUnoPage,
+    HtmlTresPage,
+    HtmlTresParteUnoPage,
 
 
     // Cursos de Css

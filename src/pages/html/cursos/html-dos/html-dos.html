@@ -1,0 +1,102 @@
+<!--
+  Generated template for the HtmlDosPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Primeros Pasos</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+
+<p><b><u>HTML Etiquetas, Atributos y Elementos</u></b></p>
+
+<p><b>Etiquetas</b></p>
+
+<p>Las etiquetas html son palabras clave (nombres de etiqueta) rodeadas por corchetes angulares</p>
+
+<ion-card>
+  <ion-card-content>  
+    <span class="tagname1"> content </span> <span class="tagname2"> </span>
+  </ion-card-content>
+</ion-card>
+
+<ul>
+  <li>Las etiquetas HTML normalmente vienen en parejas como <span class="body1"></span> y <span class="body2"></span></li><br>
+  <li>La primera etiqueta es la etiqueta de inicio la que abre; La segunda etiqueta es la etiqueta final,la que cierra</li><br>
+  <li>La etiqueta de fin se escribe como la etiqueta de inicio, pero con una barra diagonal antes del nombre de la etiqueta, como vieron en el ejemplo de arriba.</li>
+</ul>
+
+<p><b>Atributos</b></p>
+
+<p>Las etiquetas también pueden tener atributos, que son bits adicionales de información. 
+  Los atributos aparecen dentro de la etiqueta de apertura y sus valores se sitúan entre comillas. 
+  Parecen algo así como:</p>
+<ion-card>
+  <ion-card-content>
+    <span class="magenta">< tag</span> <span class="verde"> attribute</span>= <span class="amarillo">"value"</span> > Flor <span class="tag2"></span>
+  </ion-card-content>
+</ion-card><br>
+
+<p><b>Elementos</b></p>
+
+<p>Elementos son los bits que componen las páginas web</p>
+
+<p><b>Ejemplo 1</b></p>
+
+<ion-card>
+  <ion-card-content>
+    <span class="body1"> El invierno se acerca.</span> <span class="body2"></span>
+  </ion-card-content>
+</ion-card>
+
+<p>Todo lo que está entre (e incluye) etiquetas <b>body</b> y <b>/body</b> en el elemento body</p>
+
+<p><b>Ejemplo 2</b></p>
+
+<ion-card>
+  <ion-card-content>
+    <span class="title1"> </span> ¡El Rey en el note! <span class="title2"> </span>
+  </ion-card-content>
+</ion-card>
+
+<p> <b>title</b> y <b>/title</b> son etiquetas,  <b>title</b> ¡El rey en el norte!  <b>/title</b> es un pequeño elemento</p><br>
+
+<p><b><u>Abajo están las pocas etiquetas HTML esenciales</u></b></p>
+
+<ion-grid>
+  <ion-row>
+    <ion-col><b>Etiquetas</b></ion-col>
+    <ion-col><b>Descripcion</b></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col> <span class="doctype1"></span></ion-col>
+    <ion-col>Esta etiqueta define el tipo de documento y la versión HTML</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col> <span class="html1"></span></ion-col>
+    <ion-col>Esta etiqueta incluye el documento HTML completo y comprende principalmente el encabezado del documento </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col> <span class="head1"></span></ion-col>
+    <ion-col>Esta etiqueta representa el encabezado del documento que puede mantener otras etiquetas HTML </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col> <span class="title1"></span></ion-col>
+    <ion-col>Ta etiqueta title es usada dentro del head para mencionar el titulo del documento. </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col> <span class="body1"></span></ion-col>
+    <ion-col>Esta etiqueta representa el cuerpo del documento que mantiene otras etiquetas HTML </ion-col>
+  </ion-row>
+
+</ion-grid>
+
+       <button ion-button full menuClose (click)="launchHtmlDosParteUnoPage()" color="dark">Continuar</button>
+</ion-content>

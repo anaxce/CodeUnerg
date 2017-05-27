@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { JavaNueveParteDosPage } from '../java-nueve-parte-dos/java-nueve-parte-dos';
+
 
 /**
  * Generated class for the JavaNueveParteUnoPage page.
@@ -19,6 +21,11 @@ export class JavaNueveParteUnoPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad JavaNueveParteUnoPage');
+  }
+
+      launchJavaNueveParteDosPage(){
+    this.navCtrl.push(JavaNueveParteDosPage);
+
   }
 
 }

@@ -1,4 +1,25 @@
 
+
+h1{
+    font-family: montserrat;
+}
+
+h2{
+    font-family: montserrat;
+}
+
+h3{
+    font-family: montserrat;
+}
+
+h4{
+    font-family: montserrat;
+}
+
+h5{
+    font-family: montserrat;
+}
+
 .amarillo{
   color: #FFFB93;
 }
@@ -62,11 +83,22 @@ color: white;
 
 .llave2:before{
   content: " } ";
+  color: #F41E7B;
+}
+
+.tag1:before{
+content: " < ";
+color: #F41E7B;
+}
+
+.tag2:before{
+  content: " > ";
   color: white;
 }
 
+
 .margensito{
-  margin-left: 30px;
+  margin-left: 25px;
 }
 
 .magenta{
@@ -82,7 +114,123 @@ color: white;
 }
 
 
-img{
+.responsiveuno{
     width: 100%;
     height: auto;
 }
+
+.responsivedos{
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+}
+
+.responsivetres{
+    width: 40%;
+    height: auto;
+    margin-left: 13%;
+}
+
+
+// HTML TAGS
+
+.tagname1:before{
+content: " <tagname> ";
+color: #F41E7B;
+}
+
+.tagname2:before{
+  content: " </tagname> ";
+  color: #F41E7B;
+}
+
+.tag2:before{
+  content: " </tag> ";
+  color: #F41E7B;
+}
+
+.body1:before{
+  content: " <body> ";
+  color: #F41E7B;
+}
+
+.body2:before{
+  content: " </body> ";
+  color: #F41E7B;
+}
+
+.title1:before{
+  content: " <title> ";
+  color: #F41E7B;
+}
+
+.title2:before{
+  content: " </title> ";
+  color: #F41E7B;
+}
+
+.doctype1:before{
+  content: " <!DOCTYPE> ";
+  color: #F41E7B;
+}
+
+.doctype2:before{
+  content: " </title> ";
+  color: #F41E7B;
+}
+
+.html1:before{
+  content: " <html> ";
+  color: #F41E7B;
+}
+
+.html2:before{
+  content: " </html> ";
+  color: #F41E7B;
+}
+
+.head1:before{
+  content: " <head> ";
+  color: #F41E7B;
+}
+
+.head2:before{
+  content: " </head> ";
+  color: #F41E7B;
+}
+
+.br1:before{
+  content: " <br> ";
+  color: #F41E7B;
+}
+
+.p1:before{
+  content: " <p> ";
+  color: #F41E7B;
+}
+
+.p2:before{
+  content: " </p> ";
+  color: #F41E7B;
+}
+
+.h1:before{
+  content: " <h1> ";
+  color: #F41E7B;
+}
+
+.h2:before{
+  content: " <h2> ";
+  color: #F41E7B;
+}
+
+.h3:before{
+  content: " <h3> ";
+  color: #F41E7B;
+}
+
+.h4:before{
+  content: " <h4> ";
+  color: #F41E7B;
+}
+

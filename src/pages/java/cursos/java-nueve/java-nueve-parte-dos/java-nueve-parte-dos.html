@@ -15,4 +15,113 @@
 
 <ion-content padding>
 
+  <p><b><u>Herencia Multinivel</u></b></p>
+
+  <p>En la herencia multinivel, una clase puede heredar de una clase derivada, 
+    haciendo de esta clase derivada la clase base para la nueva clase.</p>
+
+     <img src="assets/img/multilevelherencia.jpg"><br>
+
+     <p><b>Ejemplo</b></p>
+
+      <ion-card>
+   <ion-card-content>
+     <span class="blanco">  Class A</span><br>
+     <span class="llave1"> </span><br>
+     <span class="margensito"></span> <span class="rojo">public void</span> <span class="naranja">metodoA</span>()<br>
+     <span class="margensito"></span> <span class="llave1"></span><br>
+     <span class="margensito"></span><span class="margensito"></span>System.out.println("<span class="amarillo">Metodo Clase A</span>");<br>
+     <span class="margensito"></span> <span class="llave2"> </span><br>
+     <span class="llave2"></span><br><br>
+     <span class="blanco"> Class B extends A</span><br>
+     <span class="llave1"></span><br>
+     <span class="margensito"></span> <span class="rojo">public void </span> <span class="naranja">metodoB</span>()<br>
+     <span class="margensito"></span> <span class="llave1"></span><br>
+     <span class="margensito"></span><span class="margensito"></span> System.out.println("<span class="rojo">Metodo Clase B</span>");<br>
+     <span class="margensito"></span> <span class="llave2"></span><br>
+     <span class="llave2"></span><br><br>
+     <span class="blanco"> Class C extends B</span><br>
+     <span class="llave1"></span><br>
+     <span class="margensito"></span> <span class="rojo">public void </span> <span class="naranja">metodoC</span>()<br>
+     <span class="margensito"></span> <span class="llave1"></span><br>
+     <span class="margensito"></span><span class="margensito"></span> System.out.println("<span class="rojo">Metodo clase C</span>");<br>
+     <span class="margensito"></span> <span class="llave2"></span><br><br>
+     <span class="margensito"></span> <span class="rojo"> public static void</span> <span class="naranja">main</span>(String args[ ])<br>
+     <span class="margensito"></span> <span class="llave1"></span><br>
+     <span class="margensito"></span><span class="margensito"></span> C obj = <span class="rojo">new</span> C();<br><br>
+     <span class="margensito"></span><span class="margensito"></span> <span class="amarillo">//Llamando al método de clase abuelo</span><br>
+     <span class="margensito"></span><span class="margensito"></span> obj.metodoA();<br><br>
+     <span class="margensito"></span><span class="margensito"></span> <span class="amarillo">// llamando al metodo de clase padre</span><br>
+     <span class="margensito"></span><span class="margensito"></span> obj.metodoB();<br><br>
+     <span class="margensito"></span><span class="margensito"></span> <span class="amarillo">// llamando al metodo local</span><br>
+     <span class="margensito"></span><span class="margensito"></span> obj.metodoC();<br>
+     <span class="margensito"></span> <span class="llave2"></span><br>
+     <span class="llave2"></span>
+     
+  </ion-card-content>
+ </ion-card>
+
+ <ion-card>
+   <ion-card-content>
+     <span class="blanco">Consola: </span><br><br>
+     <span class="blanco">Metodo Clase A</span><br>
+     <span class="blanco">Metodo Clase B</span><br>
+     <span class="blanco">Metodo Clase C</span><br>
+   </ion-card-content>
+ </ion-card>
+
+ <p><b><u>Herencia Jerarquica</u></b></p>
+ <p>En la herencia jerárquica una clase es heredada por muchas sub clases</p>
+ <p>En la imagen de abajo la clase b y c hereda la misma clase A. A es la clase principal (o clase base) de B & C</p>
+
+ <img src="assets/img/herenciaj.jpg"><br><br>
+
+      <ion-card>
+   <ion-card-content>
+     <span class="blanco">  Class A</span><br>
+     <span class="llave1"> </span><br>
+     <span class="margensito"></span> <span class="rojo">public void</span> <span class="naranja">metodoA</span>()<br>
+     <span class="margensito"></span> <span class="llave1"></span><br>
+     <span class="margensito"></span><span class="margensito"></span>System.out.println("<span class="amarillo">Metodo Clase A</span>");<br>
+     <span class="margensito"></span> <span class="llave2"> </span><br>
+     <span class="llave2"></span><br><br>
+     <span class="blanco"> Class B extends A</span><br>
+     <span class="llave1"></span><br>
+     <span class="margensito"></span> <span class="rojo">public void </span> <span class="naranja">metodoB</span>()<br>
+     <span class="margensito"></span> <span class="llave1"></span><br>
+     <span class="margensito"></span><span class="margensito"></span> System.out.println("<span class="rojo">Metodo Clase B</span>");<br>
+     <span class="margensito"></span> <span class="llave2"></span><br>
+     <span class="llave2"></span><br><br>
+     <span class="blanco"> Class C extends B</span><br>
+     <span class="llave1"></span><br>
+     <span class="margensito"></span> <span class="rojo">public void </span> <span class="naranja">metodoC</span>()<br>
+     <span class="margensito"></span> <span class="llave1"></span><br>
+     <span class="margensito"></span><span class="margensito"></span> System.out.println("<span class="rojo">Metodo clase C</span>");<br>
+     <span class="margensito"></span> <span class="llave2"></span><br><br>
+     <span class="llave2"></span><br>
+     <span class="blanco"> Class MyClass</span><br>
+     <span class="llave1"></span><br>
+     <span class="margensito"></span> <span class="rojo"> public static void</span> <span class="naranja">main</span>(String args[ ])<br>
+     <span class="margensito"></span> <span class="llave1"></span><br>
+     <span class="margensito"></span><span class="margensito"></span> B obj1 = <span class="rojo">new</span> B();<br><br>
+     <span class="margensito"></span><span class="margensito"></span> C obj2 = <span class="rojo">new</span> C();<br><br>
+     <span class="margensito"></span><span class="margensito"></span> <span class="amarillo">//Llamando al método de clase abuelo</span><br>
+     <span class="margensito"></span><span class="margensito"></span> obj1.metodoA();<br><br>
+     <span class="margensito"></span><span class="margensito"></span> <span class="amarillo">// llamando al metodo de clase padre</span><br>
+     <span class="margensito"></span><span class="margensito"></span> obj2.metodoA();<br><br>
+     <span class="margensito"></span> <span class="llave2"></span><br>
+     <span class="llave2"></span>
+     
+  </ion-card-content>
+ </ion-card>
+
+  <ion-card>
+   <ion-card-content>
+     <span class="blanco">Consola: </span><br><br>
+     <span class="blanco">Metodo Clase A</span><br>
+     <span class="blanco">Metodo Clase B</span><br>
+     <span class="blanco">Metodo Clase C</span><br>
+   </ion-card-content>
+ </ion-card>
+
 </ion-content>

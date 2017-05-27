@@ -15,6 +15,99 @@
 
 <ion-content padding>
 
+  <p><b><u>¿Que es una Herencia?</u></b></p>
+
+  <ul>
+    <li>inheritance can be defined as the process where one class acquires the properties (methods and fields) of another</li><br>
+
+    <li> Con el uso de la herencia la información se hace manejable en un orden jerárquico</li><br>
+
+    <li>La idea detrás de la herencia en java es que puede crear nuevas clases que se basan en clases existentes. 
+      Cuando heredes de una clase existente, puedes reutilizar métodos y campos de la clase padre, y puedes agregar 
+      nuevos métodos y campos también</li><br>
+
+      <li>La clase que hereda las propiedades de otra clase es conocida como subclase (clase derivada, clase hijo) y la clase 
+        cuyas propiedades son heredadas se conoce como superclase (clase base, clase padre)</li>
+
+  </ul>
+
+  <p><b><u>¿Por qué utilizar la herencia en java?</u></b></p>
+
+  <ul>
+    <li><b>Usar Polimorfismo</b></li>
+    <li><b>Para la reutilización del código</b></li>
+  </ul>
+
+  <p><b>Sintaxis</b></p>
+
+  <ion-card>  
+    <ion-card-content>  
+      <span class="rojo"> class</span> <span class="naranja"> Subclase-nombre</span> <span class="rojo">extends</span> Superclase-nombre<br>
+      <span class="margensito"> </span> <span class="llave1"> </span><br>
+      <span class="margensito"></span><span class="margensito"></span> <span class="amarillo"> // Metodos y campos</span><br>
+      <span class="margensito"></span> <span class="llave2"> </span>
+    </ion-card-content>
+  </ion-card><br>
+
+  <p><b><u>Palabra clave extends</u></b></p>
+
+  <p>La palabra clave extends indica que está creando una nueva clase que hereda las propiedades de una clase existente</p>
+
+  <ion-card>
+    <ion-card-content>
+      <span class="rojo">class</span> <span class="naranja">Vehiculo</span><br>
+      <span class="llave1"></span><br>
+      <span class="margensito"></span> ...... <br>
+      <span class="llave2"></span><br>
+      <span class="rojo">class</span> <span class="naranja">Moto</span> <span class="rojo">extends</span> <span class="naranja">Vehiculo</span><br>
+      <span class="llave1"></span><br>
+      <span class="margensito"></span> <span class="amarillo">// Extiende la propiedad de la clase vehículo</span><br>
+      <span class="margensito"></span> ......<br>
+      <span class="llave2"></span>
+    </ion-card-content>
+  </ion-card>
+
+  <p>Ahora basado en el ejemplo anterior. En el término OOP podemos decir que</p>
+
+  <ul>
+    <li><b>Vehiculo</b> es la superclase de <b>Moto</b></li><br>
+    <li><b>Moto</b> es una subclase de <b>Vehiculo</b></li>
+  </ul>
+
+  <p><b>Ejemplo</b></p>
+
+  <ion-card>
+    <ion-card-content>
+      <span class="rojo">class</span> <span class="naranja">Vehiculo</span><br>
+      <span class="llave1"></span><br>
+      <span class="margensito"></span> String vehiculoType;
+      <span class="llave2"></span><br><br>
+      <span class="rojo">public class</span> <span class="naranja">Moto</span> <span class="rojo">extends</span> <span class="naranja">Vehiculo</span><br>
+      <span class="llave1"></span><br>
+      <span class="margensito"></span> String modeloType;<br><br>
+      <span class="margensito"></span> <span class="rojo">public void</span> <span class="naranja">showDetail</span>()<br>
+      <span class="margensito"></span> <span class="llave1"></span><br>
+      <span class="margensito"></span> <span class="margensito"></span> <span class="amarillo">// Miembro de la clase vehiculo</span><br>
+      <span class="margensito"></span><span class="margensito"></span> vehiculoType = <span class="amarillo">"Moto"</span>;<br>
+      <span class="margensito"></span><span class="margensito"></span> modeloType = <span class="amarillo">"deportiva"</span>;<br><br>
+      <span class="margensito"></span><span class="margensito"></span> System.out.println(modeloType + <span class="amarillo">" "</span> +vehiculoType);<br>
+      <span class="margensito"></span> <span class="llave2"></span><br><br>
+      <span class="margensito"></span> <span class="rojo">public static void</span> <span class="naranja">main</span> <span class="azul">(String[ ] args)</span><br>
+      <span class="margensito"></span> <span class="llave1"></span><br>
+      <span class="margensito"></span><span class="margensito"></span> Moto moto = <span class="rojo">new </span> moto();<br>
+      <span class="margensito"></span><span class="margensito"></span> moto.showDetail();<br>
+      <span class="margensito"></span> <span class="llave2"></span><br>
+      <span class="llave2"></span>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      <span class="blanco"> Consola: </span><br><br>
+      <span class="blanco">  deportiva Moto</span>
+    </ion-card-content>
+  </ion-card>
+
       <button ion-button full menuClose (click)="launchJavaNueveParteUnoPage()" color="dark">Continuar</button>
 
 

@@ -10,6 +10,7 @@ import { JavaSeisPage } from './cursos/java-seis/java-seis';
 import { JavaSietePage } from './cursos/java-siete/java-siete';
 import { JavaOchoPage } from './cursos/java-ocho/java-ocho';
 import { JavaNuevePage } from './cursos/java-nueve/java-nueve';
+import { JavaDiezPage } from './cursos/java-diez/java-diez';
 
  
 
@@ -82,6 +83,11 @@ export class JavaPage {
 
       launchJavaNuevePage(){
     this.navCtrl.push(JavaNuevePage);
+
+  }
+
+      launchJavaDiezPage(){
+    this.navCtrl.push(JavaDiezPage);
 
   }
 
